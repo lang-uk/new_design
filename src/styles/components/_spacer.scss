@@ -1,0 +1,7 @@
+.spacer-h-wrap {
+  @include spacer-h-wrap();
+}
+
+.spacer {
+  @include spacer();
+}

@@ -1,0 +1,23 @@
+.button{
+  display: inline-flex;
+  align-items: center;
+  border-radius: $border-radius;
+  padding: $spacer * 1.5 $spacer * 3;
+
+  width: $spacer * 29.75;
+
+  font-family: $font-family-gilroy-bold;
+
+  font-size: $spacer * 2;
+
+  line-height: $spacer * 3;
+
+  border: none;
+  background: transparent;
+  //font-weight: bold;
+  //text-decoration: none;
+
+  &--primary{
+    background: $color-primary;
+  }
+}

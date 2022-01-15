@@ -1,0 +1,8 @@
+.badge{
+  font-size: inherit;
+  font-family: inherit;
+
+  &--primary-dark{
+    color: $color-primary-dark;
+  }
+}

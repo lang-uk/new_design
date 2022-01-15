@@ -1,0 +1,52 @@
+$spacer: 0.5rem;
+
+//  Font sizes from design
+//  https://www.figma.com/file/ovca1eqn1uRxAsPolF6byc/Lang-uk-(Delivery)?node-id=1501%3A5946
+//  Font families
+
+$font-family-gilroy-bold: 'Gilroy-Bold', sans-serif;
+$font-family-gilroy-semibold: 'Gilroy-SemiBold', sans-serif;
+$font-family-gilroy-regular: 'Gilroy-Regular', sans-serif;
+
+$font-family-ibm-pm-regular: 'IBM-Plex-Mono-Regular', sans-serif;
+
+$font-family-open-sans: 'Open Sans', sans-serif;
+
+//  Breakpoints
+$xs: 576px !default;  //  Mobile
+$sm: 768px !default;
+$md: 992px !default;  // Tablet
+$lg: 1280px !default;
+//$xl: 1400px !default;
+$xl: 1500px !default;
+
+$grid-breakpoints: (
+  xs: $xs,
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl,
+) !default;
+
+//  Border radius
+$border-radius: $spacer * 6;
+
+//  Colors
+$color-primary: #AAE2BF;
+$color-primary-dark: #63BA84;
+
+$color-bg: #F4F1EF;
+$color-bg-dark: #EBE8E6;
+
+$color-grey-1: #898989;
+$color-grey-2: #DDDDDD;
+$color-grey-3: #EBE8E6;
+$color-grey-4: #F4F1EF;
+
+$color-white: #FFFFFF;
+$color-black: #000000;
+
+$color-error: #D76060;
+$color-success: #63BA84;
+$color-warning: #eca843;
+$color-info: #43c3ec;

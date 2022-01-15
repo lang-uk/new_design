@@ -13,3 +13,11 @@ lang.org.ua - вебсайт ініціативи lang-uk присвячений
 * Дизайн https://www.figma.com/file/ovca1eqn1uRxAsPolF6byc/Lang-uk-(Delivery)?node-id=1035%3A803
 * Попередня версія сайту https://lang.org.ua
 * Логотипи https://drive.google.com/drive/u/3/folders/1VOlXzcr-R6c0bwnVO6WXF-a6q6s5i7rZ
+
+### Для того щоб зібрати проєкт потрібно:
+* Gulp CLI version: 2.3.0
+* node.js version 12.x (ці незручності тимчасові, трохи згодом перероблю під новішу 14 або 16 версію node.js)
+* npm version 6.14.15
+* В корні проєкту виконати команду --> npm install
+* Зібрати проєкт виконати команду --> gulp build
+* Режим розробки --> gulp dev

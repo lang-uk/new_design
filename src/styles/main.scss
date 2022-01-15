@@ -1,0 +1,18 @@
+//  src/styles/**/*.scss
+@import "./fonts.scss";
+@import "./vars.scss";
+@import "./mixins.scss";
+@import "./reset.scss";
+@import "./typography.scss";
+
+@import "./templates/index.scss";
+@import "./components/index.scss";
+@import "./layout/index.scss";
+@import "./pages/index.scss";
+@import "./general/index.scss";
+
+//  src/blocks/**/*.scss
+@import "../blocks/header/header.scss";
+@import "../blocks/footer/footer.scss";
+
+@import "./helpers.scss";

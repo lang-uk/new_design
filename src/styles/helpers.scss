@@ -1,0 +1,40 @@
+.hide {
+      display: none;
+      padding: 0;
+      margin: 0;
+  @media (min-width: $xs) {
+    &--xs {
+      display: initial;
+      padding: initial;
+      margin: initial;
+    }
+  }
+  @media (min-width: $sm) {
+    &--sm {
+      display: initial;
+      padding: initial;
+      margin: initial;
+    }
+  }
+  @media (min-width: $md) {
+    &--md {
+      display: initial;
+      padding: initial;
+      margin: initial;
+    }
+  }
+  @media (min-width: $lg) {
+    &--lg {
+      display: initial;
+      padding: initial;
+      margin: initial;
+    }
+  }
+  @media (min-width: $xl) {
+    &--xl {
+      display: initial;
+      padding: initial;
+      margin: initial;
+    }
+  }
+}
