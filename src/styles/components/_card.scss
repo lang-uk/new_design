@@ -1,0 +1,52 @@
+.card {
+  $self: &;
+  display: flex;
+  width: 352px;
+  height: 216px;
+  border: 1px solid $color-black;
+  padding: $spacer * 4;
+  position: relative;
+  transition: 0.4s all ease;
+
+  &__item {
+
+  }
+
+  &__strip {
+    position: absolute;
+    height: $spacer;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: $color-black;
+    transition: 0.4s all ease;
+
+    &:before {
+      content: '';
+      position: absolute;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-top: $spacer solid $color-bg;
+      border-left: $spacer solid $color-black;
+      transition: 0.4s all ease;
+    }
+  }
+
+  &:hover {
+    background: $color-white;
+
+    transition: 0.4s all ease;
+
+    #{$self}__strip {
+      height: 0;
+
+      &:before {
+        border-top: 0 solid $color-bg;
+        border-left: 0 solid $color-black;
+        transition: 0.4s all ease;
+      }
+    }
+  }
+
+}

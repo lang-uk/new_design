@@ -14,7 +14,7 @@ lang.org.ua - вебсайт ініціативи lang-uk присвячений
 * Попередня версія сайту https://lang.org.ua
 * Логотипи https://drive.google.com/drive/u/3/folders/1VOlXzcr-R6c0bwnVO6WXF-a6q6s5i7rZ
 
-### GitHub Pages
+### GitHub Page
 https://lang-uk.github.io/new_design/build/
 
 #### Для того щоб зібрати проєкт потрібно:

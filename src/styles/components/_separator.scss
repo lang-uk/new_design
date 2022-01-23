@@ -1,0 +1,27 @@
+.separator{
+  display: flex;
+  width: 100%;
+
+  &__icons{
+    padding-top: $spacer * 3;
+  }
+
+  &--line{
+    border-top: 1px solid $color-black;
+  }
+  &--icon-right{
+    justify-content: end;
+  }
+
+}
+
+.separator-icon{
+  $self: &;
+  display: flex;
+
+  &__item{
+    & + & {
+      margin-left: $spacer;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.link {
+  font-family: $font-family-gilroy-regular;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  font-weight: 600;
+
+  &--primary-dark {
+    color: $color-primary-dark;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
