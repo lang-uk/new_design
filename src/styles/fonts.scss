@@ -1,0 +1,52 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4300178, 2022-01-15T03:35:36-0500
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Gilroy-SemiBold by Radomir Tinkov
+ * URL: https://www.myfonts.com/fonts/radomir-tinkov/gilroy/semi-bold/
+ *
+ * Webfont: Gilroy-Regular by Radomir Tinkov
+ * URL: https://www.myfonts.com/fonts/radomir-tinkov/gilroy/regular/
+ *
+ * Webfont: Gilroy-Bold by Radomir Tinkov
+ * URL: https://www.myfonts.com/fonts/radomir-tinkov/gilroy/bold/
+ *
+ *
+ * Webfonts copyright: Copyright � 2016 by Radomir Tinkov. All rights reserved.
+ *
+ * © 2022 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+// TODO: Мы можем это удалить?
+//@import url("//hello.myfonts.net/count/419d92");
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url('../fonts/GilroyRegular/font.woff2') format('woff2'),
+       url('../fonts/GilroyRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url('../fonts/GilroyBold/font.woff2') format('woff2'),
+       url('../fonts/GilroyBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url('../fonts/GilroySemiBold/font.woff2') format('woff2'),
+       url('../fonts/GilroySemiBold/font.woff') format('woff');
+}
+
+/*
+ * IBM Plex Mono Regular
+*/
+@font-face {
+  font-family: "IBM-Plex-Mono-Regular";
+  src: url('../fonts/IBMPlexMonoRegular/font.ttf') format('truetype');
+}

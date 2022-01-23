@@ -1,0 +1,46 @@
+.slogan-section {
+  margin-top: $spacer * 8;
+
+  &__title {
+    margin-top: $spacer * 6;
+    text-align: center;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__image {
+    display: flex;
+    width: 280px;
+    margin-top: $spacer * 3;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $xs) {
+    &__image {
+      width: $spacer * 64.5;
+    }
+  }
+
+  @media (min-width: $sm) {
+    &__title {
+      width: $spacer * 72;
+      text-align: left;
+    }
+    &__text {
+      width: $spacer * 56;
+      text-align: left;
+    }
+    &__image{
+      margin-top: $spacer * 6;
+    }
+  }
+
+  @media (min-width: $md) {
+    &__image {
+      justify-content: end;
+    }
+  }
+}

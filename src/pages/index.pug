@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+html(lang="ru")
+	include ../templates/head/head.pug
+
+	body
+		.layout
+
+			include ../blocks/header/header.pug
+
+			main.main
+				.main__container
+					include ../templates/homepage/slogan-section.pug
+					include ../templates/homepage/about-us-section.pug
+
+			include ../blocks/footer/footer.pug
+
+		script(type="module", src="./js/main.js")

@@ -1,0 +1,148 @@
+@mixin spacer-h-wrap($element: 'item', $size-default: 2) {
+  $self: &;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: $spacer * $size-default * -1;
+  margin-left: $spacer * $size-default * -1;
+
+  &--center-v {
+    justify-content: center;
+  }
+  &--center-h {
+    align-items: center;
+  }
+
+  > #{$self}__#{$element} {
+    margin-bottom: $spacer * $size-default;
+    margin-left: $spacer * $size-default;
+
+    &--last {
+      margin-left: auto;
+    }
+  }
+
+  @for $i from 1 to 16 {
+    &#{$self}--size-#{$i} {
+      margin-bottom: $spacer * $i * -1;
+      margin-left: $spacer * $i * -1;
+    }
+
+    &#{$self}--size-#{$i} > #{$self}__#{$element} {
+      margin-bottom: $spacer * $i;
+      margin-left: $spacer * $i;
+    }
+  }
+}
+
+@mixin -spacer-horizontal($self: '', $element: 'item', $size-default: 2) {
+  flex-direction: row;
+  display: flex;
+
+  // Прості модифікатори до блоку
+  &#{$self}--center-v {
+    align-items: initial;
+    justify-content: center;
+  }
+  &#{$self}--center-h {
+    align-items: center;
+  }
+
+  // Дефолтні відстані між елементами
+  // 1 пріоритет, найнижчий
+  &#{$self} > #{$self}__#{$element} + #{$self}__#{$element} {
+    margin-left: $spacer * $size-default;
+    margin-top: 0;
+  }
+
+  // Модифікатор зміни розмір для всіх елементів на блоці.
+  // 2 пріоритет
+  @for $i from 1 to 16 {
+    &#{$self}--size-#{$i} > #{$self}__#{$element} + #{$self}__#{$element} {
+      margin-top: 0;
+      margin-left: $spacer * $i;
+    }
+  }
+
+  // Модифікатори розміру вже не елементах.
+  // 3 пріоритет
+  @for $i from 1 to 16 {
+    &#{$self} > #{$self}__#{$element} + #{$self}__#{$element}--size-#{$i} {
+      margin-top: 0;
+      margin-left: $spacer * $i;
+    }
+  }
+
+  // Кастомні модифікатори на елементах.
+  // 4 пріоритет, найвищий
+  &#{$self} > #{$self}__#{$element} + #{$self}__#{$element} {
+    &--last {
+      margin-left: auto;
+    }
+  }
+}
+
+@mixin spacer($element: 'item', $size-default: 2) {
+  $self: &;
+  display: flex;
+  flex-direction: column;
+
+  // You dont need align on horizontal, only vertical
+  &--center-v {
+    align-items: center;
+  }
+
+  // Дефолтні відстані між елементами
+  // 1 пріоритет, найнижчий
+  & > &__#{$element} + &__#{$element} {
+    // Default size of spacer
+    margin-top: $spacer * $size-default;
+  }
+
+  // Модифікатор зміни розмір для всіх елементів на блоці.
+  // 2 пріоритет
+  @for $i from 1 to 16 {
+    &--size-#{$i} > &__#{$element} + &__#{$element} {
+      margin-top: $spacer * $i;
+    }
+  }
+
+  // Модифікатори розміру вже не елементах.
+  // 3 пріоритет
+  @for $i from 1 to 16 {
+    & > &__#{$element} + &__#{$element}--size-#{$i} {
+      margin-top: $spacer * $i;
+    }
+  }
+
+  // Кастомні модифікатори на елементах.
+  // 4 пріоритет, найвищий
+  & > &__#{$element} + &__#{$element} {
+    &--last {
+      margin-top: auto;
+    }
+  }
+
+  // Модифікатори, щоб перевести це все в горизонталь.
+  // Також можливий модифікатор, який робить відстанні горизонтальними по якомусь
+  // брейкпоінту. Наприклад, spacer spacer--h-md.
+  &--h {
+    @include -spacer-horizontal($self, $element, $size-default);
+  }
+
+  @each $breakpoint, $value in $grid-breakpoints {
+    @media (min-width: $value) {
+      &--h-#{$breakpoint} {
+        @include -spacer-horizontal($self, $element, $size-default);
+      }
+    }
+  }
+
+}
+
+
+@mixin spacer-h($element: 'item', $size-default: 2) {
+  $self: &;
+
+  @include -spacer-horizontal($self, $element, $size-default)
+}

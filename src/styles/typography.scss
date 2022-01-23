@@ -1,0 +1,151 @@
+.h0, .h1, .h2, .h3, .h4 {
+  font-family: $font-family-gilroy-bold;
+  margin: 0;
+}
+
+.h0 {
+  //font-size: $font-size-0;
+  font-size: 60px;
+  line-height: 100%;
+
+  @media (min-width: $xs) {
+    font-size: 100px;
+  }
+
+  @media (min-width: $md) {
+    font-size: 112px;
+  }
+}
+
+.h1 {
+  //font-size: $font-size-1;
+  font-size: 40px;
+  line-height: 44px;
+
+  @media (min-width: $xs) {
+    font-size: 52px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $md) {
+    font-size: 72px;
+    line-height: 72px;
+  }
+}
+
+.h2 {
+  //font-size: $font-size-2;
+  font-size: 32px;
+  line-height: 36px;
+
+  @media (min-width: $xs) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: $md) {
+    font-size: 44px;
+    line-height: 48px;
+  }
+}
+
+.h3 {
+  //font-size: $font-size-3;
+  font-size: 24px;
+  line-height: 28px;
+
+  @media (min-width: $xs) {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $md) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.h4 {
+  //font-size: $font-size-4;
+  font-size: 20px;
+  line-height: 28px;
+
+  @media (min-width: $xs) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+// Body type
+.text-l {
+  font-family: $font-family-gilroy-regular;
+  //font-size: $font-size-4;
+  font-size: 20px;
+  line-height: 28px;
+
+  @media (min-width: $xs) {
+    line-height: 32px;
+  }
+
+  @media (min-width: $md) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.text-m {
+  //font-size: $font-size-5;
+  font-size: 16px;
+  line-height: 24px;
+
+  &--regular {
+    font-family: $font-family-gilroy-regular;
+  }
+
+  &--bold {
+    font-family: $font-family-gilroy-bold;
+  }
+}
+
+.caption-1 {
+  font-family: $font-family-gilroy-semibold;
+  //font-size: $font-size-6;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.caption-2 {
+  font-family: $font-family-gilroy-regular;
+  //font-size: $font-size-7;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+// UI
+//.button-text {
+//  font-family: $font-family-gilroy-bold;
+//  font-size: 16px;
+//  //font-size: $font-size-5;
+//  line-height: 24px;
+//}
+
+.code-text {
+  font-family: $font-family-ibm-pm-regular;
+  font-size: 16px;
+  //font-size: $font-size-5;
+  line-height: 24px;
+}
+
+.citation-text {
+  font-family: $font-family-ibm-pm-regular;
+  //font-size: $font-size-6;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.link-text {
+  font-family: $font-family-gilroy-semibold;
+  //font-size: $font-size-5;
+  font-size: 14px;
+  line-height: 24px;
+}

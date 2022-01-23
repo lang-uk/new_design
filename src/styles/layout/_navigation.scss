@@ -1,0 +1,39 @@
+.navigation {
+  $self: &;
+
+  &__item {
+    font-family: $font-family-gilroy-regular;
+    font-size: $spacer * 1.875;
+    line-height: $spacer * 3;
+    font-weight: 600;
+
+    & + & {
+      margin-left: $spacer * 4;
+    }
+  }
+  
+  &__link{
+
+  }
+
+}
+
+.navigation-action{
+  $self: &;
+  margin-left: $spacer * 6.5;
+  display: flex;
+  align-items: center;
+
+  &__item{
+    font-family: $font-family-gilroy-regular;
+    font-size: $spacer * 1.75;
+    line-height: $spacer * 2.5;
+    font-weight: 600;
+
+    & + & {
+      margin-left: $spacer * 4;
+    }
+  }
+}
+
+

@@ -1,0 +1,24 @@
+.main{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  background: $color-bg;
+  padding-left: $spacer * 2;
+  padding-right: $spacer * 2;
+
+  &__container{
+    max-width: $spacer * 140;
+    width: 100%;
+  }
+
+  @media (min-width: $xs) {
+    padding-left: $spacer * 4;
+    padding-right: $spacer * 4;
+  }
+
+  @media (min-width: $lg) {
+    padding-left: $spacer * 10;
+    padding-right: $spacer * 10;
+  }
+}
