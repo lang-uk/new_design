@@ -1,3 +1,8 @@
-.about-us-section{
+.about-us-section {
+
+  &__content {
+    margin-top: $spacer * 7;
+    margin-bottom: $spacer * 10.5;
+  }
 
 }

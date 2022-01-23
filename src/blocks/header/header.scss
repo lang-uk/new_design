@@ -5,6 +5,7 @@
   padding: $spacer * 0.75 $spacer * 2;
   position: sticky;
   top: 0;
+  z-index: 10;
 
   &__container {
     display: flex;
@@ -69,5 +70,6 @@
   line-height: $spacer * 3;
   border: none;
   background: $color-primary;
+  text-decoration: none;
 
 }
