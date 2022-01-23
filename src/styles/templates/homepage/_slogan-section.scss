@@ -1,5 +1,6 @@
 .slogan-section {
   margin-top: $spacer * 8;
+  margin-bottom: $spacer * 8;
 
   &__title {
     margin-top: $spacer * 6;
@@ -19,6 +20,7 @@
   }
 
   @media (min-width: $xs) {
+    margin-bottom: $spacer * 13;
     &__image {
       width: $spacer * 64.5;
     }
@@ -40,6 +42,7 @@
 
   @media (min-width: $md) {
     &__image {
+      margin-top: initial;
       justify-content: end;
     }
   }
