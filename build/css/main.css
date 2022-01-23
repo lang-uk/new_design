@@ -217,7 +217,8 @@ img {
   line-height: 24px; }
 
 .slogan-section {
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
   .slogan-section__title {
     margin-top: 3rem;
     text-align: center; }
@@ -232,8 +233,10 @@ img {
     margin-left: auto;
     margin-right: auto; }
   @media (min-width: 576px) {
-    .slogan-section__image {
-      width: 32.25rem; } }
+    .slogan-section {
+      margin-bottom: 6.5rem; }
+      .slogan-section__image {
+        width: 32.25rem; } }
   @media (min-width: 768px) {
     .slogan-section__title {
       width: 36rem;
@@ -245,6 +248,7 @@ img {
       margin-top: 3rem; } }
   @media (min-width: 992px) {
     .slogan-section__image {
+      margin-top: initial;
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: end; } }
