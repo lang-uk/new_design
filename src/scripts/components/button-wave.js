@@ -1,4 +1,3 @@
-// console.log('Hello JS')
 (() => {
   const btn = document.querySelectorAll('.button-wave')
 
