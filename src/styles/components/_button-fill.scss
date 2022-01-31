@@ -1,4 +1,4 @@
-.button-fill-animation-container {
+.button-fill-container {
   $self: &;
   border-top: $spacer / 4 solid $color-black;
   border-bottom: $spacer / 4 solid $color-black;
@@ -29,7 +29,7 @@
   }
 }
 
-.button-fill-animation {
+.button-fill {
   $self: &;
   display: flex;
   justify-content: center;

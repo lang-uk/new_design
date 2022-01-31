@@ -1,10 +1,22 @@
+.card-container{
+  display: grid;
+  justify-content: center;
+  gap: $spacer * 3 $spacer * 2;
+  grid-template-columns: repeat(2, 1fr);
+  
+  @media (min-width: $sm) {
+    gap: $spacer * 4;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .card {
   $self: &;
   display: flex;
-  width: 352px;
-  height: 216px;
+  width: 100%;
+  min-height: 172px;
   border: 1px solid $color-black;
-  padding: $spacer * 4;
+  padding: $spacer * 2;
   position: relative;
   transition: 0.4s all ease;
 
@@ -47,6 +59,11 @@
         transition: 0.4s all ease;
       }
     }
+  }
+
+  @media (min-width: $sm) {
+    min-height: 216px;
+    padding: $spacer * 4;
   }
 
 }

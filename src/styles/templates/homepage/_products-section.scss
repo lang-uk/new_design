@@ -1,12 +1,12 @@
-.products-section{
+.products-section {
   margin-top: $spacer * 8.25;
 
   @media (min-width: $sm) {
-  margin-top: $spacer * 13;
+    margin-top: $spacer * 13;
   }
 
   @media (min-width: $md) {
-  margin-top: $spacer * 20;
+    margin-top: $spacer * 20;
   }
 
 }

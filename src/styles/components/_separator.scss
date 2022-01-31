@@ -10,18 +10,13 @@
     border-top: 1px solid $color-black;
   }
   &--icon-right{
-    justify-content: end;
+    justify-content: flex-end;
   }
 
 }
 
 .separator-icon{
-  $self: &;
   display: flex;
 
-  &__item{
-    & + & {
-      margin-left: $spacer;
-    }
-  }
+  @include spacer-h('item', 1);
 }
