@@ -1,6 +1,6 @@
 .button-wave {
   $self: &;
-  transition: .3s all ease;
+  transition: .6s all ease;
   transform: translateY(0);
   position: relative;
   overflow: hidden;
@@ -13,17 +13,17 @@
     height: $spacer / 4;
     width: $spacer / 4;
     border-radius: 50%;
-    transition: .4s all linear;
+    transition: .6s all linear;
     position: absolute;
     z-index: -1;
     background: $color-bg;
   }
 
-  &:hover{
+  &:hover {
     color: $color-black;
   }
 
-  &--white {
+  &--grey {
     color: $color-black;
     background: $color-bg;
 
@@ -38,7 +38,13 @@
 
   &__wave.button-wave__restore {
     position: absolute;
-    transform: scale(250);
+    transform: scale(700);
     z-index: -1;
+  }
+
+  @media (min-width: $sm) {
+    &__wave.button-wave__restore {
+      transform: scale(250);
+    }
   }
 }

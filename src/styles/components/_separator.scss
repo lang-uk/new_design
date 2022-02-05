@@ -9,10 +9,14 @@
   &--line{
     border-top: 1px solid $color-black;
   }
+
+  &--icon-center{
+    justify-content: center;
+  }
+
   &--icon-right{
     justify-content: flex-end;
   }
-
 }
 
 .separator-icon{

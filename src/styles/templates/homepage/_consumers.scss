@@ -1,0 +1,33 @@
+.consumers {
+  margin-top: $spacer * 20;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    width: $spacer * 20;
+    height: $spacer * 15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $spacer * 2;
+    border: 1px solid $color-black;
+    background-color: $color-white;
+  }
+
+  &__logo {
+    object-fit: contain;
+  }
+
+  @media (min-width: $md) {
+    &__card {
+      width: $spacer * 23;
+      height: $spacer * 15;
+    }
+  }
+
+}

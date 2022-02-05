@@ -1,5 +1,9 @@
-.products-section {
+.products {
   margin-top: $spacer * 8.25;
+
+  &__actions{
+    width: 100%;
+  }
 
   @media (min-width: $sm) {
     margin-top: $spacer * 13;
