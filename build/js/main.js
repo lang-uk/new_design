@@ -9,7 +9,7 @@
     this.prepend(wave)
     setTimeout(() => {
       wave.classList.add('button-wave__restore')
-      wave.style.transform = 'scale(250)'
+      // wave.style.transform = 'scale(250)'
     }, 1)
   }))
 
