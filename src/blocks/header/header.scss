@@ -22,6 +22,7 @@
   &__navigation {
     display: flex;
     align-items: center;
+    position: relative;
   }
 
   @media (min-width: $xs) {
@@ -33,7 +34,7 @@
   }
 
   @media (min-width: $xl) {
-    &__navigation{
+    &__navigation {
       transform: translateX(182px);
     }
   }
@@ -70,5 +71,101 @@
   border: none;
   background: $color-primary;
   text-decoration: none;
+
+}
+
+.header-input {
+  $self: &;
+  position: relative;
+  height: 48px;
+  width: 48px;
+
+  &__input {
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    right: 0;
+    border-radius: 24px;
+    border: $color-white;
+    background-color: $color-white;
+    transition: width 0.3s ease-in;
+
+    &::placeholder {
+      color: transparent;
+    }
+
+    &:focus {
+      padding: 12px 50px 12px 16px;
+
+      width: 300px;
+
+      &::placeholder {
+        color: $color-grey-1;
+      }
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 13px;
+    top: 11px;
+    cursor: pointer;
+  }
+
+  &__input.active {
+    padding: 12px 50px 12px 16px;
+
+    width: 300px;
+
+    transition: width 0.3s ease-in;
+
+    &::placeholder {
+      color: $color-grey-1;
+    }
+  }
+
+
+  @media (min-width: $md) {
+
+    &__input {
+      &:focus {
+        width: 550px;
+      }
+    }
+
+    &__input.active {
+      width: 550px;
+    }
+  }
+
+
+  @media (min-width: $lg) {
+
+    &__input {
+      &:focus {
+        width: 700px;
+      }
+    }
+
+    &__input.active {
+      width: 700px;
+    }
+  }
+
+  @media (min-width: $xl) {
+
+    &__input {
+      &:focus {
+        width: 1000px;
+      }
+    }
+
+    &__input.active {
+      width: 1000px;
+    }
+  }
 
 }
