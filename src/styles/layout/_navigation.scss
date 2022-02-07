@@ -1,6 +1,7 @@
 .navigation {
-  display: flex;
   $self: &;
+  display: flex;
+  flex-direction: column;
 
   &__item {
     font-family: $font-family-gilroy-regular;
@@ -9,23 +10,36 @@
     font-weight: 600;
 
     & + & {
-      margin-left: $spacer * 4;
+      margin-top: $spacer * 4;
     }
   }
-  
-  &__link{
+
+  &__link {
+
+  }
+
+  @media (min-width: $md) {
+    flex-direction: row;
+
+    &__item {
+
+      & + & {
+        margin-top: 0;
+        margin-left: $spacer * 4;
+      }
+    }
 
   }
 
 }
 
-.navigation-action{
+.navigation-action {
   $self: &;
   margin-left: $spacer * 6.5;
   display: flex;
   align-items: center;
 
-  &__item{
+  &__item {
     font-family: $font-family-gilroy-regular;
     font-size: $spacer * 1.75;
     line-height: $spacer * 2.5;
