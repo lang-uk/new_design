@@ -1,0 +1,17 @@
+.enter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: $spacer * 6;
+  margin-bottom: $spacer * 9;
+  width: 100%;
+
+  @media (min-width: $xs) {
+    margin-top: $spacer * 9;
+  }
+
+  @media (min-width: $sm) {
+    width: initial;
+    margin-top: $spacer * 14;
+  }
+}

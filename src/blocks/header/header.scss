@@ -20,8 +20,6 @@
   }
 
   &__navigation {
-    //display: none;
-
     position: absolute;
     top: -200%;
     left: 0;
@@ -30,6 +28,7 @@
     padding: 50px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     //background: $color-grey-1;
     transition: 0.3s ease;
     overflow: hidden;
@@ -44,7 +43,6 @@
 
     transition: 0.3s ease;
   }
-
 
   &__burger-wrap {
     display: flex;
@@ -110,6 +108,7 @@
       position: relative;
 
 
+
       top: initial;
       left: initial;
       height: initial;
@@ -137,24 +136,6 @@
 
 }
 
-@keyframes anim-before-back {
-  0% {
-    transform: rotate(45deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes anim-after-back {
-  0% {
-    transform: rotate(-45deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-
-}
 
 .is__active {
 
@@ -177,23 +158,6 @@
   }
 }
 
-@keyframes anim-before {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(45deg);
-  }
-}
-
-@keyframes anim-after {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-45deg);
-  }
-}
 
 .header-logo {
   width: $spacer * 12;
@@ -322,4 +286,41 @@
     }
   }
 
+}
+
+// Animations for burger menu
+@keyframes anim-before-back {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes anim-after-back {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes anim-before {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes anim-after {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
 }

@@ -1,18 +1,29 @@
-.card-container{
+.card-container {
   display: grid;
   justify-content: center;
   gap: $spacer * 3 $spacer * 2;
   grid-template-columns: repeat(2, 1fr);
-  
+
+  &--text {
+    grid-template-columns: repeat(1, 1fr);
+
+    @media (min-width: $xs) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   @media (min-width: $sm) {
     gap: $spacer * 4;
     grid-template-columns: repeat(3, 1fr);
   }
+
 }
 
 .card {
   $self: &;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   min-height: 172px;
   border: 1px solid $color-black;
@@ -20,9 +31,29 @@
   position: relative;
   transition: 0.4s all ease;
 
-  &__item {
-
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+
+  &__icon {
+    display: flex;
+    align-self: flex-end;
+  }
+
+  &__text{
+    margin-top: $spacer * 3;
+  }
+
+  &--text{
+    justify-content: flex-start;
+
+    #{$self}__icon{
+      align-self: center;
+    }
+  }
+
 
   &__strip {
     position: absolute;
