@@ -1,0 +1,9 @@
+.healthy{
+
+  &__content{
+    max-width: $spacer * 68;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
