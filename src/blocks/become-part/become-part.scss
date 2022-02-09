@@ -1,0 +1,20 @@
+.become-part{
+  width: 100%;
+  //height: 748px;
+  //height: 63.125%;
+  aspect-ratio: 100/63.125;
+  background: url("../img/grid.png") no-repeat center;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //padding: 94px 94px;
+  padding: 8% 10.65%;
+
+  &__container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: $color-white;
+  }
+}
