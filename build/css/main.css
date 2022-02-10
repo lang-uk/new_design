@@ -117,7 +117,7 @@ img {
 .h0 {
   font-size: 60px;
   line-height: 100%; }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     .h0 {
       font-size: 100px; } }
   @media (min-width: 992px) {
@@ -127,7 +127,7 @@ img {
 .h1 {
   font-size: 40px;
   line-height: 44px; }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     .h1 {
       font-size: 52px;
       line-height: 60px; } }
@@ -139,7 +139,7 @@ img {
 .h2 {
   font-size: 32px;
   line-height: 36px; }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     .h2 {
       font-size: 40px;
       line-height: 48px; } }
@@ -151,7 +151,7 @@ img {
 .h3 {
   font-size: 24px;
   line-height: 28px; }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     .h3 {
       font-size: 28px;
       line-height: 36px; } }
@@ -163,7 +163,7 @@ img {
 .h4 {
   font-size: 20px;
   line-height: 28px; }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     .h4 {
       font-size: 24px;
       line-height: 36px; } }
@@ -172,7 +172,7 @@ img {
   font-family: "Gilroy-Regular", sans-serif;
   font-size: 20px;
   line-height: 28px; }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     .text-l {
       line-height: 32px; } }
   @media (min-width: 992px) {
@@ -303,11 +303,13 @@ img {
       width: 11.5rem;
       height: 7.5rem; } }
 
-.healthy__content {
-  max-width: 34rem;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
+.healthy {
+  margin-bottom: 6.5rem; }
+  .healthy__content {
+    max-width: 34rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
 
 .cols {
   -webkit-box-sizing: border-box;
@@ -1088,12 +1090,14 @@ img {
     background: #F4F1EF; }
   .button-wave:hover {
     color: #000000; }
-  .button-wave--grey {
+  .button-wave--wave-white .button-wave__wave {
+    background: #FFFFFF; }
+  .button-wave--transparent {
     color: #000000;
-    background: #F4F1EF; }
-    .button-wave--grey .button-wave__wave {
+    background: transparent; }
+    .button-wave--transparent .button-wave__wave {
       background: #000000; }
-    .button-wave--grey:hover {
+    .button-wave--transparent:hover {
       color: #fff; }
   .button-wave__wave.button-wave__restore {
     position: absolute;
@@ -2694,9 +2698,6 @@ img {
 
 .become-part {
   width: 100%;
-  aspect-ratio: 100/63.125;
-  background: url("../img/grid.png") no-repeat center;
-  background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2706,14 +2707,56 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 8% 10.65%; }
+  padding: 0;
+  margin-bottom: 6.5rem; }
   .become-part__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 100%;
-    height: 100%;
-    background: #FFFFFF; }
+    background: #FFFFFF;
+    padding: 3.5rem 2.5rem; }
+  .become-part__title {
+    font-family: "Gilroy-Bold", sans-serif;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center; }
+  .become-part__actions {
+    margin-top: 2rem; }
+  @media (min-width: 768px) {
+    .become-part {
+      background: url("../img/grid.png") no-repeat center;
+      background-size: contain;
+      padding: 8% 10.65%;
+      height: 748px; }
+      .become-part__container {
+        height: 100%;
+        padding: 2rem; }
+      .become-part__title {
+        font-size: 52px;
+        line-height: 60px;
+        text-align: left; }
+      .become-part__actions {
+        margin-top: 1rem; } }
+  @media (min-width: 992px) {
+    .become-part__container {
+      padding: 4rem; }
+    .become-part__title {
+      font-size: 72px;
+      line-height: 72px; }
+    .become-part__actions {
+      margin-top: 3rem; } }
+  @supports (aspect-ratio: 100/63.125) {
+    @media (min-width: 768px) {
+      .become-part {
+        height: initial;
+        aspect-ratio: 100/63.125; } } }
 
 .hide {
   display: none;

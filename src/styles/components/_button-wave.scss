@@ -23,9 +23,15 @@
     color: $color-black;
   }
 
-  &--grey {
+  &--wave-white{
+    #{$self}__wave {
+      background: $color-white;
+    }
+  }
+
+  &--transparent {
     color: $color-black;
-    background: $color-bg;
+    background: transparent;
 
     #{$self}__wave {
       background: $color-black;
