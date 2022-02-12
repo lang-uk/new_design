@@ -1,0 +1,41 @@
+// TODO: START TEST
+.slider {
+  display: flex;
+  margin-top: $spacer * 2;
+  margin-bottom: $spacer * 2;
+
+  @media (min-width: $sm) {
+
+    & > * {
+      display: inline-flex !important;
+    }
+  }
+}
+
+// TODO: END TEST
+
+.slider-wrap {
+  position: relative;
+
+  &__slider {
+
+    .tns-nav {
+      display: flex;
+      justify-content: center;
+      margin-top: $spacer*5;
+
+      button {
+        display: block;
+        width: $spacer;
+        height: $spacer;
+        border: 1px solid #000000;
+        padding: 0;
+        margin: 0 $spacer / 4;
+      }
+
+      .tns-nav-active {
+        background: #000000;
+      }
+    }
+  }
+}

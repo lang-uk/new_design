@@ -19,8 +19,8 @@ https://lang-uk.github.io/new_design/build/
 
 #### Для того щоб зібрати проєкт потрібно:
 * Gulp CLI version: 2.3.0
-* node.js version 12.x (ці незручності тимчасові, трохи згодом перероблю під новішу 14 або 16 версію node.js)
-* npm version 6.14.15
+* npm version 8.3.1
+* node.js version 16.x
 * В корні проєкту виконати команду --> npm install
 * Зібрати проєкт виконати команду --> gulp build
 * Режим розробки --> gulp dev
