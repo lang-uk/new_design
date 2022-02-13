@@ -25,6 +25,7 @@
     justify-content: space-between;
     background: $color-bg;
     z-index: 1;
+    border-bottom: 1px solid $color-black;
   }
 
   &__head-item{
