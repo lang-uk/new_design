@@ -3719,6 +3719,7 @@ img {
           justify-content: space-between;
   background: #F4F1EF;
   z-index: 1;
+  border-bottom: 1px solid #000000;
 }
 .media-card__head-item {
   display: -webkit-box;
