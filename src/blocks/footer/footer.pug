@@ -1,9 +1,30 @@
 footer.footer
 	.footer__container
-		p Footer
-		div(style="width: 109px;")
-			img(src="./img/logo.svg", style="width: 100%")
-		span
-			include ../../svg/github.svg
-			include ../../svg/telegram.svg
-			include ../../svg/wave_1.svg
+		.footer__top
+			div(style="width: 109px;")
+				img(src="./img/logo.svg", style="width: 100%")
+			.footer-nav
+				.footer-nav__item
+					.spacer
+						.spacer__item
+							a(href="about-us.html") Про нас
+						.spacer__item
+							a(href="products.html") Продукти
+						.spacer__item
+							a(href="manifest.html") Маніфест
+				.footer-nav__item
+					.spacer
+						.spacer__item
+							a(href="#") E: ouremail@gmail.com
+						.spacer__item
+							a(href="#") T: +38 095 123 45 67
+			span
+				include ../../svg/github.svg
+				include ../../svg/telegram.svg
+		.footer__bottom
+			span ©2021 Lang-uk
+			div
+				span
+					include ../../svg/wave_1.svg
+				span Architected by
+				span Báchoo
