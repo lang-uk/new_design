@@ -1,14 +1,40 @@
-.footer{
+.footer {
   display: flex;
   justify-content: center;
   background: $color-white;
+  padding: $spacer * 5 $spacer * 2 $spacer * 3;
 
-  padding-left: $spacer * 2;
-  padding-right: $spacer * 2;
-
-  &__container{
+  &__container {
     max-width: $spacer * 115;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  //&__nav{
+  //
+  //}
+  //
+  //&__contacts{
+  //
+  //}
+
+  &__logo{
+
+  }
+
+  &__social{
+
   }
 
   @media (min-width: $xs) {
@@ -16,8 +42,55 @@
     padding-right: $spacer * 4;
   }
 
+  @media (min-width: $sm) {
+    padding-top: $spacer * 6;
+    padding-bottom: $spacer * 6;
+
+    &__top {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  @media (min-width: $md) {
+    padding-top: $spacer * 9;
+    padding-bottom: $spacer * 9;
+  }
+
   @media (min-width: $lg) {
     padding-left: $spacer * 10;
     padding-right: $spacer * 10;
+  }
+}
+
+.footer-nav{
+  display: flex;
+  //justify-content: space-between;
+  //width: 50%;
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    & + & {
+      margin-left: auto;
+    }
+  }
+
+  &__nav{
+
+  }
+
+  &__contacts{
+
+  }
+
+  @media (min-width: $xs) {
+
+  &__item{
+
+    & + & {
+      margin-left: $spacer * 15;
+    }
+  }
   }
 }
