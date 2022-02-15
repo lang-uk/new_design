@@ -1519,7 +1519,8 @@ img {
   background: #000000;
 }
 .button-wave--transparent:hover {
-  color: #fff;
+  color: #FFFFFF;
+  fill: #FFFFFF;
 }
 .button-wave__wave.button-wave__restore {
   position: absolute;
@@ -3590,6 +3591,23 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.footer__logo {
+  width: 109px;
+}
+.footer__social {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 @media (min-width: 576px) {
   .footer {
     padding-left: 2rem;
@@ -3640,6 +3658,12 @@ img {
 }
 .footer-nav__item + .footer-nav__item {
   margin-left: auto;
+}
+.footer-nav__link {
+  font-family: "Gilroy-Regular", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  font-weight: 600;
 }
 @media (min-width: 576px) {
   .footer-nav__item + .footer-nav__item {
