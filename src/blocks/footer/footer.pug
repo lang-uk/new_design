@@ -1,30 +1,38 @@
 footer.footer
 	.footer__container
 		.footer__top
-			div(style="width: 109px;")
+			.footer__logo
 				img(src="./img/logo.svg", style="width: 100%")
 			.footer-nav
 				.footer-nav__item
 					.spacer
 						.spacer__item
-							a(href="about-us.html") Про нас
+							a.footer-nav__link.underline-animation(href="about-us.html") Про нас
 						.spacer__item
-							a(href="products.html") Продукти
+							a.footer-nav__link.underline-animation(href="products.html") Продукти
 						.spacer__item
-							a(href="manifest.html") Маніфест
+							a.footer-nav__link.underline-animation(href="manifest.html") Маніфест
 				.footer-nav__item
 					.spacer
 						.spacer__item
-							a(href="#") E: ouremail@gmail.com
+							a.underline-animation(href="mailto:ouremail@gmail.com")
+								span.footer-nav__link E:&nbsp;
+								| ouremail@gmail.com
 						.spacer__item
-							a(href="#") T: +38 095 123 45 67
-			span
-				include ../../svg/github.svg
-				include ../../svg/telegram.svg
+							a.underline-animation(href="tel:+380951234567")
+								span.footer-nav__link T:&nbsp;
+								| +38 095 123 45 67
+			.spacer.spacer--h.spacer--size-3
+				.spacer__item
+					button.footer__social.button-wave.button-wave--transparent
+						include ../../svg/github.svg
+				.spacer__item
+					button.footer__social.button-wave.button-wave--transparent
+						include ../../svg/telegram.svg
 		.footer__bottom
 			span ©2021 Lang-uk
-			div
-				span
+			.spacer.spacer--h.spacer--size-1
+				span.spacer__item
 					include ../../svg/wave_1.svg
-				span Architected by
-				span Báchoo
+				span.spacer__item Architected by
+				span.spacer__item Báchoo
