@@ -1,8 +1,9 @@
 footer.footer
 	.footer__container
 		.footer__top
-			.footer__logo
-				img(src="./img/logo.svg", style="width: 100%")
+			.footer__logo(href="index.html")
+				a(href="index.html")
+					img(src="./img/logo.svg", style="width: 100%")
 			.footer-nav
 				.footer-nav__item
 					.spacer
@@ -22,17 +23,18 @@ footer.footer
 							a.underline-animation(href="tel:+380951234567")
 								span.footer-nav__link T:&nbsp;
 								| +38 095 123 45 67
-			.spacer.spacer--h.spacer--size-3
-				.spacer__item
-					button.footer__social.button-wave.button-wave--transparent
-						include ../../svg/github.svg
-				.spacer__item
-					button.footer__social.button-wave.button-wave--transparent
-						include ../../svg/telegram.svg
+			.footer__actions
+				.spacer.spacer--h.spacer--size-3
+					.spacer__item
+						button.footer__button.button-wave.button-wave--transparent
+							include ../../svg/github.svg
+					.spacer__item
+						button.footer__button.button-wave.button-wave--transparent
+							include ../../svg/telegram.svg
 		.footer__bottom
-			span ©2021 Lang-uk
+			span.caption-1.caption-1--regular ©2021 Lang-uk
 			.spacer.spacer--h.spacer--size-1
 				span.spacer__item
 					include ../../svg/wave_1.svg
-				span.spacer__item Architected by
-				span.spacer__item Báchoo
+				span.spacer__item.caption-1.caption-1--regular Architected by
+				span.spacer__item.caption-1 Báchoo

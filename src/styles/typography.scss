@@ -4,7 +4,6 @@
 }
 
 .h0 {
-  //font-size: $font-size-0;
   font-size: 60px;
   line-height: 100%;
 
@@ -18,7 +17,6 @@
 }
 
 .h1 {
-  //font-size: $font-size-1;
   font-size: 40px;
   line-height: 44px;
 
@@ -34,7 +32,6 @@
 }
 
 .h2 {
-  //font-size: $font-size-2;
   font-size: 32px;
   line-height: 36px;
 
@@ -50,7 +47,6 @@
 }
 
 .h3 {
-  //font-size: $font-size-3;
   font-size: 24px;
   line-height: 28px;
 
@@ -66,7 +62,6 @@
 }
 
 .h4 {
-  //font-size: $font-size-4;
   font-size: 20px;
   line-height: 28px;
 
@@ -79,7 +74,6 @@
 // Body type
 .text-l {
   font-family: $font-family-gilroy-regular;
-  //font-size: $font-size-4;
   font-size: 20px;
   line-height: 28px;
 
@@ -94,7 +88,6 @@
 }
 
 .text-m {
-  //font-size: $font-size-5;
   font-size: 16px;
   line-height: 24px;
 
@@ -109,14 +102,16 @@
 
 .caption-1 {
   font-family: $font-family-gilroy-semibold;
-  //font-size: $font-size-6;
   font-size: 14px;
   line-height: 20px;
+
+  &--regular{
+    font-family: $font-family-gilroy-regular;
+  }
 }
 
 .caption-2 {
   font-family: $font-family-gilroy-regular;
-  //font-size: $font-size-7;
   font-size: 12px;
   line-height: 16px;
 }
@@ -124,20 +119,17 @@
 .code-text {
   font-family: $font-family-ibm-pm-regular;
   font-size: 16px;
-  //font-size: $font-size-5;
   line-height: 24px;
 }
 
 .citation-text {
   font-family: $font-family-ibm-pm-regular;
-  //font-size: $font-size-6;
   font-size: 14px;
   line-height: 20px;
 }
 
 .link-text {
   font-family: $font-family-gilroy-semibold;
-  //font-size: $font-size-5;
   font-size: 14px;
   line-height: 24px;
 }

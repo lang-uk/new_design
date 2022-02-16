@@ -1,6 +1,7 @@
 .media-articles {
   display: flex;
   flex-direction: column;
+  margin-bottom: $spacer * 13;
 
   &__title {
     margin-bottom: $spacer * 5;
