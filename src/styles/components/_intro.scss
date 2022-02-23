@@ -1,0 +1,61 @@
+.intro {
+  position: relative;
+  padding-bottom: $spacer * 9;
+  margin-bottom: $spacer * 5;
+
+  &__title {
+
+  }
+
+  &__image {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__actions {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+
+  &__button{
+    width: $spacer * 7;
+    height: $spacer * 7;
+    background: $color-white;
+    border: 1px solid $color-black;
+    box-shadow: $spacer / 2 $spacer / 2;
+
+    &:before,
+    &:after{
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+    }
+
+    &:before {
+      top: 0;
+      right: $spacer / -2;
+      border-top: $spacer / 2 solid $color-bg;
+      border-left: $spacer / 2 solid $color-black;
+    }
+
+    &:after {
+      left: 0;
+      bottom: $spacer / -2;
+      border-bottom: $spacer / 2 solid $color-bg;
+      border-right: $spacer / 2 solid $color-black;
+    }
+  }
+
+  @media (min-width: $xs) {
+    padding-bottom: 0;
+    margin-bottom: $spacer * 11;
+
+    &__actions {
+      left: 0;
+      transform: none;
+    }
+  }
+}
