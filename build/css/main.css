@@ -109,6 +109,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-family: "Gilroy-Regular", sans-serif;
+  cursor: url("../img/cursor.svg"), auto;
 }
 
 a, button {
@@ -1344,6 +1345,24 @@ img {
 }
 .link:hover {
   text-decoration: none;
+}
+
+.breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.breadcrumbs__item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 0.5rem;
+}
+.breadcrumbs__divider {
+  margin-right: 0.5rem;
 }
 
 .underline-animation {
@@ -3066,6 +3085,7 @@ img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  width: 100%;
 }
 .intro__actions {
   position: absolute;
@@ -3082,6 +3102,15 @@ img {
   border: 1px solid #000000;
   -webkit-box-shadow: 0.25rem 0.25rem;
           box-shadow: 0.25rem 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .intro__button:before, .intro__button:after {
   content: "";
@@ -3105,6 +3134,9 @@ img {
   .intro {
     padding-bottom: 0;
     margin-bottom: 5.5rem;
+  }
+  .intro__image {
+    width: initial;
   }
   .intro__actions {
     left: 0;

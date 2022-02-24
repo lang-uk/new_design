@@ -1,0 +1,14 @@
+.breadcrumbs{
+  display: flex;
+  align-items: center;
+
+  &__item{
+    display: inline-flex;
+    margin-right: $spacer;
+  }
+
+  &__divider{
+    margin-right: $spacer;
+  }
+
+}
