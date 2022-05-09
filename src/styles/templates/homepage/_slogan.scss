@@ -3,7 +3,7 @@
   margin-bottom: $spacer * 8;
 
   &__title {
-    margin-top: $spacer * 6;
+    //margin-top: $spacer * 6;
     text-align: center;
   }
 
@@ -35,12 +35,15 @@
       width: $spacer * 56;
       text-align: left;
     }
-    &__image{
+    &__image {
       margin-top: $spacer * 6;
     }
   }
 
   @media (min-width: $md) {
+    &__title {
+      margin-top: $spacer * 6;
+    }
     &__image {
       margin-top: initial;
       justify-content: end;

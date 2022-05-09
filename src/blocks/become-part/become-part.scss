@@ -29,9 +29,9 @@
   @media (min-width: $sm) {
     background: url("../img/grid.png") no-repeat center;
     background-size: contain;
-    padding: 8% 10.65%;
+    padding: 8.5%;
     // TODO: fix height
-    height: 748px;
+    height: 614px;
 
     &__container {
       height: 100%;
@@ -51,6 +51,8 @@
   }
 
   @media (min-width: $md) {
+    // TODO: fix height
+    height: 748px;
 
     &__container {
       padding: $spacer * 8;
@@ -70,7 +72,7 @@
 
     @media (min-width: $sm) {
       height: initial;
-      aspect-ratio: 100/63.125;
+      aspect-ratio: 100/66.66;
     }
   }
 }

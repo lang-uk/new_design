@@ -420,7 +420,6 @@ img {
   margin-bottom: 4rem;
 }
 .slogan__title {
-  margin-top: 3rem;
   text-align: center;
 }
 .slogan__text {
@@ -457,6 +456,9 @@ img {
   }
 }
 @media (min-width: 992px) {
+  .slogan__title {
+    margin-top: 3rem;
+  }
   .slogan__image {
     margin-top: initial;
     -webkit-box-pack: end;
@@ -1344,6 +1346,28 @@ img {
 }
 .link:hover {
   text-decoration: none;
+}
+
+.breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+}
+.breadcrumbs__item {
+  display: inline-block;
+  color: #898989;
+  text-decoration: none;
+  font-size: 14px;
+}
+.breadcrumbs__item + .breadcrumbs__item:before {
+  content: "/";
+  margin: 0 0.25rem;
+}
+@media (min-width: 768px) {
+  .breadcrumbs {
+    margin-top: 4rem;
+  }
 }
 
 .underline-animation {
@@ -3059,6 +3083,9 @@ img {
   padding-bottom: 4.5rem;
   margin-bottom: 2.5rem;
 }
+.intro__title {
+  margin-top: 2.5rem;
+}
 .intro__image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3066,6 +3093,9 @@ img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  width: 20.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 .intro__actions {
   position: absolute;
@@ -3082,6 +3112,15 @@ img {
   border: 1px solid #000000;
   -webkit-box-shadow: 0.25rem 0.25rem;
           box-shadow: 0.25rem 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .intro__button:before, .intro__button:after {
   content: "";
@@ -3106,11 +3145,20 @@ img {
     padding-bottom: 0;
     margin-bottom: 5.5rem;
   }
+  .intro__image {
+    width: 29.25rem;
+    margin-right: initial;
+  }
   .intro__actions {
     left: 0;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
+  }
+}
+@media (min-width: 768px) {
+  .intro__title {
+    margin-top: 3rem;
   }
 }
 
@@ -3823,8 +3871,8 @@ img {
   .become-part {
     background: url("../img/grid.png") no-repeat center;
     background-size: contain;
-    padding: 8% 10.65%;
-    height: 748px;
+    padding: 8.5%;
+    height: 614px;
   }
   .become-part__container {
     height: 100%;
@@ -3840,6 +3888,9 @@ img {
   }
 }
 @media (min-width: 992px) {
+  .become-part {
+    height: 748px;
+  }
   .become-part__container {
     padding: 4rem;
   }
@@ -3855,7 +3906,7 @@ img {
   @media (min-width: 768px) {
     .become-part {
       height: initial;
-      aspect-ratio: 100/63.125;
+      aspect-ratio: 100/66.66;
     }
   }
 }
