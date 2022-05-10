@@ -9,9 +9,7 @@ html(lang="ru")
 
 			main.main
 				.main__container
-					.breadcrumbs
-						a(href="index.html").breadcrumbs__item Головна
-						a(href="products.html").breadcrumbs__item Продукти
+					include ../templates/products-page/breadcrumbs.pug
 					include ../templates/products-page/intro-section.pug
 					include ../templates/products-page/card-section.pug
 					include ../blocks/become-part/become-part.pug

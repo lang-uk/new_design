@@ -3230,7 +3230,7 @@ img {
   }
   .navigation__item + .navigation__item {
     margin-top: 0;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
   }
 }
 
@@ -3250,7 +3250,7 @@ img {
   font-weight: 600;
 }
 .navigation-action__item + .navigation-action__item {
-  margin-left: 2rem;
+  margin-left: 1.5rem;
 }
 
 .layout {
