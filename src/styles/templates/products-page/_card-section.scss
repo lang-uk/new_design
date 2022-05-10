@@ -1,0 +1,7 @@
+.card-section {
+  margin-top: $spacer * 5;
+
+  @media (min-width: $xs) {
+    margin-top: $spacer * 13;
+  }
+}
