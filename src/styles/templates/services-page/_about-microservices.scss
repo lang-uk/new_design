@@ -1,3 +1,29 @@
 .about-microservices {
+  display: flex;
+  flex-direction: column;
+  margin-top: $spacer * 5;
 
+  &__item{
+    & + & {
+      margin-top: $spacer * 8;
+    }
+  }
+
+  &__left-text {
+    margin-right: initial;
+  }
+
+  @media (min-width: $sm) {
+    margin-top: $spacer * 13;
+
+    &__item{
+      & + & {
+        margin-top: $spacer * 13;
+      }
+    }
+
+    &__left-text {
+      margin-right: $spacer * 14;
+    }
+  }
 }
