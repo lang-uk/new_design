@@ -1,0 +1,31 @@
+.list{
+  $self: &;
+  @include spacer('item', 1);
+
+  &__item {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__mark {
+    margin-right: $spacer;
+    display: inline-flex;
+    svg {
+      fill: $color-black;
+      stroke: $color-black;
+    }
+  }
+
+  &__text{
+
+  }
+
+  &--primary {
+    #{$self}__mark {
+      svg {
+        fill: $color-primary-dark;
+        stroke: $color-primary-dark;
+      }
+    }
+  }
+}

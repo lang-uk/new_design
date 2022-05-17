@@ -71,28 +71,62 @@
             </div>
             <div class="about-microservices__item">
               <div class="cols">
-                <div class="cols__item cols__item--xs-6">
-                  <p class="h4 about-microservices__left-text">На даний момент в наявності є наступні сервіси</p>
+                <div class="cols__item cols__item--md-6">
+                  <div class="about-microservices__left-text">
+                    <p class="h4">На даний момент в наявності є наступні сервіси</p>
+                    <div class="list about-microservices__list">
+                      <div class="list__item">
+                        <div class="list__mark"><svg width="12" height="12" viewBox="0 0 12 12" stroke="black" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.4348 0.5L6 10.7417L1.56522 0.5L10.4348 0.5Z"/>
+</svg>
+
+                        </div>
+                        <p class="list__text">Токенізація</p>
+                      </div>
+                      <div class="list__item">
+                        <div class="list__mark"><svg width="12" height="12" viewBox="0 0 12 12" stroke="black" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.4348 0.5L6 10.7417L1.56522 0.5L10.4348 0.5Z"/>
+</svg>
+
+                        </div>
+                        <p class="list__text">Український, російський та англійський NER</p>
+                      </div>
+                      <div class="list__item">
+                        <div class="list__mark"><svg width="12" height="12" viewBox="0 0 12 12" stroke="black" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.4348 0.5L6 10.7417L1.56522 0.5L10.4348 0.5Z"/>
+</svg>
+
+                        </div>
+                        <p class="list__text">Лематизація з використанням можливостей бібліотеки &nbsp;<a class="link link--primary-dark" href="#">nlp_uk</a></p>
+                      </div>
+                      <div class="list__item">
+                        <div class="list__mark"><svg width="12" height="12" viewBox="0 0 12 12" stroke="black" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.4348 0.5L6 10.7417L1.56522 0.5L10.4348 0.5Z"/>
+</svg>
+
+                        </div>
+                        <p class="list__text">Розпізнавання мови з використанням можливостей бібліотеки &nbsp;<a class="link link--primary-dark" href="#">WILD</a></p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="cols__item cols__item--xs-6">
-                  <p class="h4">Приклад HTTP-запиту:</p>
-                  <div class="copy-container">
-                    <div class="copy-btn-container"><span class="copy-notification-text" data-success-text="Текст скопійовано" data-error-text="Вибачте, помилка"></span>
-                      <button class="copy-btn" type="button">copy</button>
-                    </div>
-                    <p class="copy-text">This text copied 1</p>
+                <div class="cols__item cols__item--md-6">
+                  <div class="about-microservices__example-item">
+                    <p class="h4">Приклад HTTP-запиту:</p>
                   </div>
-                  <div class="copy-container">
-                    <div class="copy-btn-container"><span class="copy-notification-text" data-success-text="Текст скопійовано" data-error-text="Вибачте, помилка"></span>
-                      <button class="copy-btn" type="button">copy</button>
+                  <div class="about-microservices__example-item">
+                    <div class="copy about-microservices__copy"><code class="copy__text">$ curl -X POST -H "Content-Type: application/json" -d "{'text': 'Несе Галя'}" http://localhost:8080/lang-detect/wiki/detect [["uk",0.83333343],["bg",0.16666652]]</code>
+                      <button class="copy__button" type="button"><svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.7574 4.7334H1V20.7333L5.84843 25H16.7574V4.7334Z" fill="none" stroke="black" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M7 20V25L1 20H7Z" fill="black"/>
+<path d="M4.03027 1H20.9998V21.5" stroke="black" stroke-width="2" stroke-linejoin="bevel"/>
+</svg>
+
+                      </button>
                     </div>
-                    <p class="copy-text">This text copied 2</p>
                   </div>
-                  <div class="copy-container">
-                    <div class="copy-btn-container"><span class="copy-notification-text" data-success-text="Текст скопійовано" data-error-text="Вибачте, помилка"></span>
-                      <button class="copy-btn" type="button">copy</button>
-                    </div>
-                    <p class="copy-text">This text copied 3</p>
+                  <div class="about-microservices__example-item">
+                    <p>Docker-скрипти розробив &nbsp;<a class="link link--primary-dark" href="#">Михайло Чалий.</a></p>
                   </div>
                 </div>
               </div>

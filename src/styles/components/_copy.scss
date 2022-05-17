@@ -1,0 +1,35 @@
+.copy{
+  display: flex;
+  flex-direction: row;
+  background: $color-white;
+  border-radius: $spacer;
+  padding: $spacer * 3.5;
+  //margin-top: $spacer * 2;
+
+  &__text{
+    margin-top: $spacer;
+    flex: 1;
+    font-family: $font-family-ibm-pm-regular;
+    margin-right: $spacer;
+    word-break: break-word;
+  }
+
+  &__button{
+    display: inline-flex;
+    border: none;
+    background: transparent;
+    height: min-content;
+    padding: 0;
+    transition: 0.3s all ease;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: 0.3s all ease;
+    }
+
+    &:active {
+      transform: scale(1);
+      transition: 0.3s all ease;
+    }
+  }
+}
