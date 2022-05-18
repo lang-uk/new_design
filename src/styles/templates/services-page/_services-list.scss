@@ -1,0 +1,25 @@
+.services-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: $spacer * 8;
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__item{
+    & + & {
+      margin-top: $spacer * 2;
+    }
+  }
+
+  @media (min-width: $sm) {
+    margin-top: $spacer * 13;
+  }
+
+  @media (min-width: $md) {
+    margin-top: $spacer * 20;
+  }
+
+}

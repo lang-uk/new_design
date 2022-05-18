@@ -37,11 +37,13 @@
   position: relative;
   font-size: 12px;
   font-weight: bold;
-  width: $spacer * 5.75;
+  min-width: $spacer * 5.75;
+  width: 100%;
   height: $spacer * 3.5;
   border: none;
   background: transparent;
   cursor: pointer;
+  padding: 0 $spacer * 2;
 
   &__content {
     display: flex;

@@ -1,0 +1,10 @@
+.collapse{
+  &__title {
+    &:before {
+      content: "<:";
+    }
+    &:after {
+      content: ">";
+    }
+  }
+}
