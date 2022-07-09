@@ -17,7 +17,7 @@ document.querySelectorAll('.slider').forEach(item => {
 		speed: 500,
 		responsive: {
 			[BREAKPOINTS.XS]: {
-			  items: 1
+				items: 1
 			},
 			[BREAKPOINTS.SM]: {
 				items: 2,
