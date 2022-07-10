@@ -125,7 +125,6 @@ gulp.task('server', function () {
   gulp.watch(paths.fonts.watch, gulp.parallel('fonts'));
 });
 
-
 gulp.task('build', gulp.series(
   'clean',
   'templates',
