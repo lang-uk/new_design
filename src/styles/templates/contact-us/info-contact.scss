@@ -1,0 +1,37 @@
+.contact-us {
+
+  .contact__content {
+    @include  flex-column;
+    align-items: stretch;
+    align-content: space-between;
+    margin: $spacer * 5 0;
+
+    .h0 {
+      text-align: center;
+      margin-bottom: $spacer * 5;
+    }
+
+    .contact {
+      @include  flex-column;
+      justify-content: center;
+      text-align: center;
+
+      @media (min-width: $md) {
+        @include flex-row;
+        justify-content: space-between;
+      }
+
+      .contact__item:not(:last-child) {
+        margin-bottom: $spacer * 3;
+        @media (min-width: $md) {
+          margin-bottom: 0;
+        }
+      }
+
+      .h3 {
+        padding-left: $spacer;
+        font-family: $font-family-gilroy-regular;
+      }
+    }
+  }
+}

@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="css/main.css"/>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
   </head>
   <body>
     <div class="layout">
@@ -23,15 +24,40 @@
               <div class="navigation-action__item">
                 <!--span O-->
                 <div class="header-input">
-                  <input class="header-input__input" type="text" placeholder="Пошук"/><span class="header-input__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <input class="header-input__input" type="text" placeholder="Пошук"/>
+                  <div class="live-search">
+                    <ul>
+                      <li><a class="text-m" href=""></a></li>
+                      <li><a class="text-m" href=""></a></li>
+                      <li><a class="text-m" href=""></a></li>
+                      <li><a class="text-m" href=""></a></li>
+                    </ul>
+                    <div class="result-text"><a href="search-result.html"></a></div>
+                  </div><span class="header-input__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M11.25 18C14.9779 18 18 14.9779 18 11.25C18 7.52208 14.9779 4.5 11.25 4.5C7.52208 4.5 4.5 7.52208 4.5 11.25C4.5 14.9779 7.52208 18 11.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M23.2484 22.5L16.6484 16.65" stroke="black" stroke-width="2" stroke-linejoin="round"/>
 </svg>
 </span>
                 </div>
               </div>
-              <div class="navigation-action__item"><a class="header-product-action" href="#">Доповнити продукт</a></div>
+              <div class="navigation-action__item"><a class="header-product-action" href="add-product.html">Доповнити продукт</a></div>
             </div>
+          </div>
+          <div class="header-input mobile-input">
+            <input class="header-input__input" type="text" placeholder="Пошук"/>
+            <div class="live-search">
+              <ul>
+                <li><a class="text-m" href=""></a></li>
+                <li><a class="text-m" href=""></a></li>
+                <li><a class="text-m" href=""></a></li>
+                <li><a class="text-m" href=""></a></li>
+              </ul>
+              <div class="result-text"><a href="search-result.html"></a></div>
+            </div><span class="header-input__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.25 18C14.9779 18 18 14.9779 18 11.25C18 7.52208 14.9779 4.5 11.25 4.5C7.52208 4.5 4.5 7.52208 4.5 11.25C4.5 14.9779 7.52208 18 11.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M23.2484 22.5L16.6484 16.65" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+</svg>
+</span>
           </div>
           <div class="header__burger-wrap">
             <button class="header__burger"><span class="header__burger-line"></span></button>
@@ -194,8 +220,7 @@
               </div>
               <div class="spacer__item spacer__item--size-13">
                 <div class="spacer spacer--h-sm spacer--center-v spacer--size-4">
-                  <button class="button button-wave button-wave--transparent spacer__item">Залишити видгук</button>
-                  <button class="button button-wave spacer__item">Доповнити продукт</button>
+                  <button class="button button-wave button-wave--transparent spacer__item">Залишити видгук</button><a class="button button-wave spacer__item" href="add-product.html">Доповнити продукт</a>
                 </div>
               </div>
             </div>
@@ -261,9 +286,7 @@
                   <div class="spacer__item">
                     <button class="button button-wave button-wave--transparent spacer__item">Залишити видгук</button>
                   </div>
-                  <div class="spacer__item">
-                    <button class="button button-wave button-wave--wave-white spacer__item">Доповнити продукт</button>
-                  </div>
+                  <div class="spacer__item"><a class="button button-wave button-wave--wave-white spacer__item" href="add-product.html">Доповнити продукт</a></div>
                 </div>
               </div>
             </div>

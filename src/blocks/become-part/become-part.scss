@@ -11,9 +11,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 100%;
+    width: calc(100% + 2 * 16px);
+    margin-left: -16px;
+    margin-right: -16px;
     background: $color-white;
     padding: $spacer * 7 $spacer * 5;
+
+    @media (min-width: $sm) {
+      width: 100% ;
+
+    }
   }
 
   &__title {

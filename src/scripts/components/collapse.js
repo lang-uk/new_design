@@ -39,7 +39,9 @@ export class Collapse {
     }
     this.selector = selector
     this.isActive = false
+
   }
+
 
   init () {
     if (typeof this.selector === 'object' && this.selector.nodeType !== undefined) {
@@ -76,9 +78,11 @@ export class Collapse {
 
     this.collapse.addEventListener('click', (e) => {
       if (this.open) {
+        // this.collapse.innerHTML = `<p class="button-s"> Показати більше </p> <img src="./img/vector_1.png">`
         this.hide()
       } else {
         this.show()
+        // this.collapse.innerHTML = `<p class="button-s"> Показати менше </p> <img src="./img/vector_2.png">`
       }
     })
   }
@@ -112,6 +116,7 @@ export class Collapse {
     if (!this.isActive) {
       this.isActive = true
       this.open = true
+
 
       this.collapseTarget.forEach(target => {
         target.style.maxHeight = `${target.scrollHeight}px`

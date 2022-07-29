@@ -4,14 +4,14 @@
   transform: translateY(0);
   position: relative;
   overflow: hidden;
-  border: $spacer / 4 solid $color-black;
+  border: 0.125rem solid $color-black;
   color: $color-white;
   background: $color-black;
 
   &__wave {
     transform: scale(0);
-    height: $spacer / 4;
-    width: $spacer / 4;
+    height: 0.125rem;
+    width: 0.125rem;
     border-radius: 50%;
     transition: .6s all linear;
     position: absolute;

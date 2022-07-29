@@ -12,7 +12,7 @@
     }
   }
 
-  @media (min-width: $sm) {
+  @media (min-width: $md) {
     gap: $spacer * 4;
     grid-template-columns: repeat(3, 1fr);
   }

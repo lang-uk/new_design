@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="css/main.css"/>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
   </head>
   <body>
     <div class="layout">
@@ -23,15 +24,40 @@
               <div class="navigation-action__item">
                 <!--span O-->
                 <div class="header-input">
-                  <input class="header-input__input" type="text" placeholder="Пошук"/><span class="header-input__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <input class="header-input__input" type="text" placeholder="Пошук"/>
+                  <div class="live-search">
+                    <ul>
+                      <li><a class="text-m" href=""></a></li>
+                      <li><a class="text-m" href=""></a></li>
+                      <li><a class="text-m" href=""></a></li>
+                      <li><a class="text-m" href=""></a></li>
+                    </ul>
+                    <div class="result-text"><a href="search-result.html"></a></div>
+                  </div><span class="header-input__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M11.25 18C14.9779 18 18 14.9779 18 11.25C18 7.52208 14.9779 4.5 11.25 4.5C7.52208 4.5 4.5 7.52208 4.5 11.25C4.5 14.9779 7.52208 18 11.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M23.2484 22.5L16.6484 16.65" stroke="black" stroke-width="2" stroke-linejoin="round"/>
 </svg>
 </span>
                 </div>
               </div>
-              <div class="navigation-action__item"><a class="header-product-action" href="#">Доповнити продукт</a></div>
+              <div class="navigation-action__item"><a class="header-product-action" href="add-product.html">Доповнити продукт</a></div>
             </div>
+          </div>
+          <div class="header-input mobile-input">
+            <input class="header-input__input" type="text" placeholder="Пошук"/>
+            <div class="live-search">
+              <ul>
+                <li><a class="text-m" href=""></a></li>
+                <li><a class="text-m" href=""></a></li>
+                <li><a class="text-m" href=""></a></li>
+                <li><a class="text-m" href=""></a></li>
+              </ul>
+              <div class="result-text"><a href="search-result.html"></a></div>
+            </div><span class="header-input__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.25 18C14.9779 18 18 14.9779 18 11.25C18 7.52208 14.9779 4.5 11.25 4.5C7.52208 4.5 4.5 7.52208 4.5 11.25C4.5 14.9779 7.52208 18 11.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M23.2484 22.5L16.6484 16.65" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+</svg>
+</span>
           </div>
           <div class="header__burger-wrap">
             <button class="header__burger"><span class="header__burger-line"></span></button>
@@ -40,7 +66,32 @@
       </header>
       <main class="main">
         <div class="main__container">
-          <h2 class="h2">Contact us</h2>
+          <div class="breadcrumbs"><a class="breadcrumbs__item" href="index.html">Головна</a><a class="breadcrumbs__item" href="contact-us.html">Контакти</a></div>
+          <div class="contact-us">
+            <div class="contact__content">
+              <div class="h0">Контакти</div>
+              <div class="contact"><a class="contact__item"><span class="h4">e:</span><span class="h3">ouremail@gmail.com</span></a><a class="contact__item"><span class="h4">t:</span><span class="h3">+38 (095) 123 45 67</span></a><a class="contact__item"><svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.99694 9.44478L5.96556 9.16239L5.7069 9.04482L1.28725 7.03588L17.2977 0.80961L14.177 14.1838L10.2774 11.584L10.0359 11.423L9.77639 11.5528L6.41776 13.2321L5.99694 9.44478Z" fill="black" stroke="black"/>
+</svg>
+<span class="h3">@lang-uk</span></a></div>
+            </div>
+          </div>
+          <div class="contact__form">
+            <div class="form__content">
+              <p class="h2">Зв’язатися з нами</p>
+              <form action="" method="POST">
+                <input class="input__item error" type="text" name="name" placeholder="Ім’я*" value=""/>
+                <div class="input__contact">
+                  <input class="input__item" type="tel" name="tel" placeholder="Телефон" value=""/>
+                  <input class="input__item error" type="email" name="email" placeholder="Email*" value=""/>
+                </div>
+                <p class="text-m error">Повідомлення*</p>
+                <div class="input__area">
+                  <textarea class="input__item input__item-area error" rows="4" name="message" placeholder="Ваше повідомлення"></textarea>
+                </div><a class="button button-wave button-wave--wave-white spacer__item" href="contact-us-success.html" type="submit">Надіслати</a>
+              </form>
+            </div>
+          </div>
         </div>
       </main>
       <footer class="footer">

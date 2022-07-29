@@ -1,7 +1,7 @@
 .button-fill-container {
   $self: &;
-  border-top: $spacer / 4 solid $color-black;
-  border-bottom: $spacer / 4 solid $color-black;
+  border-top: 0.125rem solid $color-black;
+  border-bottom: 0.125rem solid $color-black;
   display: flex;
   width: fit-content;
   position: relative;
@@ -10,21 +10,21 @@
     content: '';
     position: absolute;
     height: 100%;
-    width: $spacer / 4;
+    width: 0.125rem;
     background: $color-black;
   }
 
   &:before {
-    right: $spacer / -4;
+    right: -0.125rem;
   }
 
   &:after {
-    left: $spacer / -4;
+    left: -0.125rem;
   }
 
   &__item {
     & + & {
-      border-left: $spacer / 4 solid $color-black;
+      border-left:  0.125rem solid $color-black;
     }
   }
 }

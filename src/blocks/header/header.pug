@@ -22,11 +22,38 @@ header.header
 					//span O
 					.header-input
 						input.header-input__input(type="text" placeholder="Пошук")
+						.live-search
+							ul
+								li
+									a.text-m(href="")
+								li
+									a.text-m(href="")
+								li
+									a.text-m(href="")
+								li
+									a.text-m(href="")
+							.result-text
+								a(href="search-result.html")
 						span.header-input__icon
 							include ../../svg/search.svg
 				.navigation-action__item
-					a.header-product-action(href="#") Доповнити продукт
-
+					a.header-product-action(href="add-product.html") Доповнити продукт
+		.header-input.mobile-input
+			input.header-input__input(type="text" placeholder="Пошук")
+			.live-search
+				ul
+					li
+						a.text-m(href="")
+					li
+						a.text-m(href="")
+					li
+						a.text-m(href="")
+					li
+						a.text-m(href="")
+				.result-text
+					a(href="search-result.html")
+			span.header-input__icon
+				include ../../svg/search.svg
 		.header__burger-wrap
 			button.header__burger
 				span.header__burger-line

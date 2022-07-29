@@ -13,9 +13,15 @@
   }
 
   @media (min-width: $xs) {
-    padding-left: $spacer * 4;
-    padding-right: $spacer * 4;
+    padding-left: $spacer * 2;
+    padding-right: $spacer * 2;
   }
+
+  @media (min-width: $sm) {
+    padding-left: $spacer * 3;
+    padding-right: $spacer * 3;
+  }
+
 
   @media (min-width: $lg) {
     padding-left: $spacer * 10;

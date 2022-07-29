@@ -1,0 +1,12 @@
+.contact__form
+    .form__content
+        p.h2 Зв’язатися з нами
+        form(action="" method="POST")
+            input.input__item.error(type="text" name="name" placeholder="Ім’я*" value="")
+            .input__contact
+                input.input__item(type="tel" name="tel" placeholder="Телефон" value="")
+                input.input__item.error(type="email" name="email" placeholder="Email*" value="")
+            p.text-m.error Повідомлення*
+            .input__area
+                textarea.input__item.input__item-area.error( rows="4" name="message" placeholder="Ваше повідомлення" )
+            a.button.button-wave.button-wave--wave-white.spacer__item(href="contact-us-success.html" type="submit") Надіслати

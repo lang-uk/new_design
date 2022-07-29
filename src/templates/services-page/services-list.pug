@@ -1,26 +1,231 @@
-.services-list
-	.services-list__item
-		.services-list__actions
-			.button-fill-container
-				.button-fill-container__item
-					span.button-fill
-						span.button-fill__content Картки
-				.button-fill-container__item
-					span.button-fill
-						span.button-fill__content Список
-	.services-list__item
-		.collapse(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass1')
-			p.h3.collapse__title Мікросервіс NER
-		.nameOfCollapseClass1 ffffff
-	.services-list__item
-		.collapse(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass2')
-			p.h3.collapse__title Мікросервіс NLP_UK
-		.nameOfCollapseClass2 ffffff
-	.services-list__item
-		.collapse(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass3')
-			p.h3.collapse__title Мікросервіс розпізнавання мови (WILD)
-		.nameOfCollapseClass3 ffffff
-	.services-list__item
-		.collapse(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass4')
-			p.h3.collapse__title Веб-сервіс оцінки когерентності тексту
-		.nameOfCollapseClass4 ffffff
+.services__list-card
+	.services-list__actions
+		.button-fill-container
+			.button-fill-container__item
+				span.button-fill
+					span.button-fill__content Картки
+			.button-fill-container__item
+				span.button-fill
+					span.button-fill__content Список
+	.services-list
+		.services-list__item
+			.collapse__header(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass1')
+				.collapse
+					p.h3.collapse__title Мікросервіс NER
+				.collapse__button
+					p.caption-1 Показати більше
+					include ../../svg/vector_1.svg
+			.nameOfCollapseClass1
+				a.link.link--primary-dark(href="#") Мікросервіс NER
+				| &nbsp; дозволяє здійснити NER-розмітку токенізованого тексту з використанням &nbsp;
+				a.link.link--primary-dark(href="#") моделей
+				| , натренованих з допомогою бібліотеки MITIE для української, російської та ...
+				.collapse__button-min(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass1')
+					p.caption-1 Показати менше
+					include ../../svg/vector_2.svg
+		.services-list__item
+			.collapse__header(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass2')
+				.collapse
+					p.h3.collapse__title Мікросервіс NLP_UK
+				.collapse__button
+					p.caption-1 Показати більше
+					include ../../svg/vector_1.svg
+			.nameOfCollapseClass2
+				a.link.link--primary-dark(href="#") Мікросервіс на основі бібліотеки NLP_UK
+				|&nbsp; дає змогу виконати лематизацію вхідного тексту за словником &nbsp;
+				a.link.link--primary-dark(href="#") dict_uk
+				| , яка також включає його токенізацію. Мікросервіс розробив &nbsp;
+				a.link.link--primary-dark(href="#") Андрій Рисін.
+				.collapse__button-min(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass2')
+					p.caption-1 Показати менше
+					include ../../svg/vector_2.svg
+		.services-list__item
+			.collapse__header(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass3')
+				.collapse
+					p.h3.collapse__title Мікросервіс розпізнавання мови (WILD)
+				.collapse__button
+					p.caption-1 Показати більше
+					include ../../svg/vector_1.svg
+			.nameOfCollapseClass3
+				a.link.link--primary-dark(href="#") Мікросервіс WILD
+				| &nbsp; дозволяє розпізнати мову вхідного тексту з переліку 156 мов, які використовуються в інтернеті, за допомогою бібліотеки wiki-lang-detect.
+				.collapse__button-min(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass3')
+					p.caption-1 Показати менше
+					include ../../svg/vector_2.svg
+		.services-list__item
+			.collapse__header(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass4')
+				.collapse
+					p.h3.collapse__title Веб-сервіс оцінки когерентності тексту
+				.collapse__button
+					p.caption-1 Показати менше
+					include ../../svg/vector_2.svg
+			.nameOfCollapseClass4
+				.collapse__body
+					.collapse__item-left
+						p.text-m Веб-сервіс&nbsp;
+							a.link.link--primary-dark(href="#") (Docker image)
+							|&nbsp;створений з метою здійснення наступних операцій обробки україномовних текстів
+						ul.list__item-left
+							li.text-m Оцінка когерентності тексту (розмір тексту має складати мінімум 3 речення)
+							li.text-m Виділення іменних груп
+							li.text-m Пошук кореферентних пар (тестовий варіант)
+						p.text-m Веб-сервіс реалізований у вигляді REST API. Обробка даних відбувається шляхом відправки POST-запитів на відповідні адреси
+						ul.list__item-left
+							li.text-m Оцінка когерентності тексту:&nbsp;
+								code  /api/ get_coherence
+							li.text-m Виділення іменних груп:&nbsp;
+								code  /api/ get_phrases
+							li.text-m Пошук кореферентних пар:&nbsp;
+								code  /api/ get_coreferent_clusters
+						p.h4 Вхідний формат тіла запиту (JSON):
+							.copy
+								code.copy__text {"text": "<:text>"}
+						p.text-m Відповідь від серверу повертається у форматі JSON залежно від точки доступу.
+						p.text-m Веб-сервіс створений &nbsp;
+							a.link.link--primary-dark(href="#") Артемом Крамовим
+						p.text-m--bold Будь ласка, процитуйте цю роботу, якщо ви її використовуєте:
+							.collapse__code
+								.collapse__code-content
+									.collapse__code-text
+										code.citation-text @inproceedings{akbik2019flair,
+											.code-text
+												p
+													code.citation-text title={FLAIR: An easy-to-use framework for state-of-the-art NLP},
+												p
+													code.citation-text author={Akbik, Alan and Bergmann, Tanja and Blythe, Duncan and Rasul, Kashif and Schweter, Stefan and Vollgraf, Roland}
+												p
+													code.citation-text booktitle={{NAACL} 2019, 2019 Annual Conference of the North American Chapter of the Association for Computational Linguistics (Demonstrations)}
+												p
+													code.citation-text pages={54--59},
+												p
+													code.citation-text year={2019}
+											code.citation-text  }
+								button.copy__button(type="button")
+									include ../../svg/copy-document.svg
+						.collapse__button(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass4')
+							p.caption-1 Показати менше
+							include ../../svg/vector_2.svg
+					.collapse__item-right
+						.collapse__item-content
+							p.text-m--bold About
+							.collapse__item-content1
+								p.text-m A very simple framework for state-of-the-art Natural Language Processing (NLP)
+							.collapse__item-content2
+									p.text-m--bold Releases
+									.content__item-number
+										span.caption-3 18
+							.collapse__item-content3
+								p.text-m Release 0.9
+									span.caption-1 Latest
+							.collapse__item-content4
+								p.caption-1 on 30 Aug
+								p.caption-2 +17 releases
+							.collapse__item-content5
+								p.text-m--bold Packages
+								p.caption-1 No packages published
+							.collapse__item-content6
+									include ../../svg/downloads.svg
+									p.caption-1 Download
+	.services-card
+		.services-list__item
+			.collapse(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass1')
+				p.h3.collapse__title Мікросервіс NER
+			.nameOfCollapseClass1
+				a.link.link--primary-dark(href="#") Мікросервіс NER
+				| &nbsp; дозволяє здійснити NER-розмітку токенізованого тексту з використанням &nbsp;
+				a.link.link--primary-dark(href="#") моделей
+				| , натренованих з допомогою бібліотеки MITIE для української, російської та ...
+				.collapse__button-min(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass1')
+					p.caption-1 Показати менше
+					include ../../svg/vector_2.svg
+		.services-list__item
+			.collapse(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass2')
+				p.h3.collapse__title Мікросервіс NLP_UK
+			.nameOfCollapseClass2
+				a.link.link--primary-dark(href="#") Мікросервіс на основі бібліотеки NLP_UK
+				| &nbsp; дає змогу виконати лематизацію вхідного тексту за словником &nbsp;
+				a.link.link--primary-dark(href="#") dict_uk
+				| , яка також включає його токенізацію. Мікросервіс розробив &nbsp;
+				a.link.link--primary-dark(href="#") Андрій Рисін.
+				.collapse__button-min(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass2')
+					p.caption-1 Показати менше
+					include ../../svg/vector_2.svg
+		.services-list__item
+			.collapse(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass3')
+				p.h3.collapse__title Мікросервіс розпізнавання мови (WILD)
+			.nameOfCollapseClass3
+				a.link.link--primary-dark(href="#") Мікросервіс WILD
+				| &nbsp; дозволяє розпізнати мову вхідного тексту з переліку 156 мов, які використовуються в інтернеті, за допомогою бібліотеки wiki-lang-detect.
+				.collapse__button-min(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass3')
+					p.caption-1 Показати менше
+					include ../../svg/vector_2.svg
+		.services-list__item
+			.collapse(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass4')
+				p.h3.collapse__title Веб-сервіс оцінки когерентності тексту
+			.nameOfCollapseClass4
+				.collapse__body
+					.collapse__item-left
+						p.text-m Веб-сервіс&nbsp;
+							a.link.link--primary-dark(href="#") (Docker image)
+							| &nbsp;створений з метою здійснення наступних операцій обробки україномовних текстів
+						ul.list__item-left
+							li.text-m Оцінка когерентності тексту (розмір тексту має складати мінімум 3 речення)
+							li.text-m Виділення іменних груп
+							li.text-m Пошук кореферентних пар (тестовий варіант)
+						p.text-m Веб-сервіс реалізований у вигляді REST API. Обробка даних відбувається шляхом відправки POST-запитів на відповідні адреси
+						ul.list__item-left
+							li.text-m Оцінка когерентності тексту:&nbsp;
+								code  /api/ get_coherence
+							li.text-m Виділення іменних груп:&nbsp;
+								code  /api/ get_phrases
+							li.text-m Пошук кореферентних пар:&nbsp;
+								code  /api/ get_coreferent_clusters
+						p.h4 Вхідний формат тіла запиту (JSON):
+							.copy
+								code.copy__text {"text": "<:text>"}
+						p.text-m Відповідь від серверу повертається у форматі JSON залежно від точки доступу.
+						p.text-m Веб-сервіс створений &nbsp;
+							a.link.link--primary-dark(href="#") Артемом Крамовим
+						p.text-m--bold Будь ласка, процитуйте цю роботу, якщо ви її використовуєте:
+							.collapse__code
+								.collapse__code-content
+									.collapse__code-text
+										code.citation-text @inproceedings{akbik2019flair,
+											.code-text
+												p
+													code.citation-text title={FLAIR: An easy-to-use framework for state-of-the-art NLP},
+												p
+													code.citation-text author={Akbik, Alan and Bergmann, Tanja and Blythe, Duncan and Rasul, Kashif and Schweter, Stefan and Vollgraf, Roland}
+												p
+													code.citation-text booktitle={{NAACL} 2019, 2019 Annual Conference of the North American Chapter of the Association for Computational Linguistics (Demonstrations)}
+												p
+													code.citation-text pages={54--59},
+												p
+													code.citation-text year={2019}
+											code.citation-text  }
+								button.copy__button(type="button")
+									include ../../svg/copy-document.svg
+						.collapse__button(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass4')
+							p.caption-1 Показати менше
+							include ../../svg/vector_2.svg
+					.collapse__item-right
+						.collapse__item-content
+							p.text-m--bold About
+							.collapse__item-content1
+								p.text-m A very simple framework for state-of-the-art Natural Language Processing (NLP)
+							.collapse__item-content2
+								p.text-m--bold Releases
+								.content__item-number
+									span.caption-3 18
+							.collapse__item-content3
+								p.text-m Release 0.9
+									span.caption-1 Latest
+							.collapse__item-content4
+								p.caption-1 on 30 Aug
+								p.caption-2 +17 releases
+							.collapse__item-content5
+								p.text-m--bold Packages
+								p.caption-1 No packages published
+							.collapse__item-content6
+								include ../../svg/downloads.svg
+								p.caption-1 Download
