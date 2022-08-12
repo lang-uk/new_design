@@ -22,7 +22,7 @@ header.header
 					span UA
 				.navigation-action__item
 					//span O
-					.header-input
+					form.header-input(action="/search-result.html")
 						input.header-input__input(type="text" placeholder="Пошук")
 						.live-search
 							ul
@@ -36,7 +36,7 @@ header.header
 									a.text-m(href="") Доповнити продукт
 							.result-text
 								a(href="search-result.html")
-						span.header-input__icon
+						button.header-input__icon(type="submit")
 							include ../../svg/search.svg
 				.navigation-action__item
 					a.header-product-action(href="add-product.html") Доповнити продукт
