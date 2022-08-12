@@ -2,11 +2,19 @@
     .form__content
         p.h2 Зв’язатися з нами
         form(action="" method="POST")
-            input.input__item.error(type="text" name="name" placeholder="Ім’я*" value="")
-            .input__contact
-                input.input__item(type="tel" name="tel" placeholder="Телефон" value="")
-                input.input__item.error(type="email" name="email" placeholder="Email*" value="")
-            p.text-m.error Повідомлення*
-            .input__area
-                textarea.input__item.input__item-area.error( rows="4" name="message" placeholder="Ваше повідомлення" )
+            .contact-input.error
+                input.input__item(type="text" name="name" placeholder="Ім’я*" value="")
+                .caption-2.error__msg ведіть ваше Ім'я
+            .contact-input
+                .input__contact
+                    .input__contact-item
+                        input.input__item(type="tel" name="tel" placeholder="Телефон" value="")
+                    .input__contact-item.error
+                        input.input__item(type="email" name="email" placeholder="Email*" value="")
+                        .caption-2.error__msg Введіть ваш Email
+            .contact-input.error
+                p.text-m Повідомлення*
+                .input__area
+                    textarea.input__item-area( rows="6" name="message" placeholder="Ваше повідомлення" )
+                .caption-2.error__msg Додайте повідомлення
             a.button.button-wave.button-wave--wave-white.spacer__item(href="contact-us-success.html" type="submit") Надіслати

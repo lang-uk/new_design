@@ -7,6 +7,8 @@ header.header
 			nav.navigation
 				span.navigation__item
 					a.navigation__link.underline-animation(href="products.html") Продукти
+						span.svg
+							include ../../svg/star.svg
 				span.navigation__item
 					a.navigation__link.underline-animation(href="services.html") Сервіси
 				span.navigation__item
@@ -25,31 +27,31 @@ header.header
 						.live-search
 							ul
 								li
-									a.text-m(href="")
+									a.text-m(href="") Доповнити продукт
 								li
-									a.text-m(href="")
+									a.text-m(href="") Доповнити продукт
 								li
-									a.text-m(href="")
+									a.text-m(href="") Доповнити продукт
 								li
-									a.text-m(href="")
+									a.text-m(href="") Доповнити продукт
 							.result-text
 								a(href="search-result.html")
 						span.header-input__icon
 							include ../../svg/search.svg
 				.navigation-action__item
 					a.header-product-action(href="add-product.html") Доповнити продукт
-		.header-input.mobile-input
+		.mobile-input
 			input.header-input__input(type="text" placeholder="Пошук")
 			.live-search
 				ul
 					li
-						a.text-m(href="")
+						a.text-m(href="") Доповнити продукт
 					li
-						a.text-m(href="")
+						a.text-m(href="") Доповнити продукт
 					li
-						a.text-m(href="")
+						a.text-m(href="") Доповнити продукт
 					li
-						a.text-m(href="")
+						a.text-m(href="") Доповнити продукт
 				.result-text
 					a(href="search-result.html")
 			span.header-input__icon
@@ -57,3 +59,5 @@ header.header
 		.header__burger-wrap
 			button.header__burger
 				span.header__burger-line
+				span.svg-burger
+					include ../../svg/star.svg

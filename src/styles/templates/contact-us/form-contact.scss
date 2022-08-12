@@ -1,7 +1,7 @@
 .contact__form {
-  @include  flex-column;
+  @include flex-column;
   background: $color-white;
-  margin-bottom:  $spacer * 8;
+  margin-bottom: $spacer * 8;
   margin-left: -16px;
   margin-right: -16px;
   width: calc(100% + 32px);
@@ -17,26 +17,24 @@
     width: 100%;
   }
 
-
-
-
   .form__content {
     width: 100%;
-    @include  flex-column;
+    @include flex-column;
     padding: $spacer * 8 $spacer * 2;
 
     @media (min-width: $sm) {
-      padding: $spacer * 10 $spacer * 11.5 $spacer * 12.5 ;
+      padding: $spacer * 10 $spacer * 11.5 $spacer * 12.5;
     }
     @media (min-width: $md) {
       max-width: 34rem;
       padding: 0;
-      margin: $spacer * 11.5 0 $spacer * 12.5 ;
+      margin: $spacer * 11.5 0 $spacer * 12.5;
     }
 
     .h2 {
       margin-bottom: $spacer * 5;
     }
+
     form {
       width: 100%;
       @include flex-column;
@@ -49,12 +47,39 @@
       @media (min-width: $md) {
         padding: 0;
       }
-      .error {
-        border-bottom: 1px solid $color-error;
+
+      .contact-input {
+        width: 100%;
+        padding-bottom: $spacer * 3;
       }
 
-    }
+      .error__msg {
+        display: none;
+      }
 
+      .error {
+        .input__item {
+          border-bottom: 1px solid $color-error;
+
+          &::placeholder {
+            color: $color-error;
+          }
+        }
+
+        .text-m {
+          color: $color-error;
+        }
+
+        .input__item-area {
+          border: 1px solid $color-error;
+        }
+
+        .error__msg {
+          display: block;
+          color: $color-error;
+        }
+      }
+    }
 
     .input__contact {
       width: 100%;
@@ -65,6 +90,13 @@
         column-gap: 1rem;
       }
 
+      .input__contact-item {
+        width: 100%;
+
+        &:first-child {
+          margin-bottom: $spacer * 3 ;
+        }
+      }
     }
 
     .input__item {
@@ -75,8 +107,6 @@
       color: $color-black;
       border: none;
       border-bottom: 1px solid $color-black;
-      margin-bottom: $spacer * 3;
-
 
       &::placeholder {
         font-family: $font-family-gilroy-regular;
@@ -85,42 +115,28 @@
         color: $color-black;
       }
     }
-    .input__area {
+
+    .input__item-area {
       width: 100%;
+      border: 1px solid $color-black;
 
-
-      .input__item-area {
-        border: 1px solid $color-black;
-
-
-        &::placeholder {
-          font-family: $font-family-gilroy-regular;
-          font-size: 16px;
-          line-height: 24px;
-          color: $color-grey-1;
-          padding: $spacer 0 0 $spacer * 2;
-
-        }
-      }
-      .error {
-        border: 1px solid $color-error;
+      &::placeholder {
+        font-family: $font-family-gilroy-regular;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-grey-1;
+        padding: $spacer 0 0 $spacer * 2;
       }
     }
+
     .text-m {
       align-self: flex-start;
       padding-bottom: $spacer;
-    }
-
-    .error {
-     color:  $color-error;
-
     }
 
     .button {
       width: 14.875rem;
     }
   }
-
-
 }
 

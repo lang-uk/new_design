@@ -37,28 +37,28 @@
     border-bottom: 1px solid $color-black;
   }
 
-  &__head-item{
+  &__head-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  &__head-logo{
+  &__head-logo {
     width: 44px;
     height: 44px;
     margin-bottom: $spacer * 2;
   }
 
-  &__head-text{
+  &__head-text {
     font-family: $font-family-gilroy-regular;
     font-size: 14px;
     line-height: 20px;
 
-    &--bold{
+    &--bold {
       font-family: $font-family-gilroy-bold;
     }
 
-    &--label{
+    &--label {
       color: $color-grey-2;
     }
   }
@@ -74,7 +74,7 @@
     position: relative;
     overflow: initial;
 
-    &__body{
+    &__body {
       flex: 1;
       height: initial;
     }
@@ -101,4 +101,5 @@
     margin-left: $spacer * 2;
     margin-right: $spacer * 2;
   }
+
 }
