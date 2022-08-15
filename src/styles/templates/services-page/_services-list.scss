@@ -21,6 +21,16 @@
         align-items: center;
         margin-top: $spacer * 4;
         cursor: pointer;
+        transition: .3s ;
+
+        &:hover {
+        color: $color-primary;
+          transition: .3s ;
+      }
+        &:hover path {
+          stroke: $color-primary;
+          transition: .3s ;
+        }
 
         .caption-1 {
           padding-right: $spacer;
@@ -117,7 +127,7 @@
               }
 
               .code-text {
-                margin: $spacer * 2 0 0 $spacer * 3;
+                margin: $spacer * 2  $spacer * 4 0 $spacer * 3;
               }
             }
 
@@ -261,6 +271,16 @@
             align-items: center;
             margin-top: $spacer * 2.75;
             cursor: pointer;
+            transition: .3s ;
+
+            &:hover {
+              color: $color-primary;
+              transition: .3s ;
+            }
+            &:hover path {
+              stroke: $color-primary;
+              transition: .3s ;
+            }
 
             @media (min-width: $sm) {
               margin-top: 0;
@@ -362,6 +382,15 @@
               align-items: center;
               margin-top: $spacer * 2.75;
               cursor: pointer;
+              transition: .3s ;
+              &:hover {
+                color: $color-primary;
+                transition: .3s ;
+              }
+              &:hover path {
+                stroke: $color-primary;
+                transition: .3s ;
+              }
 
               @media (min-width: $sm) {
                 margin-top: 0;

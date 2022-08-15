@@ -23,10 +23,20 @@
     transition: 0.3s all ease;
 
     &:hover {
-      transform: scale(1.05);
+      //transform: scale(1.05);
       transition: 0.3s all ease;
-      fill: #63BA84;
 
+    }
+    path {
+      transition: 0.3s;
+    }
+
+    &:hover path {
+      stroke: #AAE2BF;
+
+      &.second-path {
+        fill: #AAE2BF;
+      }
     }
 
     &:active {

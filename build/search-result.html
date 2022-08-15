@@ -23,10 +23,13 @@
 </svg>
 </span></a></span><span class="navigation__item"><a class="navigation__link underline-animation" href="services.html">Сервіси</a></span><span class="navigation__item"><a class="navigation__link underline-animation" href="about-us.html">Про нас</a></span><span class="navigation__item"><a class="navigation__link underline-animation" href="manifest.html">Маніфест</a></span><span class="navigation__item"><a class="navigation__link underline-animation" href="contact-us.html">Контакти</a></span></nav>
             <div class="navigation-action">
-              <div class="navigation-action__item"><span>UA</span></div>
+              <div class="navigation-action__item lang"><a class="lang__item" href="#">UA<span class="lang-arrow"><svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 1L5 5L1 0.999999" stroke="black" stroke-width="2" stroke-linecap="round"/>
+</svg>
+</span></a><a class="lang__item lang-en" href="#">EN</a></div>
               <div class="navigation-action__item">
                 <!--span O-->
-                <div class="header-input">
+                <form class="header-input" action="/search-result.html">
                   <input class="header-input__input" type="text" placeholder="Пошук"/>
                   <div class="live-search">
                     <ul>
@@ -36,12 +39,14 @@
                       <li><a class="text-m" href="">Доповнити продукт</a></li>
                     </ul>
                     <div class="result-text"><a href="search-result.html"></a></div>
-                  </div><span class="header-input__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  </div>
+                  <button class="header-input__icon" type="submit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M11.25 18C14.9779 18 18 14.9779 18 11.25C18 7.52208 14.9779 4.5 11.25 4.5C7.52208 4.5 4.5 7.52208 4.5 11.25C4.5 14.9779 7.52208 18 11.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M23.2484 22.5L16.6484 16.65" stroke="black" stroke-width="2" stroke-linejoin="round"/>
 </svg>
-</span>
-                </div>
+
+                  </button>
+                </form>
               </div>
               <div class="navigation-action__item"><a class="header-product-action" href="add-product.html">Доповнити продукт</a></div>
             </div>
@@ -77,15 +82,15 @@
               <p class="h1">Результати пошуку</p>
               <div class="search-result__item">
                 <div class="item__website"><a class="text-m">https://lang.org.ua/uk/gazetteers/</a></div><a class="h4" href="#">Корисні ґазетіри</a>
-                <p class="text-m">Набір різноманітних колекцій даних українською мовою, зібраний протягом роботи над&nbsp;<a class="link link--primary-dark" href="#">антикорупційними</a>та не тільки проектами. CSV–формат, UTF-8, до деяких датасетів також наявний переклад англійською або російською.</p>
+                <p class="text-m">Набір різноманітних колекцій даних українською мовою, зібраний протягом роботи над&nbsp;<a class="link link--primary-dark" href="#">антикорупційними</a>&nbsp;та не тільки проектами. CSV–формат, UTF-8, до деяких датасетів також наявний переклад англійською або російською.</p>
               </div>
               <div class="search-result__item">
                 <div class="item__website"><a class="text-m">https://lang.org.ua/uk/gazetteers/</a></div><a class="h4" href="#">Корисні ґазетіри</a>
-                <p class="text-m">Набір різноманітних колекцій даних українською мовою, зібраний протягом роботи над&nbsp;<a class="link link--primary-dark" href="#">антикорупційними</a>та не тільки проектами. CSV–формат, UTF-8, до деяких датасетів також наявний переклад англійською або російською.</p>
+                <p class="text-m">Набір різноманітних колекцій даних українською мовою, зібраний протягом роботи над&nbsp;<a class="link link--primary-dark" href="#">антикорупційними</a>&nbsp;та не тільки проектами. CSV–формат, UTF-8, до деяких датасетів також наявний переклад англійською або російською.</p>
               </div>
               <div class="search-result__item">
                 <div class="item__website"><a class="text-m">https://lang.org.ua/uk/gazetteers/</a></div><a class="h4" href="#">Корисні ґазетіри</a>
-                <p class="text-m">Набір різноманітних колекцій даних українською мовою, зібраний протягом роботи над&nbsp;<a class="link link--primary-dark" href="#">антикорупційними</a>та не тільки проектами. CSV–формат, UTF-8, до деяких датасетів також наявний переклад англійською або російською.</p>
+                <p class="text-m">Набір різноманітних колекцій даних українською мовою, зібраний протягом роботи над&nbsp;<a class="link link--primary-dark" href="#">антикорупційними</a>&nbsp;та не тільки проектами. CSV–формат, UTF-8, до деяких датасетів також наявний переклад англійською або російською.</p>
               </div>
             </div>
             <div class="search-result__pages">
@@ -132,13 +137,10 @@
 
                   </button>
                 </div>
-                <div class="spacer__item">
-                  <button class="footer__button button-wave button-wave--transparent"><svg class="svg-icon svg-icon--stroke" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <div class="spacer__item"><a class="footer__button button-wave button-wave--transparent" href="tg://resolve?domain=lang-uk"><svg class="svg-icon svg-icon--stroke" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
     <path d="M7.38567 12.1767L7.35325 11.8922L7.09148 11.7762L3.3153 10.1027L17.2938 4.80249L14.5675 16.1947L11.1614 13.9808L10.9241 13.8266L10.6698 13.9506L7.75003 15.3739L7.38567 12.1767Z" />
 </svg>
-
-                  </button>
-                </div>
+</a></div>
               </div>
             </div>
           </div>

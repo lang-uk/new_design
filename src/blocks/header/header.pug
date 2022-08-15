@@ -18,8 +18,13 @@ header.header
 				span.navigation__item
 					a.navigation__link.underline-animation(href="contact-us.html") Контакти
 			.navigation-action
-				.navigation-action__item
-					span UA
+				.navigation-action__item.lang
+					a(href="#").lang__item UA
+						span.lang-arrow
+							include ../../svg/vector_1.svg
+					a(href="#").lang__item.lang-en EN
+
+
 				.navigation-action__item
 					//span O
 					form.header-input(action="/search-result.html")
