@@ -1,0 +1,30 @@
+.page__error {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin:$spacer * 4 0 ;
+
+  .error__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .error__image {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: $spacer * 5;
+
+      @media (min-width: $xs) {
+        width: 35.25rem;
+      }
+    }
+    .button {
+      max-width: 14.875rem;
+    }
+  }
+}

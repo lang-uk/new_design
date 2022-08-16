@@ -37,7 +37,7 @@
       transition: .3s;
       visibility: visible;
       pointer-events: all;
-      color: $color-success;
+
     }
 
     &:hover .lang-arrow {
@@ -48,9 +48,7 @@
     .lang__item {
       text-decoration: none;
 
-      //&:hover {
-      //  color: $color-success;
-      //}
+
     }
 
     .lang-en {
@@ -63,6 +61,10 @@
       transition: .3s;
       visibility: hidden;
       pointer-events: none;
+
+      &:hover {
+        color: $color-success;
+      }
     }
   }
 
