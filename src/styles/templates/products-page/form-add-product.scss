@@ -35,6 +35,7 @@
           display: flex;
           flex-direction: row;
           margin-left: 2rem;
+          width: calc(100% - 140px);
           max-width: 444px;
         }
 
@@ -210,16 +211,24 @@
       padding: $spacer * 1.5 $spacer * 2;
       border: none;
       border-radius: $spacer;
-
-      .tox {
-        width: 100% ;
-        max-width: 100% ;
-      }
     }
 
     .tox {
       width: 100%;
-      max-width: 100%;
+      max-width: calc(100vw - 2 * 1rem);
+
+      @media (min-width: $xs) {
+        width: 100%;
+        max-width: 444px;
+      }
+
+      @media(min-width: 576px) and (max-width: 768px) {
+        max-width: calc(100vw - 2 * 1rem - 1rem - 140px);
+      }
+
+      @media (min-width: $md) {
+        max-width: 544px;
+      }
     }
 
     .deliverables {
@@ -280,4 +289,8 @@
       }
     }
   }
+}
+
+.tox.tox-silver-sink.tox-tinymce-aux {
+  display: none !important;
 }
