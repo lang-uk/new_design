@@ -5772,11 +5772,9 @@ img {
     top: 8px;
   }
 }
-.card .h3:hover span::after {
-  content: "Нові надходження";
+.card .h3 .star-text,
+.card .h3 .star-text__top {
   position: absolute;
-  top: 28px;
-  left: -95px;
   color: #898989;
   font-size: 12px;
   line-height: 16px;
@@ -5785,12 +5783,28 @@ img {
   -webkit-transition: 0.8s;
   -o-transition: 0.8s;
   transition: 0.8s;
+  display: none;
+}
+.card .h3 .star-text {
+  top: 28px;
+  left: -95px;
 }
 @media (min-width: 576px) {
-  .card .h3:hover span::after {
-    top: -10px;
-    left: 2px;
+  .card .h3 .star-text {
+    top: -8px;
+    left: 4px;
   }
+}
+.card .h3 .star-text__top {
+  top: -10px;
+  left: 4px;
+}
+.card .h3 .svg:hover .star-text,
+.card .h3 .svg:hover .star-text__top {
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+  display: block;
 }
 
 .slider {
@@ -8060,6 +8074,9 @@ img {
   -webkit-transition: 0.8s;
   -o-transition: 0.8s;
   transition: 0.8s;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
 }
 .become-part .svg-hover svg {
   width: 100%;
@@ -8070,18 +8087,21 @@ img {
   -webkit-transition: 0.8s;
   -o-transition: 0.8s;
   transition: 0.8s;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 @media (max-width: 767px) {
   .become-part:hover .svg-hover {
     opacity: 0;
   }
 }
-.become-part a:hover span {
+.become-part a span {
   background: #AAE2BF;
 }
 .become-part .add-product .button-wave:hover {
   border: 0.125rem solid #FFFFFF;
-  background: none;
+  background: #AAE2BF;
 }
 
 .media-articles {

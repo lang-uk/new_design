@@ -108,6 +108,7 @@
     left: 0;
     opacity: 0;
     transition: .8s;
+    transform: scale(0.8);
 
     svg {
       width: 100%;
@@ -118,19 +119,18 @@
   &:hover .svg-hover {
     opacity: 1;
     transition: .8s;
+    transform: scale(1);
     @media (max-width: 767px) {
       opacity: 0;
     }
   }
-  a:hover  {
-    span {
-      background: $color-primary;
-    }
-  }
+  a span   {
+         background: $color-primary;
+      }
   .add-product {
     .button-wave:hover {
       border: 0.125rem solid $color-white;
-      background:  none;
+      background:  $color-primary;
     }
   }
 }

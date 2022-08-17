@@ -117,22 +117,35 @@
         }
       }
     }
-    &:hover span::after {
-      content: "Нові надходження";
+    .star-text,
+    .star-text__top {
       position: absolute;
-      top:28px;
-      left: -95px;
-      color : $color-grey-1;
+      color: $color-grey-1;
       font-size: 12px;
       line-height: 16px;
       white-space: nowrap;
       font-family: $font-family-gilroy-regular;
       transition: 0.8s;
+      display: none;
+    }
+    .star-text {
+      top: 28px;
+      left: -95px;
 
       @media (min-width: $xs) {
-        top:-10px;
-        left: 2px;
+        top:-8px;
+        left: 4px;
       }
+    }
+    .star-text__top {
+      top:-10px;
+      left: 4px;
+    }
+
+    .svg:hover .star-text,
+    .svg:hover .star-text__top {
+      transition: 0.8s;
+      display: block;
     }
   }
 }
