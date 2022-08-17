@@ -9,7 +9,6 @@
 
     .search-result__item:not(:last-child) {
       border-bottom: 1px solid $color-black;
-
     }
 
     h1 {
@@ -27,11 +26,13 @@
       @media (min-width: $xs) {
         max-width: 33.5rem;
       }
+
       @media (min-width: $md) {
         max-width: 40.5rem;
       }
 
       .item__website {
+
         .text-m {
           color: $color-grey-1;
           padding-bottom: $spacer;
@@ -57,12 +58,10 @@
     justify-content: center;
     width: 100%;
 
-
     .pagination {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-
 
       li {
         display: flex;
@@ -74,8 +73,6 @@
       }
 
       .text-m {
-
-
         &:hover {
           text-decoration: underline;
         }

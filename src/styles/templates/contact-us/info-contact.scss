@@ -1,7 +1,7 @@
 .contact-us {
 
   .contact__content {
-    @include  flex-column;
+    @include flex-column;
     align-items: stretch;
     align-content: space-between;
     margin: $spacer * 5 0;
@@ -12,7 +12,7 @@
     }
 
     .contact {
-      @include  flex-column;
+      @include flex-column;
       justify-content: center;
       text-align: center;
 

@@ -25,6 +25,7 @@
       grid-template-columns: repeat(3, 1fr);
       row-gap: 1.5rem;
     }
+
     @media (min-width: 1120px) {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -32,13 +33,11 @@
       row-gap: 2.15rem;
     }
 
-
     .team__item {
       max-width: 9.75rem;
 
       &:nth-child(8n + 1) .icon {
         border-radius: 50%;
-
       }
 
       &:nth-child(8n + 2) .icon {
@@ -90,6 +89,11 @@
       }
       @media (min-width: 1120px) {
         max-width: 16rem;
+      }
+      .team__info-socialnetworks {
+        svg {
+          fill: grey;
+        }
       }
     }
 

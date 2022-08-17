@@ -1306,7 +1306,7 @@ img {
   margin-left: 0.84rem;
 }
 .services__list-card .services-list {
-  display: none;
+  display: block;
 }
 .services__list-card .services-list .services-list__item {
   border: 1px solid #000000;
@@ -1428,7 +1428,7 @@ img {
   margin: 1.5rem 1.1875rem 0;
 }
 .services__list-card .services-card {
-  display: block;
+  display: none;
 }
 .services__list-card .services-card .services-list__item {
   border-bottom: 1px solid #000000;
@@ -1793,7 +1793,7 @@ img {
   width: 100%;
   height: 100%;
   left: 0;
-  bottom: 1rem;
+  bottom: 16px;
   overflow: hidden;
 }
 @media (min-width: 576px) {
@@ -1803,8 +1803,8 @@ img {
 }
 .our__team .team__items .team__icon .team__hand .team__hand-icon {
   position: absolute;
-  bottom: -9.375rem;
-  right: 2.125rem;
+  bottom: -150px;
+  right: 34px;
   opacity: 0;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
@@ -1812,8 +1812,8 @@ img {
 }
 .our__team .team__items .team__icon .team__hand .team__hand-icon2 {
   position: absolute;
-  bottom: -9.375rem;
-  left: 2.125rem;
+  bottom: -150px;
+  left: 34px;
   opacity: 0;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
@@ -1822,11 +1822,11 @@ img {
 .our__team .team__items .team__icon .team__hand:hover .team__hand-icon,
 .our__team .team__items .team__icon .team__hand:hover .team__hand-icon2 {
   opacity: 1;
-  bottom: -0.5rem;
+  bottom: -8px;
 }
 .our__team .team__items .team__icon .team__hand2 {
   position: absolute;
-  left: 2rem;
+  left: 32px;
   bottom: 0;
   -webkit-transition: all 0.25s;
   -o-transition: all 0.25s;
@@ -1941,6 +1941,9 @@ img {
   .our__team .team__items .team__item-content {
     padding: 1.25rem 0 0.25rem 1.25rem;
   }
+}
+.our__team .team__items .team__item-content .team__info-socialnetworks svg {
+  fill: gray;
 }
 .our__team .team__items .team__item-content .caption-2 {
   padding: 0 0 0.625rem;
@@ -2081,6 +2084,9 @@ img {
     max-width: 16rem;
   }
 }
+.team__helper .team__items .team__item .team__info-socialnetworks svg {
+  fill: grey;
+}
 .team__helper .team__items .text-m--bold {
   padding-top: 1rem;
 }
@@ -2141,12 +2147,12 @@ img {
 }
 @media (min-width: 576px) {
   .about-manifest .about-manifest__info .about-manifest__content .h3 {
-    max-width: 536px;
+    max-width: 33.5rem;
   }
 }
 @media (min-width: 992px) {
   .about-manifest .about-manifest__info .about-manifest__content .h3 {
-    max-width: 736px;
+    max-width: 46rem;
   }
 }
 .about-manifest .about-manifest__info .manifest__content-line {
@@ -2927,13 +2933,13 @@ img {
 }
 @media (min-width: 576px) {
   .article .article__content {
-    max-width: 526px;
+    max-width: 32.875rem;
     margin: 4rem 5.75rem;
   }
 }
 @media (min-width: 992px) {
   .article .article__content {
-    max-width: 736px;
+    max-width: 46rem;
     margin: 6.5rem 0 5rem;
   }
 }
@@ -3080,7 +3086,7 @@ img {
 }
 @media (min-width: 992px) {
   .article .table {
-    width: 736px;
+    width: 46rem;
     margin-bottom: 10rem;
   }
 }
@@ -3201,11 +3207,15 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   margin: 2rem 0;
 }
 .page__error .error__content {
@@ -8039,9 +8049,6 @@ img {
       aspect-ratio: 100/66.66;
     }
   }
-}
-.become-part a:hover .button {
-  background: #63BA84;
 }
 .become-part .svg-hover {
   position: absolute;

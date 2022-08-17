@@ -1,13 +1,10 @@
 .page__error {
-  display: flex;
+  @include flex-column;
   align-content: center;
-  align-items: center;
-  margin:$spacer * 4 0 ;
+   margin:$spacer * 4 0 ;
 
   .error__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column;
     justify-content: center;
     width: 100%;
 

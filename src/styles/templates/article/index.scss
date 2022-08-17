@@ -1,7 +1,5 @@
 .article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-column;
 
   .article__content {
     display: flex;
@@ -9,13 +7,13 @@
     margin: $spacer * 8 0;
 
     @media (min-width: $xs) {
-      max-width: 526px;
+      max-width: 32.875rem;
       margin: $spacer * 8 $spacer * 11.5;
     }
-    @media (min-width: $md) {
-      max-width: 736px;
-      margin: $spacer * 13 0 $spacer * 10;
 
+    @media (min-width: $md) {
+      max-width: 46rem;
+      margin: $spacer * 13 0 $spacer * 10;
     }
 
     .h1,
@@ -44,8 +42,10 @@
             margin-bottom: $spacer * 5;
           }
         }
+
         .text-m:first-child {
           margin: $spacer * 2 0 $spacer;
+
           @media (min-width: $sm) {
             margin: $spacer * 3 0 $spacer;
           }
@@ -155,12 +155,11 @@
     }
   }
 
-
   .table {
     width: calc(100% + 16px);
     margin-right: -16px;
     overflow: hidden;
-    margin-bottom:  $spacer * 8;
+    margin-bottom: $spacer * 8;
 
     @media (min-width: $sm) {
       width: 100%;
@@ -168,8 +167,8 @@
     }
 
     @media (min-width: $md) {
-      width: 736px;
-      margin-bottom:  $spacer * 20;
+      width: 46rem;
+      margin-bottom: $spacer * 20;
     }
 
     table {

@@ -7,38 +7,34 @@
     @include flex-column;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 3rem;
-    @media (min-width: $sm) {
-      margin-bottom: 4rem;
-    }
+    margin-bottom: $spacer * 6;
 
+    @media (min-width: $sm) {
+      margin-bottom: $spacer * 8;
+    }
 
     @media (min-width: $md) {
       @include flex-row;
       justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 6.5rem;
+      margin-bottom: $spacer * 13;
     }
-
 
     .list__item-title {
       @include flex-column;
       align-items: flex-start;
-      padding-bottom: 1.5rem;
+      padding-bottom: $spacer * 3;
 
       @media (min-width: $xs) {
         @include flex-row;
         justify-content: space-between;
         align-items: flex-start;
-        //max-width: 444px;
         padding-bottom: 0;
       }
-
 
       .list__item-title:first-child {
         @media (min-width: $xs) {
           transform: translateY(-2.5rem);
-
         }
       }
 
@@ -48,7 +44,7 @@
         align-items: flex-end;
         width: 80px;
         height: 80px;
-        margin-bottom: 1.5rem;
+        margin-bottom: $spacer * 3;
       }
 
       .item__icon {
@@ -76,11 +72,12 @@
         @media (min-width: 430px) {
           max-width: 22rem;
         }
+
         @media (min-width: $xs) {
           padding-bottom: 1.5rem;
           padding-left: 1rem;
-
         }
+
         @media (min-width: $md) {
           padding-left: 1.5rem;
         }
@@ -101,11 +98,11 @@
       }
 
       .list__text-content {
-        margin: 1.5rem 0 0.5rem;
+        margin: $spacer * 3 0 $spacer;
 
         .text-l {
           position: relative;
-          padding: 0 0 1rem 1.625rem;
+          padding: 0 0 $spacer * 2 $spacer * 3.25;
         }
 
         .text-l::before {
