@@ -8076,6 +8076,13 @@ img {
     opacity: 0;
   }
 }
+.become-part a:hover span {
+  background: #AAE2BF;
+}
+.become-part .add-product .button-wave:hover {
+  border: 0.125rem solid #AAE2BF;
+  background: none;
+}
 
 .media-articles {
   display: -webkit-box;

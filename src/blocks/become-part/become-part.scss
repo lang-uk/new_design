@@ -42,7 +42,6 @@
   }
 
   &__actions {
-
     margin-top: $spacer * 4;
   }
 
@@ -101,10 +100,6 @@
     }
   }
 
-  //a:hover .button-wave {
-  //  background: #63BA84;
-  //}
-
   .svg-hover {
     position: absolute;
     width: 100%;
@@ -117,7 +112,6 @@
     svg {
       width: 100%;
       height: 100%;
-
     }
   }
 
@@ -127,6 +121,16 @@
     @media (max-width: 767px) {
       opacity: 0;
     }
-
+  }
+  a:hover  {
+    span {
+      background: $color-primary;
+    }
+  }
+  .add-product {
+    .button-wave:hover {
+      border: 0.125rem solid $color-primary;
+      background:  none;
+    }
   }
 }
