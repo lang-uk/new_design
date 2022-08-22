@@ -9,6 +9,10 @@
     }
   }
 
+  .list > .list__item + .list__item:not(:first-child) {
+    margin-top: $spacer * 2.5;
+  }
+
   &__example-item {
     &:first-child {
       margin-top: $spacer * 3;
@@ -20,7 +24,7 @@
   }
 
   &__list {
-    margin-top: $spacer * 2;
+    margin-top: $spacer * 3;
   }
 
   @media (min-width: $md) {
@@ -49,5 +53,7 @@
         margin-top: $spacer * 5;
       }
     }
+
   }
+
 }

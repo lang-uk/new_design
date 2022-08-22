@@ -230,6 +230,10 @@
         padding: $spacer * 2.5 0 $spacer * 0.5 $spacer * 2.5;
       }
       .team__info-socialnetworks {
+        a {
+          text-decoration: none;
+        }
+
         svg {
           fill: gray;
         }

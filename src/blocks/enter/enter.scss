@@ -2,16 +2,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: $spacer * 6;
-  margin-bottom: $spacer * 9;
+  margin-top: $spacer * 5.5;
+  margin-bottom: $spacer * 8.75;
   width: 100%;
-
-  @media (min-width: $xs) {
-    margin-top: $spacer * 9;
-  }
 
   @media (min-width: $sm) {
     width: initial;
+    margin-top: $spacer * 8;
+  }
+
+  @media (min-width: $md) {
+
     margin-top: $spacer * 14;
   }
 }

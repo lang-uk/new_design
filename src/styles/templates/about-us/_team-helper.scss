@@ -91,6 +91,11 @@
         max-width: 16rem;
       }
       .team__info-socialnetworks {
+
+        a {
+          text-decoration: none;
+        }
+
         svg {
           fill: grey;
         }

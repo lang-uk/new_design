@@ -488,9 +488,27 @@ img {
     margin-top: 10rem;
   }
 }
+.products .spacer:last-child {
+  margin-top: 1rem;
+}
+@media (min-width: 992px) {
+  .products .spacer:last-child {
+    margin-top: 5rem;
+  }
+}
 
 .consumers {
-  margin-top: 10rem;
+  margin-top: 4rem;
+}
+@media (min-width: 768px) {
+  .consumers {
+    margin-top: 6.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .consumers {
+    margin-top: 10rem;
+  }
 }
 .consumers__container {
   display: -webkit-box;
@@ -505,6 +523,19 @@ img {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .consumers__container {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .consumers__container {
+    margin-bottom: 4rem;
+  }
 }
 .consumers__card {
   width: 10rem;
@@ -940,6 +971,9 @@ img {
 .about-microservices__item + .about-microservices__item {
   margin-top: 4rem;
 }
+.about-microservices .list > .list__item + .list__item:not(:first-child) {
+  margin-top: 1.25rem;
+}
 .about-microservices__example-item:first-child {
   margin-top: 1.5rem;
 }
@@ -947,7 +981,7 @@ img {
   margin-top: 1rem;
 }
 .about-microservices__list {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 @media (min-width: 992px) {
   .about-microservices {
@@ -1942,6 +1976,9 @@ img {
     padding: 1.25rem 0 0.25rem 1.25rem;
   }
 }
+.our__team .team__items .team__item-content .team__info-socialnetworks a {
+  text-decoration: none;
+}
 .our__team .team__items .team__item-content .team__info-socialnetworks svg {
   fill: gray;
 }
@@ -2083,6 +2120,9 @@ img {
   .team__helper .team__items .team__item {
     max-width: 16rem;
   }
+}
+.team__helper .team__items .team__item .team__info-socialnetworks a {
+  text-decoration: none;
 }
 .team__helper .team__items .team__item .team__info-socialnetworks svg {
   fill: grey;
@@ -7951,18 +7991,18 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 3rem;
-  margin-bottom: 4.5rem;
+  margin-top: 2.75rem;
+  margin-bottom: 4.375rem;
   width: 100%;
-}
-@media (min-width: 576px) {
-  .enter {
-    margin-top: 4.5rem;
-  }
 }
 @media (min-width: 768px) {
   .enter {
     width: initial;
+    margin-top: 4rem;
+  }
+}
+@media (min-width: 992px) {
+  .enter {
     margin-top: 7rem;
   }
 }

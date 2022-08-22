@@ -13,4 +13,13 @@
     margin-top: $spacer * 20;
   }
 
+  .spacer:last-child {
+    margin-top:  $spacer * 2;
+
+    @media (min-width: $md) {
+      margin-top: $spacer * 10;
+    }
+
+  }
+
 }
