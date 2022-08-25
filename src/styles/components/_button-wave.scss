@@ -16,11 +16,12 @@
     transition: .6s all linear;
     position: absolute;
     z-index: -1;
-    background: $color-bg;
+    background: $color-primary;
   }
 
   &:hover {
     color: $color-black;
+    border: 0.125rem solid $color-primary;
   }
 
   &--wave-white{
@@ -32,6 +33,7 @@
   &--transparent {
     color: $color-black;
     background: transparent;
+    border: 0.125rem solid $color-black;
 
     #{$self}__wave {
       background: $color-black;
@@ -40,6 +42,32 @@
     &:hover {
       color: $color-white;
       fill: $color-white;
+      border: 0.125rem solid $color-black;
+    }
+  }
+
+  &--produckt {
+    color: $color-black;
+    background: $color-primary;
+    border: none;
+    height: 48px;
+    width: 196px;
+    padding: $spacer * 1.5 $spacer * 3;
+    font-family: $font-family-open-sans;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: $spacer * 3;
+    white-space: nowrap;
+
+    #{$self}__wave {
+      background: $color-black;
+    }
+
+    &:hover {
+      color: $color-white;
+      fill: $color-white;
+      background: $color-black;
+      border: none;
     }
   }
 

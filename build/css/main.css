@@ -4285,10 +4285,11 @@ img {
   transition: 0.6s all linear;
   position: absolute;
   z-index: -1;
-  background: #F4F1EF;
+  background: #AAE2BF;
 }
 .button-wave:hover {
   color: #000000;
+  border: 0.125rem solid #AAE2BF;
 }
 .button-wave--wave-white .button-wave__wave {
   background: #FFFFFF;
@@ -4296,6 +4297,7 @@ img {
 .button-wave--transparent {
   color: #000000;
   background: transparent;
+  border: 0.125rem solid #000000;
 }
 .button-wave--transparent .button-wave__wave {
   background: #000000;
@@ -4303,6 +4305,29 @@ img {
 .button-wave--transparent:hover {
   color: #FFFFFF;
   fill: #FFFFFF;
+  border: 0.125rem solid #000000;
+}
+.button-wave--produckt {
+  color: #000000;
+  background: #AAE2BF;
+  border: none;
+  height: 48px;
+  width: 196px;
+  padding: 0.75rem 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5rem;
+  white-space: nowrap;
+}
+.button-wave--produckt .button-wave__wave {
+  background: #000000;
+}
+.button-wave--produckt:hover {
+  color: #FFFFFF;
+  fill: #FFFFFF;
+  background: #000000;
+  border: none;
 }
 .button-wave__wave.button-wave__restore {
   position: absolute;
@@ -7477,25 +7502,6 @@ img {
         -ms-transform: translateX(-100%);
             transform: translateX(-100%);
   }
-}
-
-.header-product-action {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 3rem;
-  padding: 0.75rem 1.5rem;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.5rem;
-  white-space: nowrap;
-  border: none;
-  background: #AAE2BF;
-  text-decoration: none;
 }
 
 .header-input,
