@@ -1,85 +1,86 @@
 .button-wave {
-  $self: &;
-  transition: .6s all ease;
-  transform: translateY(0);
-  position: relative;
-  overflow: hidden;
-  border: 0.125rem solid $color-black;
-  color: $color-white;
-  background: $color-black;
+    $self: &;
+    transition: 0.6s;
+    transform: translateY(0);
+    position: relative;
+    overflow: hidden;
+    // border: 0.125rem solid $color-black;
+    color: $color-white;
+    background: $color-black;
 
-  &__wave {
-    transform: scale(0);
-    height: 0.125rem;
-    width: 0.125rem;
-    border-radius: 50%;
-    transition: .6s all linear;
-    position: absolute;
-    z-index: -1;
-    background: $color-primary;
-  }
-
-  &:hover {
-    color: $color-black;
-    border: 0.125rem solid $color-primary;
-  }
-
-  &--wave-white{
-    #{$self}__wave {
-      background: $color-white;
-    }
-  }
-
-  &--transparent {
-    color: $color-black;
-    background: transparent;
-    border: 0.125rem solid $color-black;
-
-    #{$self}__wave {
-      background: $color-black;
+    &__wave {
+        transform: scale(0);
+        height: 0.125rem;
+        width: 0.125rem;
+        border-radius: 50%;
+        clip-path: circle(50% at 50% 50%);
+        transition: 0.6s transform;
+        position: absolute;
+        z-index: -1;
+        background: $color-primary;
     }
 
     &:hover {
-      color: $color-white;
-      fill: $color-white;
-      border: 0.125rem solid $color-black;
-    }
-  }
-
-  &--produckt {
-    color: $color-black;
-    background: $color-primary;
-    border: none;
-    height: 48px;
-    width: 196px;
-    padding: $spacer * 1.5 $spacer * 3;
-    font-family: $font-family-open-sans;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: $spacer * 3;
-    white-space: nowrap;
-
-    #{$self}__wave {
-      background: $color-black;
+        color: $color-black;
+        border-color: $color-primary;
     }
 
-    &:hover {
-      color: $color-white;
-      fill: $color-white;
-      background: $color-black;
-      border: none;
+    &--wave-white {
+        #{$self}__wave {
+            background: $color-white;
+        }
     }
-  }
 
-  &__wave.button-wave__restore {
-    position: absolute;
-    transform: scale(900);
-    z-index: -1;
-  }
+    &--transparent {
+        color: $color-black;
+        background: transparent;
+        border: 0.125rem solid $color-black;
 
-  @media (min-width: $sm) {
+        #{$self}__wave {
+            background: $color-black;
+        }
+
+        &:hover {
+            color: $color-white;
+            fill: $color-white;
+            border-color: $color-black;
+        }
+    }
+
+    &--produckt {
+        color: $color-black;
+        background: $color-primary;
+        border: none;
+        height: 48px;
+        width: 196px;
+        padding: $spacer * 1.5 $spacer * 3;
+        font-family: $font-family-open-sans;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: $spacer * 3;
+        white-space: nowrap;
+
+        #{$self}__wave {
+            background: $color-black;
+        }
+
+        &:hover {
+            color: $color-white;
+            fill: $color-white;
+            // background: $color-black;
+            border: none;
+        }
+    }
+
     &__wave.button-wave__restore {
-      transform: scale(250);
+        position: absolute;
+        transform: scale(900);
+        z-index: -1;
     }
-  }
+
+    @media (min-width: $sm) {
+        &__wave.button-wave__restore {
+            transform: scale(250);
+        }
+    }
 }

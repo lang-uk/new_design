@@ -1,559 +1,558 @@
 .header {
-  display: flex;
-  justify-content: center;
-  background: $color-bg;
-  padding: $spacer * 0.75 $spacer * 2;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-
-  &__container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: $spacer * 140;
-    width: 100%;
-  }
-
-  &__logo {
-    position: relative;
-    width: 100%;
-    z-index: 9;
-  }
-
-  .lang-arrow {
-    margin-left: $spacer * 0.5;
-    display: inline-block;
-  }
-
-  .lang {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-
-    &:hover .lang-en {
-      opacity: 1;
-      transition: .3s;
-      visibility: visible;
-      pointer-events: all;
-
-    }
-
-    &:hover .lang-arrow {
-      transform: rotate(-180deg);
-
-    }
-
-    .lang__item {
-      text-decoration: none;
-
-
-    }
-
-    .lang-en {
-      position: absolute;
-      width: 100%;
-      top: 100%;
-      left: 0;
-      padding-top: $spacer;
-      opacity: 0;
-      transition: .3s;
-      visibility: hidden;
-      pointer-events: none;
-
-      &:hover {
-        color: $color-success;
-      }
-    }
-  }
-
-  &__navigation {
-    position: absolute;
-    top: -100%;
-    left: 0;
-    height: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: 0.3s ease;
-    overflow: hidden;
-  }
-
-  &__navigation.active {
+    justify-content: center;
+    background: $color-bg;
+    padding: $spacer * 0.75 $spacer * 2;
+    position: sticky;
     top: 0;
-    height: 100vh;
-    background: $color-white;
-    width: 100%;
-    padding: 108px 24px 44px 24px;
-    transition: 0.3s ease;
-    z-index: 5;
+    z-index: 10;
 
-    .navigation__item {
-      position: relative;
-      font-weight: 700;
-      font-size: 32px;
-      line-height: 36px;
-      font-family: $font-family-gilroy-bold;
-      margin-top: 40px;
-
-      &:first-child {
-        margin-top: 0;
-        padding-top: 48px;
-        border-top: 1px solid $color-black;
-      }
-
-      &:last-child {
-        padding-bottom: 48px;
-        border-bottom: 1px solid $color-black;
-      }
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        max-width: $spacer * 140;
+        width: 100%;
     }
 
-    .navigation-action {
-      justify-content: space-between;
-      margin-left: 0;
-      padding-top: 40px;
-    }
-  }
-
-  .svg {
-    position: absolute;
-    top: -10px;
-  }
-
-  &__burger-wrap {
-    position: relative;
-    display: flex;
-    width: 48px;
-    height: 48px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 24px;
-    border: $color-white;
-    background-color: $color-white;
-    z-index: 9;
-
-    .svg-burger {
-      position: absolute;
-      top: 0;
-      right: 3px;
-    }
-  }
-
-  &__burger {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    padding: 0;
-    background: transparent;
-    width: 100%;
-    height: 100%;
-    outline: transparent;
-  }
-
-  &__burger-line {
-    display: flex;
-    width: 19.2px;
-    height: 2.4px;
-    background: #000;
-    border: none;
-    border-radius: 2px;
-    transition: all 0.3s 0.3s;
-    position: relative;
-
-    &::before, &::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: #000;
-      transition: all 0.3s 0.3s;
+    &__logo {
+        position: relative;
+        width: 100%;
+        z-index: 9;
     }
 
-    &::before {
-      top: 6px;
-      animation: anim-before-back 0.3s both;
+    .lang-arrow {
+        margin-left: $spacer * 0.5;
+        display: inline-block;
+        transition: 0.2s;
+
+        svg {
+            transform: translate3d(0, 0, 0);
+        }
     }
 
-    &::after {
-      bottom: 6px;
-      animation: anim-after-back 0.3s both;
+    .lang {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        &:hover .lang-en {
+            opacity: 1;
+            transition: 0.3s;
+            visibility: visible;
+            pointer-events: all;
+        }
+
+        &:hover .lang-arrow {
+            transform: rotate(-180deg);
+        }
+
+        .lang__item {
+            text-decoration: none;
+        }
+
+        .lang-en {
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            left: 0;
+            padding-top: $spacer;
+            opacity: 0;
+            transition: 0.3s;
+            visibility: hidden;
+            pointer-events: none;
+
+            &:hover {
+                color: $color-success;
+            }
+        }
     }
-  }
-
-  @media (min-width: $xs) {
-    padding: $spacer * 2 $spacer * 4;
-  }
-
-  @media (min-width: $md) {
 
     &__navigation {
-      flex-direction: row;
-      align-items: center;
-      position: relative;
-      top: initial;
-      left: initial;
-      height: initial;
-      width: initial;
-      padding: initial;
-      overflow: initial;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        height: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: 0.3s ease;
+        overflow: hidden;
+    }
+
+    &__navigation.active {
+        top: 0;
+        height: 100vh;
+        background: $color-white;
+        width: 100%;
+        padding: 108px 24px 44px 24px;
+        transition: 0.3s ease;
+        z-index: 5;
+
+        .navigation__item {
+            position: relative;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 36px;
+            font-family: $font-family-gilroy-bold;
+            margin-top: 40px;
+
+            &:first-child {
+                margin-top: 0;
+                padding-top: 48px;
+                border-top: 1px solid $color-black;
+            }
+
+            &:last-child {
+                padding-bottom: 48px;
+                border-bottom: 1px solid $color-black;
+            }
+        }
+
+        .navigation-action {
+            justify-content: space-between;
+            margin-left: 0;
+            padding-top: 40px;
+        }
+    }
+
+    .svg {
+        position: absolute;
+        top: -10px;
     }
 
     &__burger-wrap {
-      display: none;
-    }
-  }
+        position: relative;
+        display: flex;
+        width: 48px;
+        height: 48px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 24px;
+        border: $color-white;
+        background-color: $color-white;
+        z-index: 9;
 
-  @media (min-width: $lg) {
-    padding: $spacer * 2.5 $spacer * 10;
-  }
-
-  @media (min-width: $xl) {
-    &__navigation {
-      transform: translateX(182px);
-    }
-  }
-}
-
-.is__active {
-
-  .header__burger-line {
-    background: transparent;
-    transition: 0.3s;
-
-    &::before {
-      top: 0;
-      transition: all 0.3s;
-      animation: anim-before 0.3s 0.3s both;
+        .svg-burger {
+            position: absolute;
+            top: 0;
+            right: 3px;
+        }
     }
 
-    &::after {
-      bottom: 0;
-      transition: all 0.3s;
-      animation: anim-after 0.3s 0.3s both;
-    }
-  }
-
-  .svg-burger {
-    display: none;
-  }
-}
-
-.header-logo {
-  position: relative;
-  width: $spacer * 12;
-  z-index: 9;
-
-  &__logo {
-    width: 100%;
-  }
-
-  @media (min-width: $xs) {
-    width: $spacer * 17.5;
-  }
-
-  @media (min-width: $xl) {
-    transform: translateX(-100%);
-  }
-}
-//кнопка без ховера
-//.header-product-action {
-//  display: inline-flex;
-//  align-items: center;
-//  border-radius: $border-radius;
-//  padding: $spacer * 1.5 $spacer * 3;
-//  font-family: $font-family-open-sans;
-//  font-weight: bold;
-//  //font-size: $spacer * 2;
-//  font-size: 14px;
-//  line-height: $spacer * 3;
-//  white-space: nowrap;
-//  border: none;
-//  background: $color-primary;
-//  text-decoration: none;
-//  color: black;
-//
-//  &:hover {
-//    background: $color-black;
-//    color: #FFFFFF;
-//    border: none;
-//  }
-//}
-
-.header-input,
-.mobile-input {
-  $self: &;
-  position: relative;
-  height: 48px;
-  width: 48px;
-
-  &__input {
-    position: absolute;
-    height: 48px;
-    width: 48px;
-    right: 0;
-    border-radius: 24px;
-    border: $color-white;
-    background-color: $color-white;
-    transition: width 0.3s ease-in;
-
-    &::placeholder {
-      color: transparent;
+    &__burger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        padding: 0;
+        background: transparent;
+        width: 100%;
+        height: 100%;
+        outline: transparent;
     }
 
-    &:focus {
-      padding: 12px 50px 12px 16px;
-      width: 300px;
+    &__burger-line {
+        display: flex;
+        width: 19.2px;
+        height: 2.4px;
+        background: #000;
+        border: none;
+        border-radius: 2px;
+        transition: all 0.3s 0.3s;
+        position: relative;
 
-      &::placeholder {
-        color: $color-grey-1;
-      }
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            transition: all 0.3s 0.3s;
+        }
+
+        &::before {
+            top: 6px;
+            animation: anim-before-back 0.3s both;
+        }
+
+        &::after {
+            bottom: 6px;
+            animation: anim-after-back 0.3s both;
+        }
     }
-  }
 
-  &__icon {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    right: 13px;
-    top: 11px;
-    cursor: pointer;
-    border: none;
-    background: none;
-
-    @media (min-width: $md) {
-      right: 6px;
-    }
-  }
-
-  &__input.active {
-    padding: 12px 50px 12px 16px;
-    width: 300px;
-    transition: width 0.3s ease-in;
-
-    &::placeholder {
-      color: $color-grey-1;
-    }
-  }
-
-  .live-search {
-    display: none;
-    position: absolute;
-    z-index: 100;
-    background-color: $color-white;
-    border-radius: 8px;
-    width: 100%;
-    left: 0;
-    top: calc(100% + 9px);
-    overflow-y: auto;
     @media (min-width: $xs) {
-      width: 470px;
-      left: calc(100% - 470px);
+        padding: $spacer * 2 $spacer * 4;
     }
-
-    ul {
-      margin: $spacer * 0.5 0;
-    }
-
-    li {
-      padding: $spacer $spacer * 1;
-
-      &:hover {
-        background: $color-grey-3;
-      }
-    }
-
-    .text-m {
-      text-decoration: none;
-    }
-  }
-}
-
-.header-input {
-  display: none;
-  @media (min-width: $md) {
-    display: block;
-  }
-
-  @media (min-width: $sm) {
-
-    &__input {
-      &:focus {
-        width: 550px;
-      }
-    }
-
-    &__input.active {
-      width: 550px;
-    }
-  }
-
-  @media (min-width: $lg) {
-
-    &__input {
-      &:focus {
-        width: 700px;
-      }
-    }
-
-    &__input.active {
-      width: 700px;
-    }
-  }
-
-  @media (min-width: $xl) {
-
-    &__input {
-      &:focus {
-        width: 1000px;
-      }
-    }
-
-    &__input.active {
-      width: 1000px;
-    }
-  }
-
-  .live-search {
-    display: none;
 
     @media (min-width: $md) {
-      width: 550px;
-      left: calc(100% - 550px);
+        &__navigation {
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+            top: initial;
+            left: initial;
+            height: initial;
+            width: initial;
+            padding: initial;
+            overflow: initial;
+        }
+
+        &__burger-wrap {
+            display: none;
+        }
     }
 
     @media (min-width: $lg) {
-      width: 700px;
-      left: calc(100% - 700px);
+        padding: $spacer * 2.5 $spacer * 10;
     }
 
     @media (min-width: $xl) {
-      width: 1000px;
-      left: calc(100% - 1000px);
+        &__navigation {
+            transform: translateX(182px);
+        }
     }
-  }
 }
 
+.is__active {
+    .header__burger-line {
+        background: transparent;
+        transition: 0.3s;
+
+        &::before {
+            top: 0;
+            transition: all 0.3s;
+            animation: anim-before 0.3s 0.3s both;
+        }
+
+        &::after {
+            bottom: 0;
+            transition: all 0.3s;
+            animation: anim-after 0.3s 0.3s both;
+        }
+    }
+
+    .svg-burger {
+        display: none;
+    }
+}
+
+.header-logo {
+    position: relative;
+    width: $spacer * 12;
+    z-index: 9;
+
+    &__logo {
+        width: 100%;
+    }
+
+    @media (min-width: $xs) {
+        width: $spacer * 17.5;
+    }
+
+    @media (min-width: $xl) {
+        transform: translateX(-100%);
+    }
+}
+
+// .header-product-action {
+//     display: inline-flex;
+//     align-items: center;
+//     border-radius: $border-radius;
+//     padding: $spacer * 1.5 $spacer * 3;
+//     font-family: $font-family-open-sans;
+//     font-weight: bold;
+//     //font-size: $spacer * 2;
+//     font-size: 14px;
+//     line-height: $spacer * 3;
+//     white-space: nowrap;
+//     border: none;
+//     background: $color-primary;
+//     text-decoration: none;
+
+//      &:hover {
+//         background: $color-black;
+//         color: #FFFFFF;
+//         border: none;
+//     }
+// }
+
+.header-input,
+.mobile-input {
+    $self: &;
+    position: relative;
+    height: 48px;
+    width: 48px;
+
+    &__input {
+        position: absolute;
+        height: 48px;
+        width: 48px;
+        right: 0;
+        border-radius: 24px;
+        border: $color-white;
+        background-color: $color-white;
+        transition: width 0.3s ease-in;
+
+        &::placeholder {
+            color: transparent;
+        }
+
+        &:focus {
+            padding: 12px 50px 12px 16px;
+            width: 300px;
+
+            &::placeholder {
+                color: $color-grey-1;
+            }
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 13px;
+        top: 11px;
+        cursor: pointer;
+        border: none;
+        background: none;
+        margin: 0;
+        padding: 0px 6px;
+        box-shadow: none;
+
+        @media (min-width: $md) {
+            right: 6px;
+        }
+
+        svg {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    &__input.active {
+        padding: 12px 50px 12px 16px;
+        width: 300px;
+        transition: width 0.3s ease-in;
+
+        &::placeholder {
+            color: $color-grey-1;
+        }
+    }
+
+    .live-search {
+        display: none;
+        position: absolute;
+        z-index: 100;
+        background-color: $color-white;
+        border-radius: 8px;
+        width: 100%;
+        left: 0;
+        top: calc(100% + 9px);
+        overflow-y: auto;
+        @media (min-width: $xs) {
+            width: 470px;
+            left: calc(100% - 470px);
+        }
+
+        ul {
+            margin: $spacer * 0.5 0;
+        }
+
+        li {
+            padding: $spacer $spacer * 1;
+
+            &:hover {
+                background: $color-grey-3;
+            }
+        }
+
+        .text-m {
+            text-decoration: none;
+        }
+    }
+}
+
+.header-input {
+    display: none;
+    @media (min-width: $md) {
+        display: block;
+    }
+
+    @media (min-width: $sm) {
+        &__input {
+            &:focus {
+                width: 550px;
+            }
+        }
+
+        &__input.active {
+            width: 550px;
+        }
+    }
+
+    @media (min-width: $lg) {
+        &__input {
+            &:focus {
+                width: 700px;
+            }
+        }
+
+        &__input.active {
+            width: 700px;
+        }
+    }
+
+    @media (min-width: $xl) {
+        &__input {
+            &:focus {
+                width: 1000px;
+            }
+        }
+
+        &__input.active {
+            width: 1000px;
+        }
+    }
+
+    .live-search {
+        display: none;
+
+        @media (min-width: $md) {
+            width: 550px;
+            left: calc(100% - 550px);
+        }
+
+        @media (min-width: $lg) {
+            width: 700px;
+            left: calc(100% - 700px);
+        }
+
+        @media (min-width: $xl) {
+            width: 1000px;
+            left: calc(100% - 1000px);
+        }
+    }
+}
 
 .mobile-input {
-  border-radius: 24px;
-  margin-top: 10px;
+    border-radius: 24px;
+    margin-top: 10px;
 
-  width: 472px;
-  background-color: $color-white;
-  order: 3;
+    width: 472px;
+    background-color: $color-white;
+    order: 3;
 
-  @media (min-width: $xs) {
-    margin-top: 0;
-    order: 0;
-    margin-right: 24px;
-    width: 24px;
-    background-color: $color-bg;
-    margin-left: auto;
+    @media (min-width: $xs) {
+        margin-top: 0;
+        order: 0;
+        margin-right: 24px;
+        width: 24px;
+        background-color: $color-bg;
+        margin-left: auto;
+
+        .header-input__input {
+            border: 1px solid $color-white;
+            background-color: $color-bg;
+        }
+    }
 
     .header-input__input {
-      border: 1px solid $color-white;
-      background-color: $color-bg;
-    }
-  }
-
-  .header-input__input {
-    &:focus {
-      background-color: $color-white;
-    }
-  }
-
-  @media (min-width: $xs) {
-
-    .header-input__input.active {
-      width: 470px;
-      background-color: $color-white;
+        &:focus {
+            background-color: $color-white;
+        }
     }
 
-    .header-input__input:focus {
-      width: 470px;
-      background-color: $color-white;
-    }
-  }
-  @media (min-width: $xs) {
-
-    .header-input__input.active {
-      width: 400px;
-      background-color: $color-white;
-    }
-
-    .header-input__input:focus {
-      width: 400px;
-      background-color: $color-white;
-    }
-  }
-
-  @media (min-width: $sm) {
-
-    .header-input__input.active {
-      width: 470px;
-      background-color: $color-white;
-    }
-
-    .header-input__input:focus {
-      width: 470px;
-      background-color: $color-white;
-    }
-  }
-
-  .live-search {
     @media (min-width: $xs) {
-      width: 400px;
-      left: calc(100% - 400px);
-    }
-    @media (min-width: $sm) {
-      width: 470px;
-      left: calc(100% - 470px);
-    }
-  }
+        .header-input__input.active {
+            width: 470px;
+            background-color: $color-white;
+        }
 
-  @media (min-width: $md) {
-    display: none;
-  }
+        .header-input__input:focus {
+            width: 470px;
+            background-color: $color-white;
+        }
+    }
+    @media (min-width: $xs) {
+        .header-input__input.active {
+            width: 400px;
+            background-color: $color-white;
+        }
+
+        .header-input__input:focus {
+            width: 400px;
+            background-color: $color-white;
+        }
+    }
+
+    @media (min-width: $sm) {
+        .header-input__input.active {
+            width: 470px;
+            background-color: $color-white;
+        }
+
+        .header-input__input:focus {
+            width: 470px;
+            background-color: $color-white;
+        }
+    }
+
+    .live-search {
+        @media (min-width: $xs) {
+            width: 400px;
+            left: calc(100% - 400px);
+        }
+        @media (min-width: $sm) {
+            width: 470px;
+            left: calc(100% - 470px);
+        }
+    }
+
+    @media (min-width: $md) {
+        display: none;
+    }
 }
 
 // Animations for burger menu
 @keyframes anim-before-back {
-  0% {
-    transform: rotate(45deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+    0% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 @keyframes anim-after-back {
-  0% {
-    transform: rotate(-45deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+    0% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 @keyframes anim-before {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(45deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
 }
 
 @keyframes anim-after {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-45deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-45deg);
+    }
 }

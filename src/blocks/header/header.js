@@ -8,11 +8,12 @@
 	inputContainer.addEventListener('mouseout', () => toggler())
 
 
-// для кнопки меню в адаптиве
+	
+	// для кнопки меню в адаптиве
 
-const header = document.querySelector('.header');
-const navList = document.querySelector('.header__navigation');
-const burger = document.querySelector('.header__burger');
+	const header = document.querySelector('.header');
+	const navList = document.querySelector('.header__navigation');
+	const burger = document.querySelector('.header__burger');
 	burger.onclick = function () {
 		this.classList.toggle('is__active')
 		if (this.classList.contains('is__active')) {

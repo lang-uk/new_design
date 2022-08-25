@@ -1,115 +1,131 @@
 .footer {
-  display: flex;
-  justify-content: center;
-  background: $color-white;
-  padding: $spacer * 5 $spacer * 2 $spacer * 3;
-
-  &__container {
-    max-width: $spacer * 115;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__top {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__bottom {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  //&__nav{
-  //
-  //}
-  //
-  //&__contacts{
-  //
-  //}
-
-  &__logo {
-    width: 109px;
-  }
-
-  &__actions {
-    margin-bottom: $spacer * 5;
-  }
-
-  &__button {
-    width: $spacer * 5;
-    height: $spacer * 5;
-    border-radius: $border-radius;
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
+    background: $color-white;
+    padding: $spacer * 5 $spacer * 2 $spacer * 3;
 
-
-  @media (min-width: $xs) {
-    padding-left: $spacer * 4;
-    padding-right: $spacer * 4;
-  }
-
-  @media (min-width: $sm) {
-    padding-top: $spacer * 6;
-    padding-bottom: $spacer * 6;
+    &__container {
+        max-width: $spacer * 115;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
 
     &__top {
-      flex-direction: row;
-      justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__developer {
+        align-items: center;
+
+        .spacer__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a {
+            text-decoration: none;
+            transition: 0.3s;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+
+    //&__nav{
+    //
+    //}
+    //
+    //&__contacts{
+    //
+    //}
+
+    &__logo {
+        width: 109px;
     }
 
     &__actions {
-      margin-bottom: initial;
+        margin-bottom: $spacer * 5;
     }
-  }
 
-  @media (min-width: $md) {
-    padding-top: $spacer * 9;
-    padding-bottom: $spacer * 9;
-  }
+    &__button {
+        width: $spacer * 5;
+        height: $spacer * 5;
+        border-radius: $border-radius;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-  @media (min-width: $lg) {
-    padding-left: $spacer * 10;
-    padding-right: $spacer * 10;
-  }
+    @media (min-width: $xs) {
+        padding-left: $spacer * 4;
+        padding-right: $spacer * 4;
+    }
+
+    @media (min-width: $sm) {
+        padding-top: $spacer * 6;
+        padding-bottom: $spacer * 6;
+
+        &__top {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__actions {
+            margin-bottom: initial;
+        }
+    }
+
+    @media (min-width: $md) {
+        padding-top: $spacer * 9;
+        padding-bottom: $spacer * 9;
+    }
+
+    @media (min-width: $lg) {
+        padding-left: $spacer * 10;
+        padding-right: $spacer * 10;
+    }
 }
 
 .footer-nav {
-  display: flex;
-  margin-top: $spacer * 5;
-  margin-bottom: $spacer * 8;
-
-  &__item {
     display: flex;
-    flex-direction: column;
-
-    & + & {
-      margin-left: auto;
-    }
-  }
-
-  &__link {
-    font-family: $font-family-gilroy-regular;
-    font-size: $spacer * 1.875;
-    line-height: $spacer * 3;
-    font-weight: 600;
-  }
-
-  @media (min-width: $xs) {
+    margin-top: $spacer * 5;
+    margin-bottom: $spacer * 8;
 
     &__item {
+        display: flex;
+        flex-direction: column;
 
-      & + & {
-        margin-left: $spacer * 15;
-      }
+        & + & {
+            margin-left: auto;
+        }
     }
-  }
 
-  @media (min-width: $sm) {
-    margin-top: initial;
-    margin-bottom: initial;
-  }
+    &__link {
+        font-family: $font-family-gilroy-regular;
+        font-size: $spacer * 1.875;
+        line-height: $spacer * 3;
+        font-weight: 600;
+    }
+
+    @media (min-width: $xs) {
+        &__item {
+            & + & {
+                margin-left: $spacer * 15;
+            }
+        }
+    }
+
+    @media (min-width: $sm) {
+        margin-top: initial;
+        margin-bottom: initial;
+    }
 }

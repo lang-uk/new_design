@@ -77,14 +77,17 @@
       </header>
       <main class="main">
         <div class="main__container">
-          <div class="breadcrumbs"><a class="breadcrumbs__item" href="index.html">Головна</a><a class="breadcrumbs__item" href="services.html">Сервіси</a></div>
+          <ul class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a class="breadcrumbs__item" href="index.html" itemid="index.html" itemscope="" itemtype="http://schema.org/Thing" itemprop="item"><span itemprop="name">Головна</span></a><meta itemprop="position" content="1"></li>
+            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><span class="breadcrumbs__item" itemid="services.html" itemscope="" itemtype="http://schema.org/Thing" itemprop="item"><span itemprop="name">Сервіси</span></span><meta itemprop="position" content="2"></li>
+          </ul>
           <div class="intro">
             <div class="cols">
               <div class="cols__item cols__item--md">
                 <p class="h0 intro__title">Сервіси</p>
               </div>
               <div class="cols__item cols__item--md">
-                <div class="intro__image"><img src="./img/sp_1.png"/></div>
+                <div class="intro__image"><img src="./img/sp_1.svg"/></div>
               </div>
             </div><span class="intro__actions">
               <div class="intro__button"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -512,11 +515,11 @@
             </div>
           </div>
           <div class="footer__bottom"><span class="caption-1 caption-1--regular">©2021 Lang-uk</span>
-            <div class="spacer spacer--h spacer--size-1"><span class="spacer__item"><svg class="svg-icon svg-icon--stroke" width="25" height="13" viewBox="0 0 25 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="spacer spacer--h spacer--size-1 footer__developer"><span class="spacer__item"><svg class="svg-icon svg-icon--stroke" width="25" height="13" viewBox="0 0 25 13" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M24.3192 11.7166L18.5313 6.21051L12.4218 11.861L6.64232 6.35494L1.00303 12" stroke="black"/>
     <path d="M24.3211 6.50616L18.5317 1.00006L12.4237 6.65056L6.64278 1.14449L1.005 6.78955" stroke="black"/>
 </svg>
-</span><span class="spacer__item caption-1 caption-1--regular">Architected by</span><span class="spacer__item caption-1">Báchoo</span></div>
+</span><span class="spacer__item caption-1 caption-1--regular">Architected by</span><a class="spacer__item caption-1" href="https://bachoodesign.com">Báchoo</a></div>
           </div>
         </div>
       </footer>

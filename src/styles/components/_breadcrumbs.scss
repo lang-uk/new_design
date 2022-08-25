@@ -1,22 +1,39 @@
 .breadcrumbs {
-  display: flex;
-  margin-top: $spacer * 4;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    // margin-top: $spacer * 4;
+    margin-top: 20px;
+    margin-bottom: 40px;
 
-  &__item {
-    display: inline-block;
-    color: $color-grey-1;
-    text-decoration: none;
-    font-size: 14px;
+    &__item {
+        display: inline-block;
+        color: $color-grey-1;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 20px;
 
-    & + & {
-      &:before {
-        content: '/';
-        margin: 0 0.25rem;
-      }
+        & + & {
+            &:before {
+                content: "/";
+                margin: 0 0.25rem;
+            }
+        }
     }
-  }
 
-  @media (min-width: $sm) {
-    margin-top: $spacer * 8;
-  }
+    a {
+        display: inline-block;
+        transition: 0.3s;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    @media (min-width: $xs) {
+        // margin-top: $spacer * 8;
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
 }

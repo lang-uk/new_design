@@ -1,296 +1,297 @@
 .form-product {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: $spacer * 8 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: $spacer * 8 0;
 
-  .form-product__content {
-    margin-top: $spacer * 5;
+    .form-product__content {
+        margin-top: $spacer * 5;
 
-    .block__content {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin-bottom: $spacer * 6;
-      width: 100%;
+        .block__content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: $spacer * 6;
+            width: 100%;
 
-      @media (min-width: $xs) {
-        flex-direction: row;
-        .text-m {
-          width: 140px;
-        }
-      }
-
-      @media (min-width: $sm) {
-        margin-bottom: $spacer * 5;
-        .text-m {
-          width: 192px;
-        }
-      }
-
-      .input__block {
-        width: 100%;
-
-        @media (min-width: $xs) {
-          display: flex;
-          flex-direction: row;
-          margin-left: 2rem;
-          width: calc(100% - 140px);
-          max-width: 444px;
-        }
-
-        @media (min-width: $md) {
-          max-width: 544px;
-        }
-      }
-
-      .author {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .your-email {
-        @media (min-width: $xs) {
-          display: flex;
-          flex-direction: column;
-        }
-      }
-
-      .enter-field {
-        padding: $spacer * 1.5 $spacer * 2 $spacer * 4.25;
-      }
-    }
-
-    .input-radio {
-      margin-top: $spacer * 2;
-
-      @media (min-width: $xs) {
-        margin-top: 0;
-      }
-
-      input {
-        display: none;
-
-        &:checked {
-          & + label {
-            &:after {
-              opacity: 1;
+            @media (min-width: $xs) {
+                flex-direction: row;
+                .text-m {
+                    width: 140px;
+                }
             }
-          }
+
+            @media (min-width: $sm) {
+                margin-bottom: $spacer * 5;
+                .text-m {
+                    width: 192px;
+                }
+            }
+
+            .input__block {
+                width: 100%;
+
+                @media (min-width: $xs) {
+                    display: flex;
+                    flex-direction: row;
+                    margin-left: 2rem;
+                    width: calc(100% - 140px);
+                    max-width: 444px;
+                }
+
+                @media (min-width: $md) {
+                    max-width: 544px;
+                }
+            }
+
+            .author {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .your-email {
+                @media (min-width: $xs) {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            .enter-field {
+                padding: $spacer * 1.5 $spacer * 2 $spacer * 4.25;
+            }
         }
-      }
 
-      .caption-1 {
-        padding-right: 26px;
-        margin-right: 24px;
-        display: inline-block;
-        position: relative;
+        .input-radio {
+            margin-top: $spacer * 2;
 
-        &:before {
-          width: 20px;
-          height: 20px;
-          content: '';
-          position: absolute;
-          right: 0;
-          top: 50%;
-          background: #fff;
-          border: 1px solid $color-black;
-          margin-top: -10px;
+            @media (min-width: $xs) {
+                margin-top: 0;
+            }
+
+            input {
+                display: none;
+
+                &:checked {
+                    & + label {
+                        &:after {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            .caption-1 {
+                padding-right: 26px;
+                margin-right: 24px;
+                display: inline-block;
+                position: relative;
+                cursor: pointer;
+
+                &:before {
+                    width: 20px;
+                    height: 20px;
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    background: #fff;
+                    border: 1px solid $color-black;
+                    margin-top: -10px;
+                }
+
+                &:after {
+                    background: $color-black;
+                    right: 6px;
+                    top: 6px;
+                    transition: 0.3s;
+                    opacity: 0;
+                    width: 8px;
+                    height: 8px;
+                    content: "";
+                    position: absolute;
+                }
+            }
         }
 
-        &:after {
-          background: $color-black;
-          right: 6px;
-          top: 6px;
-          transition: .3s;
-          opacity: 0;
-          width: 8px;
-          height: 8px;
-          content: '';
-          position: absolute;
-        }
-      }
-    }
+        .text-m {
+            margin-bottom: $spacer * 2;
 
-    .text-m {
-      margin-bottom: $spacer * 2;
-
-      @media (min-width: $xs) {
-        margin-bottom: 0;
-      }
-    }
-
-    .input__item {
-      width: 100%;
-      font-family: $font-family-gilroy-regular;
-      font-size: 16px;
-      line-height: 24px;
-      color: $color-black;
-      background: inherit;
-      padding: $spacer * 1.5 $spacer * 2;
-      border: 1px solid $color-black;
-
-      &::placeholder {
-        font-family: $font-family-gilroy-regular;
-        font-size: 16px;
-        line-height: 24px;
-        color: $color-grey-1;
-      }
-    }
-
-    .select-css {
-      width: 100%;
-      background: inherit;
-      font-family: $font-family-gilroy-bold;
-      font-size: 16px;
-      line-height: 24px;
-      color: $color-black;
-      padding: $spacer * 1.5 $spacer * 2;
-      border: 1px solid $color-black;
-      box-shadow: none;
-
-      .select-css:hover,
-      .select-css:focus {
-        background-color: $color-grey-2;
-      }
-
-      & option {
-        font-family: $font-family-gilroy-regular;
-        font-size: 16px;
-        line-height: 24px;
-        color: $color-black;
-        background-color: #F4F1EF;
-      }
-    }
-
-    .input__author {
-      @media (min-width: $xs) {
-        display: flex;
-        flex-direction: row;
-      }
-
-      .text-m {
-        margin-bottom: $spacer * 1.5;
-
-        @media (min-width: $xs) {
-          margin-left: -10px;
-          width: 10px;
-          transform: translate(-14px, 14px);
-        }
-      }
-
-      .input-author {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-
-        .adding {
-          position: absolute;
-          top: 0.8rem;
-          right: 1rem;
-          @media (min-width: $sm) {
-            right: -2rem;
-          }
+            @media (min-width: $xs) {
+                margin-bottom: 0;
+            }
         }
 
         .input__item {
-          margin-bottom: $spacer;
-          width: 100%;
-        }
-      }
-    }
+            width: 100%;
+            font-family: $font-family-gilroy-regular;
+            font-size: 16px;
+            line-height: 24px;
+            color: $color-black;
+            background: inherit;
+            padding: $spacer * 1.5 $spacer * 2;
+            border: 1px solid $color-black;
 
-    .textarea {
-      width: 100%;
-      background: $color-bg-dark;
-      font-family: $font-family-gilroy-regular;
-      font-size: 16px;
-      line-height: 24px;
-      color: $color-black;
-      padding: $spacer * 1.5 $spacer * 2;
-      border: none;
-      border-radius: $spacer;
-    }
-
-    .tox {
-      width: 100%;
-      max-width: calc(100vw - 2 * 1rem);
-
-      @media (min-width: $xs) {
-        width: 100%;
-        max-width: 444px;
-      }
-
-      @media(min-width: 576px) and (max-width: 768px) {
-        max-width: calc(100vw - 2 * 1rem - 1rem - 140px);
-      }
-
-      @media (min-width: $md) {
-        max-width: 544px;
-      }
-    }
-
-    .deliverables {
-      .text-m {
-        margin-bottom: $spacer * 1.5;
-
-        @media (min-width: $xs) {
-          margin-left: -10px;
-          width: 10px;
-          transform: translate(-14px, 14px);
-        }
-      }
-
-      .block_deliverables {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-
-        .adding {
-          position: absolute;
-          top: 0.8rem;
-          right: 1rem;
-
-          @media (min-width: $sm) {
-            right: -2rem;
-          }
+            &::placeholder {
+                font-family: $font-family-gilroy-regular;
+                font-size: 16px;
+                line-height: 24px;
+                color: $color-grey-1;
+            }
         }
 
-        .input__item {
-          margin-bottom: $spacer;
-          width: 100%;
+        .select-css {
+            width: 100%;
+            background: inherit;
+            font-family: $font-family-gilroy-bold;
+            font-size: 16px;
+            line-height: 24px;
+            color: $color-black;
+            padding: $spacer * 1.5 $spacer * 2;
+            border: 1px solid $color-black;
+            box-shadow: none;
+
+            .select-css:hover,
+            .select-css:focus {
+                background-color: $color-grey-2;
+            }
+
+            & option {
+                font-family: $font-family-gilroy-regular;
+                font-size: 16px;
+                line-height: 24px;
+                color: $color-black;
+                background-color: #f4f1ef;
+            }
         }
-      }
-    }
 
-    .caption-2 {
-      margin-top: $spacer;
-    }
+        .input__author {
+            @media (min-width: $xs) {
+                display: flex;
+                flex-direction: row;
+            }
 
-    .block__button {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+            .text-m {
+                margin-bottom: $spacer * 1.5;
 
-      .button {
-        width: 14.875rem;
-        align-items: center;
-      }
-    }
+                @media (min-width: $xs) {
+                    margin-left: -10px;
+                    width: 10px;
+                    transform: translate(-14px, 14px);
+                }
+            }
 
-    .content__button {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      @media (min-width: $md) {
-        margin-left: 80px;
-      }
+            .input-author {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                .adding {
+                    position: absolute;
+                    top: 0.8rem;
+                    right: 1rem;
+                    @media (min-width: $sm) {
+                        right: -2rem;
+                    }
+                }
+
+                .input__item {
+                    margin-bottom: $spacer;
+                    width: 100%;
+                }
+            }
+        }
+
+        .textarea {
+            width: 100%;
+            background: $color-bg-dark;
+            font-family: $font-family-gilroy-regular;
+            font-size: 16px;
+            line-height: 24px;
+            color: $color-black;
+            padding: $spacer * 1.5 $spacer * 2;
+            border: none;
+            border-radius: $spacer;
+        }
+
+        .tox {
+            width: 100%;
+            max-width: calc(100vw - 2 * 1rem);
+
+            @media (min-width: $xs) {
+                width: 100%;
+                max-width: 444px;
+            }
+
+            @media (min-width: 576px) and (max-width: 768px) {
+                max-width: calc(100vw - 2 * 1rem - 1rem - 140px);
+            }
+
+            @media (min-width: $md) {
+                max-width: 544px;
+            }
+        }
+
+        .deliverables {
+            .text-m {
+                margin-bottom: $spacer * 1.5;
+
+                @media (min-width: $xs) {
+                    margin-left: -10px;
+                    width: 10px;
+                    transform: translate(-14px, 14px);
+                }
+            }
+
+            .block_deliverables {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+
+                .adding {
+                    position: absolute;
+                    top: 0.8rem;
+                    right: 1rem;
+
+                    @media (min-width: $sm) {
+                        right: -2rem;
+                    }
+                }
+
+                .input__item {
+                    margin-bottom: $spacer;
+                    width: 100%;
+                }
+            }
+        }
+
+        .caption-2 {
+            margin-top: $spacer;
+        }
+
+        .block__button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .button {
+                width: 14.875rem;
+                align-items: center;
+            }
+        }
+
+        .content__button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media (min-width: $md) {
+                margin-left: 80px;
+            }
+        }
     }
-  }
 }
 
 .tox.tox-silver-sink.tox-tinymce-aux {
-  display: none !important;
+    display: none !important;
 }

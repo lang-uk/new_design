@@ -1,25 +1,29 @@
 .products {
-  margin-top: $spacer * 8.25;
+    margin-top: $spacer * 8.25;
 
-  &__actions{
-    width: 100%;
-  }
-
-  @media (min-width: $sm) {
-    margin-top: $spacer * 13;
-  }
-
-  @media (min-width: $md) {
-    margin-top: $spacer * 20;
-  }
-
-  .spacer:last-child {
-    margin-top:  $spacer * 2;
-
-    @media (min-width: $md) {
-      margin-top: $spacer * 10;
+    &__actions {
+        width: 100%;
     }
 
-  }
+    @media (min-width: $sm) {
+        margin-top: $spacer * 13;
+    }
 
+    @media (min-width: $md) {
+        margin-top: $spacer * 20;
+    }
+
+    .spacer:last-child {
+        margin-top: $spacer * 2;
+
+        @media (min-width: $md) {
+            margin-top: $spacer * 10;
+        }
+    }
+
+    .underline-animation-reverse {
+        &:before {
+            background: $color-primary-dark;
+        }
+    }
 }

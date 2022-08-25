@@ -1,50 +1,57 @@
 .hide {
-      display: none;
-      padding: 0;
-      margin: 0;
-  @media (min-width: $xs) {
-    &--xs {
-      display: initial;
-      padding: initial;
-      margin: initial;
+    display: none;
+    padding: 0;
+    margin: 0;
+
+    @media (min-width: $xs) {
+        &--xs {
+            display: initial;
+            padding: initial;
+            margin: initial;
+        }
     }
-  }
-  @media (min-width: $sm) {
-    &--sm {
-      display: initial;
-      padding: initial;
-      margin: initial;
+
+    @media (min-width: $sm) {
+        &--sm {
+            display: initial;
+            padding: initial;
+            margin: initial;
+        }
     }
-  }
-  @media (min-width: $md) {
-    &--md {
-      display: initial;
-      padding: initial;
-      margin: initial;
+
+    @media (min-width: $md) {
+        &--md {
+            display: initial;
+            padding: initial;
+            margin: initial;
+        }
     }
-  }
-  @media (min-width: $lg) {
-    &--lg {
-      display: initial;
-      padding: initial;
-      margin: initial;
+
+    @media (min-width: $lg) {
+        &--lg {
+            display: initial;
+            padding: initial;
+            margin: initial;
+        }
     }
-  }
-  @media (min-width: $xl) {
-    &--xl {
-      display: initial;
-      padding: initial;
-      margin: initial;
+
+    @media (min-width: $xl) {
+        &--xl {
+            display: initial;
+            padding: initial;
+            margin: initial;
+        }
     }
-  }
 }
 
-.text-center{
-  text-align: center;
+.text-center {
+    text-align: center;
 }
-.text-right{
-  text-align: right;
+
+.text-right {
+    text-align: right;
 }
-.font-bold{
-  font-weight: bold;
+
+.font-bold {
+    font-weight: bold;
 }
