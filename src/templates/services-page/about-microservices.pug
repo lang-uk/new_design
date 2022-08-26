@@ -26,12 +26,12 @@
 							.list__mark
 								include ../../svg/triangle_1.svg
 							p.list__text Лематизація з використанням можливостей бібліотеки &nbsp;
-								a.link.link--primary-dark(href="#") nlp_uk
+								a.link.link--primary-dark(href="https://github.com/arysin/api_nlp_uk" target="_blank") nlp_uk
 						.list__item
 							.list__mark
 								include ../../svg/triangle_1.svg
 							p.list__text Розпізнавання мови з використанням можливостей бібліотеки &nbsp;
-								a.link.link--primary-dark(href="#") WILD
+								a.link.link--primary-dark(href="https://github.com/vseloved/wiki-lang-detect" target="_blank") WILD
 			.cols__item.cols__item--md-6
 				.about-microservices__example-item
 					p.h4 Приклад HTTP-запиту:
@@ -39,9 +39,12 @@
 					.copy.about-microservices__copy
 						code.copy__text $ curl -X POST -H "Content-Type: application/json" -d "{'text': 'Несе Галя'}" http://localhost:8080/lang-detect/wiki/detect [["uk",0.83333343],["bg",0.16666652]]
 						button.copy__button(type="button")
-							include ../../svg/copy-document.svg
+							.copy__icon
+								include ../../svg/copy-document.svg
+							.copy__icon.copy__icon--hover
+								include ../../svg/copy-document--green.svg
 				.about-microservices__example-item
 					p Docker-скрипти розробив &nbsp;
-						a.link.link--primary-dark(href="#") Михайло Чалий.
+						a.link.link--primary-dark(href="//chaliy.name/" target="_blank") Михайло Чалий.
 
 

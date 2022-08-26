@@ -1,11 +1,12 @@
 export const initCopyText = () => {
-	const container = document.getElementsByClassName('copy')
+	const copyLinks = document.querySelectorAll('copy')
 
-	Array.from(container).forEach(item => {
-		const btn = item.getElementsByClassName('copy__button')[0]
-		const text = item.getElementsByClassName('copy__text')[0]
-		btn&&btn.addEventListener('click', () => {
+	copyLinks&&copyLinks.length&&copyLinks.forEach((item) => {
+		const btn = item.querySelector('copy__button')
+		const text = item.querySelector('copy__text')
+
+		btn&&text&&btn.addEventListener('click', () => {
 			window.navigator.clipboard.writeText(text.textContent)
 		})
-	})
+	});
 }

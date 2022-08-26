@@ -1,20 +1,23 @@
 .contact__form
     .form__content
         p.h2 Зв’язатися з нами
-        form(action="" method="POST")
-            .contact-input.error
-                input.input__item(type="text" name="name" placeholder="Ім’я*" value="")
+        form.form(action="" method="POST")
+            //- input(type="hidden" name="action")
+            //- input(type="hidden" name="url")
+            input(type="hidden" name="redirect" value="contact-us-success.html")
+            
+            .contact-input
+                input.input__item.required(type="text" name="name" placeholder="Ім’я*" value="")
                 .caption-2.error__msg Ведіть ваше Ім'я
             .contact-input
                 .input__contact
                     .input__contact-item
                         input.input__item(type="tel" name="tel" placeholder="Телефон" value="")
-                    .input__contact-item.error
-                        input.input__item(type="email" name="email" placeholder="Email*" value="")
+                    .input__contact-item
+                        input.input__item.required(type="email" name="email" placeholder="Email*" value="")
                         .caption-2.error__msg Введіть ваш Email
-            .contact-input.error
+            .contact-input
                 p.text-m Повідомлення*
-                .input__area
-                    textarea.input__item-area( rows="6" name="message" placeholder="Ваше повідомлення" )
+                textarea.input__item-area.required( rows="6" name="message" placeholder="Ваше повідомлення" )
                 .caption-2.error__msg Додайте повідомлення
-            a.button.button-wave.button-wave--wave-white.spacer__item(href="contact-us-success.html" type="submit") Надіслати
+            button.button.button-wave.button-wave--wave-white.spacer__item(href="contact-us-success.html" type="submit") Надіслати

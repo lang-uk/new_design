@@ -1,145 +1,150 @@
 .contact__form {
-  @include flex-column;
-  background: $color-white;
-  margin-bottom: $spacer * 8;
-  margin-left: -16px;
-  margin-right: -16px;
-  width: calc(100% + 32px);
-  overflow: hidden;
-
-  @media (min-width: $sm) {
-    margin-left: -32px;
-    margin-right: -32px;
-    width: calc(100% + 64px);
-  }
-
-  @media (min-width: $md) {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-  }
-
-  .form__content {
-    width: 100%;
     @include flex-column;
-    padding: $spacer * 8 $spacer * 2;
+    background: $color-white;
+    margin-bottom: $spacer * 8;
+    margin-left: -16px;
+    margin-right: -16px;
+    width: calc(100% + 32px);
+    overflow: hidden;
 
     @media (min-width: $sm) {
-      padding: $spacer * 10 $spacer * 11.5 $spacer * 12.5;
+        margin-left: -32px;
+        margin-right: -32px;
+        width: calc(100% + 64px);
     }
 
     @media (min-width: $md) {
-      max-width: 34rem;
-      padding: 0;
-      margin: $spacer * 11.5 0 $spacer * 12.5;
-    }
-
-    .h2 {
-      margin-bottom: $spacer * 5;
-    }
-
-    form {
-      width: 100%;
-      @include flex-column;
-      align-content: center;
-
-      @media (min-width: $xs) {
-        padding: 0 $spacer * 4;
-      }
-
-      @media (min-width: $md) {
-        padding: 0;
-      }
-
-      .contact-input {
+        margin-left: 0;
+        margin-right: 0;
         width: 100%;
-        padding-bottom: $spacer * 3;
-      }
+    }
 
-      .error__msg {
-        display: none;
-      }
+    .form__content {
+        width: 100%;
+        @include flex-column;
+        padding: $spacer * 8 $spacer * 2;
 
-      .error {
-        .input__item {
-          border-bottom: 1px solid $color-error;
-
-          &::placeholder {
-            color: $color-error;
-          }
+        @media (min-width: $sm) {
+            padding: $spacer * 10 $spacer * 11.5 $spacer * 12.5;
         }
 
-        .text-m {
-          color: $color-error;
+        @media (min-width: $md) {
+            max-width: 34rem;
+            padding: 0;
+            margin: $spacer * 11.5 0 $spacer * 12.5;
+        }
+
+        .h2 {
+            margin-bottom: $spacer * 5;
+        }
+
+        form {
+            width: 100%;
+            @include flex-column;
+            align-content: center;
+
+            @media (min-width: $xs) {
+                padding: 0 $spacer * 4;
+            }
+
+            @media (min-width: $md) {
+                padding: 0;
+            }
+
+            .contact-input {
+                width: 100%;
+                // padding-bottom: $spacer * 3;
+                padding-bottom: 32px;
+            }
+
+            .error__msg {
+                display: none;
+            }
+
+            .error {
+                .input__item {
+                    border-bottom: 1px solid $color-error;
+
+                    &::placeholder {
+                        color: $color-error;
+                    }
+                }
+
+                .text-m {
+                    color: $color-error;
+                }
+
+                .input__item-area {
+                    border: 1px solid $color-error;
+                }
+
+                .error__msg {
+                    display: block;
+                    color: $color-error;
+                }
+            }
+        }
+
+        .input__contact {
+            width: 100%;
+
+            @media (min-width: 440px) {
+                display: flex;
+                flex-direction: row;
+                column-gap: 1rem;
+            }
+
+            .input__contact-item {
+                width: 100%;
+
+                &:first-child {
+                    @media (max-width: 440px) {
+                        margin-bottom: 32px;
+                    }
+                }
+            }
+        }
+
+        .input__item {
+            width: 100%;
+            height: 32px;
+            font-family: $font-family-gilroy-regular;
+            font-size: 16px;
+            line-height: 24px;
+            color: $color-black;
+            border: none;
+            padding-bottom: 7px;
+            border-bottom: 1px solid $color-black;
+
+            &::placeholder {
+                font-family: $font-family-gilroy-regular;
+                font-size: 16px;
+                line-height: 24px;
+                color: $color-black;
+            }
         }
 
         .input__item-area {
-          border: 1px solid $color-error;
+            width: 100%;
+            border: 1px solid $color-black;
+            padding: 12px 16px;
+            font-family: $font-family-gilroy-regular;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0;
+
+            &::placeholder {
+                color: $color-grey-1;
+            }
         }
 
-        .error__msg {
-          display: block;
-          color: $color-error;
+        .text-m {
+            align-self: flex-start;
+            padding-bottom: $spacer;
         }
-      }
-    }
 
-    .input__contact {
-      width: 100%;
-
-      @media (min-width: 440px) {
-        display: flex;
-        flex-direction: row;
-        column-gap: 1rem;
-      }
-
-      .input__contact-item {
-        width: 100%;
-
-        &:first-child {
-          margin-bottom: $spacer * 3;
+        .button {
+            width: 14.875rem;
         }
-      }
     }
-
-    .input__item {
-      width: 100%;
-      font-family: $font-family-gilroy-regular;
-      font-size: 16px;
-      line-height: 24px;
-      color: $color-black;
-      border: none;
-      border-bottom: 1px solid $color-black;
-
-      &::placeholder {
-        font-family: $font-family-gilroy-regular;
-        font-size: 16px;
-        line-height: 24px;
-        color: $color-black;
-      }
-    }
-
-    .input__item-area {
-      width: 100%;
-      border: 1px solid $color-black;
-
-      &::placeholder {
-        font-family: $font-family-gilroy-regular;
-        font-size: 16px;
-        line-height: 24px;
-        color: $color-grey-1;
-        padding: $spacer 0 0 $spacer * 2;
-      }
-    }
-
-    .text-m {
-      align-self: flex-start;
-      padding-bottom: $spacer;
-    }
-
-    .button {
-      width: 14.875rem;
-    }
-  }
 }
-
