@@ -1,0 +1,14 @@
+
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    background-color: $color-bg-dark;
+    z-index: 99;
+    visibility: hidden;
+    opacity: 0;
+}

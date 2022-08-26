@@ -3435,6 +3435,19 @@ img {
   max-width: 14.875rem;
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background-color: #EBE8E6;
+  z-index: 99;
+  visibility: hidden;
+  opacity: 0;
+}
+
 .cols {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -4447,11 +4460,11 @@ img {
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
   transition: 0.6s;
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   position: relative;
   overflow: hidden;
+  border: 0.125rem solid transparent;
   color: #FFFFFF;
   background: #000000;
 }

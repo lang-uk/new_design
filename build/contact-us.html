@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="css/main.css"/>
     <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
   </head>
-  <body>
+  <body data-barba="wrapper">
+    <div class="loader"></div>
     <div class="layout">
       <header class="header">
         <div class="header__container">
@@ -75,7 +76,7 @@
           </div>
         </div>
       </header>
-      <main class="main">
+      <main class="main" data-barba="container">
         <div class="main__container">
           <ul class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
             <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a class="breadcrumbs__item" href="index.html" itemid="index.html" itemscope="" itemtype="http://schema.org/Thing" itemprop="item"><span itemprop="name">Головна</span></a><meta itemprop="position" content="1"></li>

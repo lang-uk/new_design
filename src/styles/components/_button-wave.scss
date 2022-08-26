@@ -1,10 +1,12 @@
 .button-wave {
     $self: &;
     transition: 0.6s;
-    transform: translateY(0);
+    // transform: translateY(0);
+    transform: translate3d(0, 0, 0);
     position: relative;
     overflow: hidden;
     // border: 0.125rem solid $color-black;
+    border: 0.125rem solid transparent;
     color: $color-white;
     background: $color-black;
 

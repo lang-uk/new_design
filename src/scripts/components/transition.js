@@ -1,0 +1,62 @@
+import barba from '@barba/core';
+import gsap from 'gsap';
+import { initButtons } from './button-wave.js'
+import { initCopyText } from './copy-text.js'
+import { initCollapse } from './collapse.js'
+import { initSliders } from './slider.js'
+
+export const initTransition = () => {
+    const loader = document.querySelector('.loader');
+
+    loader&&gsap.set(loader, {
+        yPercent: 110,
+        autoAlpha: 1
+    });
+
+    function loaderIn() {
+        return gsap.fromTo(loader, 
+            {
+                yPercent: 110
+            },
+            { 
+                duration: 0.8,
+                yPercent: 0,
+                ease: 'Power4.inOut', 
+            });
+    }
+
+    function loaderAway() {
+        return gsap.to(loader, { 
+            duration: 0.8,
+            yPercent: -110,
+            ease: 'Power4.inOut'
+        });
+    }
+
+
+    barba.init({
+        transitions: [{
+            name: 'cover',
+            async leave() {
+                await loaderIn();
+            },
+            enter() {
+                loaderAway();
+            }
+        }]
+    });
+
+    barba.hooks.enter(() => {
+        window.scrollTo(0, 0);
+    });
+
+    barba.hooks.beforeEnter((data) => {
+        initButtons();
+
+        initCopyText();
+
+        initCollapse();
+
+        initSliders();
+    });
+}

@@ -2,12 +2,13 @@
 html(lang="ru")
 	include ../templates/head/head.pug
 
-	body
-		.layout
+	body(data-barba="wrapper")
+		.loader
 
+		.layout
 			include ../blocks/header/header.pug
 
-			main.main
+			main.main(data-barba="container")
 				.main__container
 					include ../templates/manifest/breadcrumbs.pug
 					include ../templates/manifest/intro-section.pug

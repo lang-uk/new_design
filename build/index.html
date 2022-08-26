@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="css/main.css"/>
     <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
   </head>
-  <body>
+  <body data-barba="wrapper">
+    <div class="loader"></div>
     <div class="layout">
       <header class="header">
         <div class="header__container">
@@ -75,7 +76,7 @@
           </div>
         </div>
       </header>
-      <main class="main">
+      <main class="main" data-barba="container">
         <div class="main__container">
           <div class="slogan">
             <div class="cols">
@@ -369,22 +370,6 @@
           </div>
         </div>
       </main>
-      <div class="cookies__pop-up">
-        <div class="cookies__content">
-          <div class="cookies__close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17.6562 6.34314L6.34254 17.6568" stroke="black" stroke-width="2" stroke-linecap="round"/>
-<path d="M17.6562 17.6569L6.34254 6.34315" stroke="black" stroke-width="2" stroke-linecap="round"/>
-</svg>
-
-          </div>
-          <div class="cookies__title">
-            <p class="text-m">Продовжуючи використовувати наш сайт, ви погоджуєтесь з використанням cookies</p>
-          </div>
-          <div class="cookies__button">
-            <button class="button button-wave spacer__item">Погодитися</button><a class="button button-wave button-wave--transparent spacer__item" href="#">Детальніше</a>
-          </div>
-        </div>
-      </div>
       <footer class="footer">
         <div class="footer__container">
           <div class="footer__top">

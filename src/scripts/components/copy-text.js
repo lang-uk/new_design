@@ -1,4 +1,4 @@
-(() => {
+export const initCopyText = () => {
 	const container = document.getElementsByClassName('copy')
 
 	Array.from(container).forEach(item => {
@@ -8,5 +8,4 @@
 			window.navigator.clipboard.writeText(text.textContent)
 		})
 	})
-})()
-
+}

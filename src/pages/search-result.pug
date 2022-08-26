@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 html(lang="ru")
-    include ../templates/head/head.pug
+	include ../templates/head/head.pug
 
-    body
-        .layout
+	body(data-barba="wrapper")
+		.loader
+		.layout
 
-            include ../blocks/header/header.pug
+		include ../blocks/header/header.pug
 
-            main.main
-                .main__container
-                    include ../templates/search/search-result.pug
+			main.main(data-barba="container")
+				.main__container
+					include ../templates/search/search-result.pug
 
-            include ../blocks/footer/footer.pug
+			include ../blocks/footer/footer.pug
 
-        script(type="module", src="./js/main.js")
+	script(type="module", src="./js/main.js")
