@@ -1,3 +1,4 @@
+import { initHeader } from './header.js'
 import { initButtons } from './button-wave.js'
 import { initCopyText } from './copy-text.js'
 import { initCollapse } from './collapse.js'
@@ -8,6 +9,9 @@ import { initTransition } from './transition.js'
 
 
 (function () {
+    
+    initHeader();
+
     initButtons();
 
     initCopyText();
@@ -21,4 +25,5 @@ import { initTransition } from './transition.js'
     initForms();
 
     initTransition();
+    
 })()

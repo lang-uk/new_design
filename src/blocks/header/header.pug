@@ -17,6 +17,7 @@ header.header
 					a.navigation__link.underline-animation(href="manifest.html") Маніфест
 				span.navigation__item
 					a.navigation__link.underline-animation(href="contact-us.html") Контакти
+			
 			.navigation-action
 				.navigation-action__item.lang
 					a(href="#").lang__item UA
@@ -26,41 +27,47 @@ header.header
 
 
 				.navigation-action__item
-					//span O
-					form.header-input(action="/search-result.html")
-						input.header-input__input(type="text" placeholder="Пошук")
-						.live-search
-							ul
-								li
-									a.text-m(href="") Доповнити продукт
-								li
-									a.text-m(href="") Доповнити продукт
-								li
-									a.text-m(href="") Доповнити продукт
-								li
-									a.text-m(href="") Доповнити продукт
-							.result-text
-								a(href="search-result.html")
-						button.header-input__icon(type="submit")
+
+					form.search-form(action="/search-result.html")
+						.search-form__wrapper
+							input.search-form__input(name="search" type="text" placeholder="Пошук" autocomplete="off")
+
+							.search-form__result
+								ul
+									li
+										a.text-m(href="search-result.html") Мікро <b>сервіс</b> NLP_UK
+									li
+										a.text-m(href="") Мікро<b>сервіс</b> NER
+									li
+										a.text-m(href="") Мікро<b>сервіс</b> розпізнавання мови (WILD)
+									li
+										a.text-m(href="") Веб-<b>сервіс</b> оцінки когерентності тексту
+						
+						button.search-form__button(type="submit")
 							include ../../svg/search.svg
+
+				
 				.navigation-action__item
 					a.button.button-wave.button-wave--produckt(href="add-product.html") Доповнити продукт
-		.mobile-input
-			input.header-input__input(type="text" placeholder="Пошук")
-			.live-search
-				ul
-					li
-						a.text-m(href="") Доповнити продукт
-					li
-						a.text-m(href="") Доповнити продукт
-					li
-						a.text-m(href="") Доповнити продукт
-					li
-						a.text-m(href="") Доповнити продукт
-				.result-text
-					a(href="search-result.html")
-			span.header-input__icon
+		
+		form.search-form.search-form--mobile(action="/search-result.html")
+			.search-form__wrapper
+				input.search-form__input(name="search" type="text" placeholder="Пошук" autocomplete="off")
+
+				.live-search.search-form__result
+					ul
+						li
+							a.text-m(href="search-result.html") Мікро <b>сервіс</b> NLP_UK
+						li
+							a.text-m(href="") Мікро<b>сервіс</b> NER
+						li
+							a.text-m(href="") Мікро<b>сервіс</b> розпізнавання мови (WILD)
+						li
+							a.text-m(href="") Веб-<b>сервіс</b> оцінки когерентності тексту
+			
+			button.search-form__button(type="submit")
 				include ../../svg/search.svg
+				
 		.header__burger-wrap
 			button.header__burger
 				span.header__burger-line

@@ -1,135 +1,139 @@
-.h0, .h1, .h2, .h3, .h4 {
-  font-family: $font-family-gilroy-bold;
-  margin: 0;
+.h0,
+.h1,
+.h2,
+.h3,
+.h4 {
+    font-family: $font-family-gilroy-bold;
+    margin: 0;
 }
 
 .h0 {
-  font-size: 60px;
-  line-height: 100%;
+    font-size: 60px;
+    line-height: 100%;
 
-  @media (min-width: $sm) {
-    font-size: 100px;
-  }
+    @media (min-width: $sm) {
+        font-size: 100px;
+    }
 
-  @media (min-width: $md) {
-    font-size: 112px;
-  }
+    @media (min-width: $md) {
+        font-size: 112px;
+    }
 }
 
 .h1 {
-  font-size: 40px;
-  line-height: 44px;
+    font-size: 40px;
+    line-height: 44px;
 
-  @media (min-width: $sm) {
-    font-size: 52px;
-    line-height: 60px;
-  }
+    @media (min-width: $sm) {
+        font-size: 52px;
+        line-height: 60px;
+    }
 
-  @media (min-width: $md) {
-    font-size: 72px;
-    line-height: 72px;
-  }
+    @media (min-width: $md) {
+        font-size: 72px;
+        line-height: 72px;
+    }
 }
 
 .h2 {
-  font-size: 32px;
-  line-height: 36px;
+    font-size: 32px;
+    line-height: 36px;
 
-  @media (min-width: $sm) {
-    font-size: 40px;
-    line-height: 48px;
-  }
+    @media (min-width: $sm) {
+        font-size: 40px;
+        line-height: 48px;
+    }
 
-  @media (min-width: $md) {
-    font-size: 44px;
-    line-height: 48px;
-  }
+    @media (min-width: $md) {
+        font-size: 44px;
+        line-height: 48px;
+    }
 }
 
 .h3 {
-  font-size: 24px;
-  line-height: 28px;
+    font-size: 24px;
+    line-height: 28px;
 
-  @media (min-width: $sm) {
-    font-size: 28px;
-    line-height: 36px;
-  }
+    @media (min-width: $sm) {
+        font-size: 28px;
+        line-height: 36px;
+    }
 
-  @media (min-width: $md) {
-    font-size: 32px;
-    line-height: 40px;
-  }
+    @media (min-width: $md) {
+        font-size: 32px;
+        line-height: 40px;
+    }
 }
 
 .h4 {
-  font-size: 20px;
-  line-height: 28px;
+    font-size: 20px;
+    line-height: 28px;
 
-  @media (min-width: $sm) {
-    font-size: 24px;
-    line-height: 36px;
-  }
+    @media (min-width: $sm) {
+        font-size: 24px;
+        line-height: 36px;
+    }
 }
 
 // Body type
 .text-l {
-  font-family: $font-family-gilroy-regular;
-  font-size: 20px;
-  line-height: 28px;
+    font-family: $font-family-gilroy-regular;
+    font-size: 20px;
+    line-height: 28px;
 
-  @media (min-width: $sm) {
-    line-height: 32px;
-  }
+    @media (min-width: $sm) {
+        line-height: 32px;
+    }
 
-  @media (min-width: $md) {
-    font-size: 24px;
-    line-height: 36px;
-  }
+    @media (min-width: $md) {
+        font-size: 24px;
+        line-height: 36px;
+    }
 }
 
 .text-m {
-  font-size: 16px;
-  line-height: 24px;
+    font-size: 16px;
+    line-height: 24px;
 
-  &--regular {
-    font-family: $font-family-gilroy-regular;
-  }
+    &--regular {
+        font-family: $font-family-gilroy-regular;
+    }
 
-  &--bold {
-    font-family: $font-family-gilroy-bold;
-  }
+    &--bold {
+        font-family: $font-family-gilroy-bold;
+    }
 }
 
 .caption-1 {
-  font-family: $font-family-gilroy-semibold;
-  font-size: 14px;
-  line-height: 20px;
+    font-family: $font-family-gilroy-semibold;
+    font-size: 14px;
+    line-height: 20px;
 
-  &--regular{
-    font-family: $font-family-gilroy-regular;
-  }
+    &--regular {
+        font-family: $font-family-gilroy-regular;
+    }
 }
 
 .caption-2 {
-  font-family: $font-family-gilroy-regular;
-  font-size: 12px;
-  line-height: 16px;
+    font-family: $font-family-gilroy-regular;
+    font-size: 12px;
+    line-height: 16px;
 }
 
 .code-text {
-  font-family: $font-family-ibm-pm-regular;
-  font-size: 16px;
-  line-height: 24px;
+    font-family: $font-family-ibm-pm-regular;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .citation-text {
-  font-family: $font-family-ibm-pm-regular;
-  font-size: 14px;
-  line-height: 20px;
+    font-family: $font-family-ibm-pm-regular;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .link-text {
-  font-family: $font-family-gilroy-semibold;
-  font-size: 14px;
-  line-height: 24px;
+    font-family: $font-family-gilroy-semibold;
+    font-size: 14px;
+    line-height: 24px;
 }
