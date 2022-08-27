@@ -32,10 +32,52 @@
 							.service-button__icon
 								include ../../svg/service-arrow.svg
 
+		.service.accordion
+			.service-head.accordion-toggle
+				.service-head__title Мікросервіс NLP_UK
+				.service-head__toggle
+					.service-button
+						.service-button__text(data-open="Показати більше" data-close="Показати менше")
+						.service-button__icon
+							include ../../svg/service-arrow.svg
+
+			.service-body.accordion-body
+				.service-wrapper
+					.service-content
+						<p><a href="https://github.com/arysin/api_nlp_uk">Мікросервіс на основі бібліотеки NLP_UK</a> дає змогу виконати лематизацію вхідного тексту за словником <a href="https://github.com/brown-uk/dict_uk">dict_uk</a> , яка також включає його токенізацію. Мікросервіс розробив&nbsp; <a href="https://github.com/arysin/">Андрій Рисін</a></p>
+					
+					.service-wrapper__toggle
+						.service-button.accordion-toggle
+							.service-button__text(data-open="Показати більше" data-close="Показати менше")
+							.service-button__icon
+								include ../../svg/service-arrow.svg
+
+
+		.service.accordion
+			.service-head.accordion-toggle
+				.service-head__title Мікросервіс розпізнавання мови (WILD)
+				.service-head__toggle
+					.service-button
+						.service-button__text(data-open="Показати більше" data-close="Показати менше")
+						.service-button__icon
+							include ../../svg/service-arrow.svg
+
+			.service-body.accordion-body
+				.service-wrapper
+					.service-content
+						<p><a href="https://github.com/vseloved/wiki-lang-detect">Мікросервіс WILD</a> дозволяє розпізнати мову вхідного тексту з переліку 156 мов, які використовуються в інтернеті, за допомогою бібліотеки&nbsp;wiki-lang-detect.</p>
+					
+					.service-wrapper__toggle
+						.service-button.accordion-toggle
+							.service-button__text(data-open="Показати більше" data-close="Показати менше")
+							.service-button__icon
+								include ../../svg/service-arrow.svg
+
+
 
 		.service.accordion(data-open)
 			.service-head.accordion-toggle
-				.service-head__title Мікросервіс NER
+				.service-head__title Веб-сервіс оцінки когерентності тексту
 				.service-head__toggle
 					.service-button
 						.service-button__text(data-open="Показати більше" data-close="Показати менше")
