@@ -33,7 +33,7 @@ import { sleep, stringToHash } from '../utils.js'
 export class Collapse {
     constructor(selector = '[data-collapse]', config = {}) {
         this.config = {
-            transitionDuration: 200,
+            transitionDuration: 400,
             saveState: false,
             ...config
         }

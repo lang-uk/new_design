@@ -2,9 +2,9 @@ import barba from '@barba/core';
 import gsap from 'gsap';
 import { initButtons } from './button-wave.js'
 import { initCopyText } from './copy-text.js'
-import { initCollapse } from './collapse.js'
 import { initSliders } from './slider.js'
 import { initCookie } from './cookie.js'
+import { initAccordions } from './accordions.js'
 import { initForms } from './form.js'
 
 export const initTransition = () => {
@@ -57,12 +57,12 @@ export const initTransition = () => {
 
         initCopyText();
 
-        initCollapse();
-
         initSliders();
 
         initCookie();
 
         initForms();
+
+        initAccordions();
     });
 }

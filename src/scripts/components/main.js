@@ -1,10 +1,10 @@
 import { initHeader } from './header.js'
 import { initButtons } from './button-wave.js'
 import { initCopyText } from './copy-text.js'
-import { initCollapse } from './collapse.js'
 import { initSliders } from './slider.js'
 import { initCookie } from './cookie.js'
 import { initForms } from './form.js'
+import { initAccordions } from './accordions.js'
 import { initTransition } from './transition.js'
 
 
@@ -16,13 +16,13 @@ import { initTransition } from './transition.js'
 
     initCopyText();
 
-    initCollapse();
-
     initSliders();
 
     initCookie();
 
     initForms();
+
+    initAccordions();
 
     initTransition();
     
