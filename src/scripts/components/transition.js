@@ -6,6 +6,7 @@ import { initSliders } from './slider.js'
 import { initCookie } from './cookie.js'
 import { initAccordions } from './accordions.js'
 import { initForms } from './form.js'
+import { initAddProduct } from './add-product.js'
 
 export const initTransition = () => {
     const loader = document.querySelector('.loader');
@@ -64,5 +65,7 @@ export const initTransition = () => {
         initForms();
 
         initAccordions();
+
+        initAddProduct();
     });
 }

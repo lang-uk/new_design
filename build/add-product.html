@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="css/main.css"/>
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
   </head>
   <body data-barba="wrapper">
     <div class="loader"></div>
@@ -81,138 +80,100 @@
       </header>
       <main class="main" data-barba="container">
         <div class="main__container">
-          <div class="form-product">
-            <p class="h1">Додати продукт</p>
-            <div class="form-product__content">
-              <form action="" method="POST">
-                <div class="block__content">
-                  <p class="text-m">Мова заповнення форми</p>
-                  <div class="input__block">
-                    <div class="input-radio">
-                      <input class="custom-radio" id="radio1" type="radio" name="lang" value="1"/>
-                      <label class="caption-1" for="radio1">Укр</label>
-                      <input class="custom-radio" id="radio2" type="radio" name="lang" value="1"/>
-                      <label class="caption-1" for="radio2">Укр/En</label>
-                    </div>
+          <div class="add-product">
+            <h1 class="h1 add-product-title">Додати продукт</h1>
+            <form class="add-product-form">
+              <div class="form-row">
+                <div class="form-row__title text-m">Мова заповнення форми</div>
+                <div class="form-row__content">
+                  <div class="radio-items">
+                    <label class="radio-item">
+                      <input type="radio" name="lang" value="Укр" checked="checked"/><span class="radio-item__text">Укр</span><span class="radio-item__square"></span>
+                    </label>
+                    <label class="radio-item">
+                      <input type="radio" name="lang" value="Укр/En"/><span class="radio-item__text">Укр/En</span><span class="radio-item__square"></span>
+                    </label>
                   </div>
                 </div>
-                <div class="block__content name-product">
-                  <p class="text-m">Назва продукту*</p>
-                  <div class="input__block name-product">
-                    <input class="input__item" type="text" name="name-product" placeholder="Введіть назву продукту" value=""/>
+              </div>
+              <div class="form-row">
+                <div class="form-row__title text-m">Назва продукту*</div>
+                <div class="form-row__content">
+                  <input class="input" type="text" name="name-product" placeholder="Введіть назву продукту"/>
+                  <div class="error-message">Enter product name</div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-row__title text-m">Категорія*</div>
+                <div class="form-row__content">
+                  <select class="select-css" name="select">
+                    <option disabled="disabled" selected="Виберіть категорію">Виберіть категорію</option>
+                    <option value="Бібліотеки">Бібліотеки</option>
+                    <option value="Ґазетіри">Ґазетіри</option>
+                    <option value="Сервіси">Сервіси</option>
+                    <option value="Моделі">Моделі</option>
+                    <option value="Словники">Словники</option>
+                    <option value="Корпуси">Корпуси</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-row__title text-m">Текстовий опис*</div>
+                <div class="form-row__content">
+                  <textarea class="editor" name="description"></textarea>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-row__title text-m">Ліцензія*</div>
+                <div class="form-row__content">
+                  <select class="select-css" name="select">
+                    <option disabled="disabled" selected="Виберіть категорію">Виберіть ліцензію</option>
+                    <option value="Ліцензія 1">Ліцензія 1</option>
+                    <option value="Ліцензія 2">Ліцензія 2</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-row__title text-m">Приклад цитування</div>
+                <div class="form-row__content">
+                  <textarea class="textarea textarea--quote" name="quote" placeholder="Приклад цитування (опціонально)"></textarea>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-row__title text-m">Чи потрібен хостинг*</div>
+                <div class="form-row__content">
+                  <div class="radio-items">
+                    <label class="radio-item">
+                      <input type="radio" name="hosting" value="Так" checked="checked"/><span class="radio-item__text">Так</span><span class="radio-item__square"></span>
+                    </label>
+                    <label class="radio-item">
+                      <input type="radio" name="hosting" value="Ні"/><span class="radio-item__text">Ні</span><span class="radio-item__square"></span>
+                    </label>
                   </div>
                 </div>
-                <div class="block__content">
-                  <p class="text-m">Категорія*</p>
-                  <div class="input__block category">
-                    <select class="select-css" name="select">
-                      <option disabled="disabled" selected="Виберіть категорію">Виберіть категорію</option>
-                      <option value="value1">Бібліотеки</option>
-                      <option value="value2">Ґазетіри</option>
-                      <option value="value3">Сервіси</option>
-                      <option value="value4">Моделі</option>
-                      <option value="value5">Словники</option>
-                      <option value="value6">Корпуси</option>
-                    </select>
-                  </div>
+              </div>
+              <div class="form-row">
+                <div class="form-row__title text-m">Посилання на деліверабли </div>
+                <div class="form-row__content">
+                  <textarea class="textarea" name="dev-description1" placeholder="Опис"></textarea>
+                  <textarea class="textarea" name="dev-description2" placeholder="Add a description"></textarea>
                 </div>
-                <div class="block__content">
-                  <p class="text-m">Текстовий опис*</p>
-                  <div class="input__block description">
-                    <textarea class="editor"></textarea>
-                  </div>
+              </div>
+              <div class="form-row">
+                <div class="form-row__title text-m">Email для зворотнього зв’язку *</div>
+                <div class="form-row__content">
+                  <input class="input" type="email" name="email" placeholder="Your email"/>
+                  <div class="note">Ми не будемо оприлюднювати ваш імейл на сайті</div>
                 </div>
-                <div class="block__content">
-                  <p class="text-m">Автор(-и) *</p>
-                  <div class="input__block author">
-                    <div class="input__author">
-                      <p class="text-m">1.</p>
-                      <div class="input-author">
-                        <input class="input__item" type="text" name="name-author" placeholder="Ім’я автора" value=""/>
-                        <input class="input__item" type="email" name="email" placeholder="Посилання на соц. мережі (опціонально)" value=""/>
-                        <div class="adding"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 4V20" stroke="black" stroke-width="2" stroke-linecap="round"/>
-<path d="M20 12L4 12" stroke="black" stroke-width="2" stroke-linecap="round"/>
-</svg>
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="input__author">
-                      <p class="text-m">2.</p>
-                      <div class="input-author">
-                        <input class="input__item" type="text" name="name-author" placeholder="Ім’я автора" value=""/>
-                        <input class="input__item" type="email" name="email" placeholder="Посилання на соц. мережі (опціонально)" value=""/>
-                        <div class="adding"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17.6562 6.34314L6.34254 17.6568" stroke="black" stroke-width="2" stroke-linecap="round"/>
-<path d="M17.6562 17.6569L6.34254 6.34315" stroke="black" stroke-width="2" stroke-linecap="round"/>
-</svg>
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              </div>
+              <div class="form-row">
+                <div class="form-row__button">
+                  <button class="button button-wave button-wave--wave-white" type="submit">Відправити</button>
                 </div>
-                <div class="block__content">
-                  <p class="text-m">Ліцензія*</p>
-                  <div class="input__block license">
-                    <select class="select-css" name="select">
-                      <option selected="Вибрати ліцензію">Вибрати ліцензію</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="block__content">
-                  <p class="text-m">Приклад цитування</p>
-                  <div class="input__block quote">
-                    <textarea class="textarea" name="quote" placeholder="Приклад цитування (опціонально)"></textarea>
-                  </div>
-                </div>
-                <div class="block__content">
-                  <p class="text-m">Чи потрібен хостинг*</p>
-                  <div class="input__block hosting">
-                    <div class="input-radio">
-                      <input id="radio3" type="radio" name="hosting" value="2"/>
-                      <label class="caption-1" for="radio3">Так</label>
-                      <input id="radio4" type="radio" name="hosting" value="2"/>
-                      <label class="caption-1" for="radio4">Ні</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="block__content">
-                  <p class="text-m">Посилання на деліверабли</p>
-                  <div class="input__block deliverables">
-                    <p class="text-m">1.</p>
-                    <div class="block_deliverables">
-                      <div class="input-deliverables">
-                        <input class="input__item" type="text" name="optional" placeholder="Опціонально" value=""/>
-                        <input class="input__item enter-field" name="description" placeholder="Опис"/>
-                        <input class="input__item enter-field" name="description" placeholder="Add a description"/>
-                      </div>
-                      <div class="adding"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 4V20" stroke="black" stroke-width="2" stroke-linecap="round"/>
-<path d="M20 12L4 12" stroke="black" stroke-width="2" stroke-linecap="round"/>
-</svg>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="block__content">
-                  <p class="text-m">Email для зворотнього зв’язку *</p>
-                  <div class="input__block your-email">
-                    <input class="input__item" type="email" name="your-email" placeholder="Your email" value=""/>
-                    <p class="caption-2">Ми не будемо оприлюднювати ваш імейл на сайті</p>
-                  </div>
-                </div>
-                <div class="block__content content__button">
-                  <div class="block__button">
-                    <button class="button button-wave button-wave--wave-white spacer__item" type="submit">Відправити</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <script>tinymce.init({selector: 'textarea.editor'});</script>
+              </div>
+            </form>
           </div>
+          <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
         </div>
       </main>
       <footer class="footer">

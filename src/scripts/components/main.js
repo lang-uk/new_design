@@ -5,6 +5,7 @@ import { initSliders } from './slider.js'
 import { initCookie } from './cookie.js'
 import { initForms } from './form.js'
 import { initAccordions } from './accordions.js'
+import { initAddProduct } from './add-product.js'
 import { initTransition } from './transition.js'
 
 
@@ -23,6 +24,8 @@ import { initTransition } from './transition.js'
     initForms();
 
     initAccordions();
+
+    initAddProduct();
 
     initTransition();
     
