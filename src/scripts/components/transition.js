@@ -7,6 +7,7 @@ import { initCookie } from './cookie.js'
 import { initAccordions } from './accordions.js'
 import { initForms } from './form.js'
 import { initAddProduct } from './add-product.js'
+import { initTinyMce } from './add-product.js'
 
 export const initTransition = () => {
     const loader = document.querySelector('.loader');
@@ -36,8 +37,20 @@ export const initTransition = () => {
         });
     }
 
+    function loadScripts(container) {
+        return new Promise((resolve, reject) => {            
+            let script = document.createElement('script');
+            script.src = 'https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js';
+            container.appendChild(script);
+
+            script.onload = initTinyMce;
+            resolve();
+        })
+    }
+
 
     barba.init({
+        sync: true,
         transitions: [{
             name: 'cover',
             async leave() {
@@ -46,7 +59,13 @@ export const initTransition = () => {
             enter() {
                 loaderAway();
             }
-        }]
+        }],
+        views: [{
+            namespace: 'add-product',
+            async beforeEnter({ next }) {
+                await loadScripts(next.container);
+            }, 
+        }],
     });
 
     barba.hooks.enter(() => {

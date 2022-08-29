@@ -41,6 +41,22 @@
                 textarea.editor(name="description")
 
         .form-row
+            .form-row__title.text-m Автор(-и) *
+            .form-row__content
+                .copy-block
+                    .copy-block-content
+                        .copy-block-content__count
+                        input.input(type="text" name="authors[]" placeholder="Ім’я автора")
+                        .chip
+                            //- .chip-list
+                            input.chip-input(type="text" name="authors_links[]" placeholder="Посилання на соц. мережі (опціонально)")
+                        .copy-block-content__button
+                            .copy-block-content__icon.copy-block-content__add
+                                include ../../svg/form-plus.svg
+
+
+
+        .form-row
             .form-row__title.text-m Ліцензія*
             .form-row__content
                 select(name='select' class="select-css")
@@ -71,6 +87,16 @@
         .form-row
             .form-row__title.text-m Посилання на деліверабли 
             .form-row__content
+                .copy-block
+                    .copy-block-content
+                        .copy-block-content__count
+                        input.input(type="text" name="links[]" placeholder="Опціонально")
+                        .copy-block-content__button
+                            .copy-block-content__icon.copy-block-content__add
+                                include ../../svg/form-plus.svg
+
+
+                
                 textarea.textarea(name="dev-description1" placeholder="Опис")
                 textarea.textarea(name="dev-description2" placeholder="Add a description")
         
@@ -83,8 +109,6 @@
         .form-row
             .form-row__button
                 button.button.button-wave.button-wave--wave-white(type='submit') Відправити
-
-script(src='https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js', referrerpolicy='origin')
 
 
 //- .form-product

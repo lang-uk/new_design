@@ -78,7 +78,7 @@
           </div>
         </div>
       </header>
-      <main class="main" data-barba="container">
+      <main class="main" data-barba="container" data-barba-namespace="add-product">
         <div class="main__container">
           <div class="add-product">
             <h1 class="h1 add-product-title">Додати продукт</h1>
@@ -124,6 +124,27 @@
                 </div>
               </div>
               <div class="form-row">
+                <div class="form-row__title text-m">Автор(-и) *</div>
+                <div class="form-row__content">
+                  <div class="copy-block">
+                    <div class="copy-block-content">
+                      <div class="copy-block-content__count"></div>
+                      <input class="input" type="text" name="authors[]" placeholder="Ім’я автора"/>
+                      <div class="chip">
+                        <input class="chip-input" type="text" name="authors_links[]" placeholder="Посилання на соц. мережі (опціонально)"/>
+                      </div>
+                      <div class="copy-block-content__button">
+                        <div class="copy-block-content__icon copy-block-content__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 4V20" stroke-width="2" stroke-linecap="round"/>
+<path d="M20 12L4 12" stroke-width="2" stroke-linecap="round"/>
+</svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
                 <div class="form-row__title text-m">Ліцензія*</div>
                 <div class="form-row__content">
                   <select class="select-css" name="select">
@@ -155,6 +176,19 @@
               <div class="form-row">
                 <div class="form-row__title text-m">Посилання на деліверабли </div>
                 <div class="form-row__content">
+                  <div class="copy-block">
+                    <div class="copy-block-content">
+                      <div class="copy-block-content__count"></div>
+                      <input class="input" type="text" name="links[]" placeholder="Опціонально"/>
+                      <div class="copy-block-content__button">
+                        <div class="copy-block-content__icon copy-block-content__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 4V20" stroke-width="2" stroke-linecap="round"/>
+<path d="M20 12L4 12" stroke-width="2" stroke-linecap="round"/>
+</svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <textarea class="textarea" name="dev-description1" placeholder="Опис"></textarea>
                   <textarea class="textarea" name="dev-description2" placeholder="Add a description"></textarea>
                 </div>
@@ -173,7 +207,6 @@
               </div>
             </form>
           </div>
-          <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
         </div>
       </main>
       <footer class="footer">

@@ -1469,6 +1469,163 @@ h4 {
   -o-transition: 0.2s;
   transition: 0.2s;
 }
+.add-product-form .copy-block {
+  display: block;
+  position: relative;
+  width: 100%;
+  counter-reset: copycount;
+}
+.add-product-form .copy-block:not(:last-child) {
+  margin-bottom: 32px;
+}
+.add-product-form .copy-block-content {
+  position: relative;
+  counter-increment: copycount;
+}
+.add-product-form .copy-block-content:not(:last-child) {
+  margin-bottom: 32px;
+}
+.add-product-form .copy-block-content__count {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  margin-bottom: 8px;
+}
+@media (min-width: 767px) {
+  .add-product-form .copy-block-content__count {
+    position: absolute;
+    width: auto;
+    top: 12px;
+    left: -28px;
+  }
+}
+.add-product-form .copy-block-content__count::before {
+  content: counter(copycount) ".";
+}
+.add-product-form .copy-block-content__button {
+  position: absolute;
+  z-index: 0;
+  top: 44px;
+  right: 12px;
+}
+@media (min-width: 767px) {
+  .add-product-form .copy-block-content__button {
+    position: absolute;
+    top: 12px;
+    right: -28px;
+  }
+}
+.add-product-form .copy-block-content__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.add-product-form .copy-block-content__icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: #000000;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  pointer-events: none;
+}
+.add-product-form .copy-block-content__icon.copy-block-content__remove {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.add-product-form .copy-block-content__icon:hover svg {
+  stroke: #63ba84;
+}
+.add-product-form .copy-block-content .input {
+  position: relative;
+  z-index: 3;
+}
+.add-product-form .copy-block-content .input + .input, .add-product-form .copy-block-content .input + .chip, .add-product-form .copy-block-content .input + .textarea {
+  margin-top: 16px;
+}
+.add-product-form .chip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 48px;
+  font-family: "Gilroy-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  padding: 4px 8px;
+  border: 1px solid #000000;
+  background: #f4f1ef;
+}
+.add-product-form .chip-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 4px 8px;
+  cursor: pointer;
+  padding: 4px 4px;
+  background: #ebe8e6;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.add-product-form .chip-list-item:hover {
+  background: #dddddd;
+}
+.add-product-form .chip-list-item__text {
+  padding-right: 6px;
+}
+.add-product-form .chip-list-item__button {
+  width: 12px;
+  height: 12px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.82812 3.17157L3.17127 8.82842' stroke='black' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M8.82812 8.82843L3.17127 3.17158' stroke='black' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+}
+.add-product-form .chip-input {
+  width: 100px;
+  height: 36px;
+  margin: 4px 8px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100px;
+          flex: 1 0 100px;
+  font: inherit;
+  background: rgba(0, 0, 0, 0);
+  color: currentColor;
+  border: none;
+  outline: none;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  vertical-align: bottom;
+  text-align: inherit;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
 
 .tox-tinymce {
   border-radius: 0 !important;
