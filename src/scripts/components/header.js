@@ -31,7 +31,6 @@ export const initHeader = () => {
 		});
 	})
 
-
 	
 	// для кнопки меню в адаптиве
 	const body = document.querySelector('body');
@@ -52,4 +51,23 @@ export const initHeader = () => {
 		}
 	})
 
+}
+
+export const initHeaderTransition = () => {
+	const searchForms = document.querySelectorAll('.search-form')
+
+	searchForms&&searchForms.length&&searchForms.forEach((form) => {
+		form.classList.remove('active')
+	})
+
+	
+	// для кнопки меню в адаптиве
+	const body = document.querySelector('body');
+	const header = document.querySelector('.header');
+	const navList = document.querySelector('.header__navigation');
+	const burger = document.querySelector('.header__burger');
+
+	burger.classList.remove('is__active')
+	navList.classList.remove('active')
+	gsap.set([body], { 'overflow': '' })
 }

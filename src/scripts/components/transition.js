@@ -8,6 +8,8 @@ import { initAccordions } from './accordions.js'
 import { initForms } from './form.js'
 import { initAddProduct } from './add-product.js'
 import { initTinyMce } from './add-product.js'
+import { initHeaderTransition } from './header.js'
+
 
 export const initTransition = () => {
     const loader = document.querySelector('.loader');
@@ -73,6 +75,8 @@ export const initTransition = () => {
     });
 
     barba.hooks.beforeEnter((data) => {
+        initHeaderTransition();
+        
         initButtons();
 
         initCopyText();
