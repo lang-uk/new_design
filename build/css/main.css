@@ -1504,7 +1504,7 @@ h4 {
 }
 .add-product-form .copy-block-content__button {
   position: absolute;
-  z-index: 0;
+  z-index: 4;
   top: 44px;
   right: 12px;
 }
