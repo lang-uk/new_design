@@ -25,11 +25,24 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+  height: 340px;
   min-height: 172px;
   border: 1px solid $color-black;
   padding: $spacer * 2;
   position: relative;
   transition: 0.4s all ease;
+
+  @media (min-width: $sm) {
+    height: 372px;
+  }
+
+  &__home {
+  height: 172px;
+    @media (min-width: $sm) {
+      height: 216px;
+    }
+
+}
 
   &__top{
     display: flex;
@@ -44,6 +57,7 @@
 
   &__text{
     margin-top: $spacer * 3;
+
   }
 
   &--text{

@@ -6566,6 +6566,7 @@ h4 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  height: 340px;
   min-height: 172px;
   border: 1px solid #000000;
   padding: 1rem;
@@ -6573,6 +6574,19 @@ h4 {
   -webkit-transition: 0.4s all ease;
   -o-transition: 0.4s all ease;
   transition: 0.4s all ease;
+}
+@media (min-width: 767px) {
+  .card {
+    height: 372px;
+  }
+}
+.card__home {
+  height: 172px;
+}
+@media (min-width: 767px) {
+  .card__home {
+    height: 216px;
+  }
 }
 .card__top {
   display: -webkit-box;
