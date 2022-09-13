@@ -1735,7 +1735,6 @@ h4 {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  cursor: pointer;
   padding-bottom: 16px;
 }
 .services-list .service-head__title {
@@ -2669,11 +2668,12 @@ h4 {
   -webkit-column-gap: 1rem;
      -moz-column-gap: 1rem;
           column-gap: 1rem;
+  row-gap: 2.5rem;
 }
 @media (min-width: 576px) {
   .team__helper .team__items {
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 1.5rem;
+    row-gap: 2.5rem;
   }
 }
 @media (min-width: 1120px) {
@@ -3887,6 +3887,7 @@ h4 {
   -webkit-transform: translate(-50%, 0%);
       -ms-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
+  z-index: 10;
 }
 @media (min-width: 576px) {
   .cookies__pop-up {
@@ -8959,13 +8960,12 @@ body::-webkit-scrollbar-thumb {
           align-items: center;
   top: 0;
   left: 0;
-  opacity: 0;
   -webkit-transition: 0.8s;
   -o-transition: 0.8s;
   transition: 0.8s;
-  -webkit-transform: scale(0.8);
-      -ms-transform: scale(0.8);
-          transform: scale(0.8);
+  -webkit-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+          transform: scale(0.5);
 }
 .become-part .svg-hover img {
   width: 100%;
@@ -8974,7 +8974,6 @@ body::-webkit-scrollbar-thumb {
      object-fit: cover;
 }
 .become-part:hover .svg-hover {
-  opacity: 1;
   -webkit-transition: 0.8s;
   -o-transition: 0.8s;
   transition: 0.8s;

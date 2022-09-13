@@ -19,17 +19,18 @@
     .team__items {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 1rem;
+        column-gap: $spacer * 2;
+        row-gap: $spacer * 5;
 
         @media (min-width: $xs) {
             grid-template-columns: repeat(3, 1fr);
-            row-gap: 1.5rem;
+            row-gap: $spacer * 5;
         }
 
         @media (min-width: 1120px) {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            column-gap: 2rem;
+            column-gap: $spacer * 4;
             row-gap: 2.15rem;
         }
 

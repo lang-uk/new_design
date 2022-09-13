@@ -120,9 +120,9 @@
         align-items: center;
         top: 0;
         left: 0;
-        opacity: 0;
+
         transition: 0.8s;
-        transform: scale(0.8);
+        transform: scale(0.5);
 
         img {
             width: 100%;
@@ -132,7 +132,6 @@
     }
 
     &:hover .svg-hover {
-        opacity: 1;
         transition: 0.8s;
         transform: scale(1);
         @media (max-width: 767px) {
