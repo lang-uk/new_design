@@ -12,6 +12,10 @@ export const initHeader = () => {
 			form.classList.add('active')
 		})
 
+		form.addEventListener('mouseleave', () => {
+			if (!input.value.length) form.classList.remove('active')
+		})
+
 		document.addEventListener('click', e => {
 			if (e.target !== form && !form.contains(e.target)) {
 				form.classList.remove('active')

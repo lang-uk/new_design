@@ -1723,6 +1723,13 @@ h4 {
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
 }
+.services-list .service.active .service-info {
+  opacity: 1;
+  pointer-events: auto;
+}
+.services-list .service.active .service-content > * {
+  opacity: 1;
+}
 .services-list .service-head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1815,9 +1822,9 @@ h4 {
 }
 .services-list .service-body {
   overflow: hidden;
-  -webkit-transition: height 0.4s ease-in-out;
-  -o-transition: height 0.4s ease-in-out;
-  transition: height 0.4s ease-in-out;
+  -webkit-transition: height 0.3s ease-in-out;
+  -o-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
 }
 .services-list .service-wrapper {
   display: -webkit-box;
@@ -1864,6 +1871,12 @@ h4 {
   .services-list .service-content {
     width: calc(58.33333% - 16px);
   }
+}
+.services-list .service-content > *:not(:first-child) {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 .services-list .service-content h1,
 .services-list .service-content h2,
@@ -1983,6 +1996,14 @@ h4 {
   font-size: 14px;
   line-height: 20px;
 }
+.services-list .service-content .copy {
+  position: relative;
+}
+.services-list .service-content .copy .copy__button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
 .services-list .service-info {
   width: 100%;
   -webkit-box-ordinal-group: 0;
@@ -1991,6 +2012,11 @@ h4 {
   background: #ffffff;
   padding: 32px 20px 40px;
   margin-bottom: 24px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 @media (min-width: 767px) {
   .services-list .service-info {
@@ -3829,9 +3855,8 @@ h4 {
   }
 }
 .article .table {
-  width: calc(100% + 16px);
-  margin-right: -16px;
-  overflow: hidden;
+  width: 100%;
+  overflow: auto;
   margin-bottom: 4rem;
 }
 @media (min-width: 767px) {
@@ -8854,9 +8879,9 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 2.75rem;
-  margin-bottom: 4.375rem;
+  margin: 2.75rem auto 4.375rem;
   width: 100%;
+  max-width: 736px;
 }
 @media (min-width: 767px) {
   .enter {
@@ -8868,6 +8893,10 @@ body::-webkit-scrollbar-thumb {
   .enter {
     margin-top: 7rem;
   }
+}
+.enter img {
+  width: 100%;
+  max-width: 100%;
 }
 
 .become-part {
@@ -8984,8 +9013,6 @@ body::-webkit-scrollbar-thumb {
 .become-part .svg-hover img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .become-part:hover .svg-hover {
   -webkit-transition: 0.8s;

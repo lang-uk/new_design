@@ -1,18 +1,22 @@
 .enter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: $spacer * 5.5;
-  margin-bottom: $spacer * 8.75;
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: $spacer * 5.5 auto $spacer * 8.75;
+    width: 100%;
+    max-width: 736px;
 
-  @media (min-width: $sm) {
-    width: initial;
-    margin-top: $spacer * 8;
-  }
+    @media (min-width: $sm) {
+        width: initial;
+        margin-top: $spacer * 8;
+    }
 
-  @media (min-width: $md) {
+    @media (min-width: $md) {
+        margin-top: $spacer * 14;
+    }
 
-    margin-top: $spacer * 14;
-  }
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
 }
