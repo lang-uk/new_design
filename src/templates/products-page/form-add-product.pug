@@ -20,14 +20,14 @@
         .form-row
             .form-row__title.text-m Назва продукту*
             .form-row__content
-                input.input(type='text' name='name-product' placeholder="Введіть назву продукту")
+                input.input.required(type='text' name='name-product' placeholder="Введіть назву продукту")
                 .error-message Enter product name
 
         .form-row
             .form-row__title.text-m Категорія*
             .form-row__content
-                select(name='select' class="select-css")
-                    option( disabled selected='Виберіть категорію') Виберіть категорію
+                select.required(name='select' class="select-css")
+                    option(disabled selected value="0") Виберіть категорію
                     option(value='Бібліотеки') Бібліотеки
                     option(value='Ґазетіри') Ґазетіри
                     option(value='Сервіси') Сервіси
@@ -38,7 +38,7 @@
         .form-row
             .form-row__title.text-m Текстовий опис*
             .form-row__content
-                textarea.editor(name="description")
+                textarea.required.editor(name="description")
 
         .form-row
             .form-row__title.text-m Автор(-и) *
@@ -46,7 +46,7 @@
                 .copy-block
                     .copy-block-content
                         .copy-block-content__count
-                        input.input(type="text" name="authors[]" placeholder="Ім’я автора")
+                        input.required.input(type="text" name="authors[]" placeholder="Ім’я автора")
                         .chip
                             //- .chip-list
                             input.chip-input(type="text" name="authors_links[]" placeholder="Посилання на соц. мережі (опціонально)")
@@ -54,21 +54,18 @@
                             .copy-block-content__icon.copy-block-content__add
                                 include ../../svg/form-plus.svg
 
-
-
         .form-row
             .form-row__title.text-m Ліцензія*
             .form-row__content
-                select(name='select' class="select-css")
-                    option( disabled selected='Виберіть категорію') Виберіть ліцензію
+                select.required(name='select' class="select-css")
+                    option(disabled selected  value="0") Виберіть ліцензію
                     option(value='Ліцензія 1') Ліцензія 1
                     option(value='Ліцензія 2') Ліцензія 2
         
         .form-row
             .form-row__title.text-m Приклад цитування
             .form-row__content
-                textarea.textarea.textarea--quote(name="quote" placeholder="Приклад цитування (опціонально)")
-        
+                textarea.textarea.textarea--quote(name="quote" placeholder="Приклад цитування (опціонально)")     
 
         .form-row
             .form-row__title.text-m Чи потрібен хостинг*
@@ -103,7 +100,7 @@
         .form-row
             .form-row__title.text-m Email для зворотнього зв’язку *
             .form-row__content
-                input.input(type="email" name="email" placeholder="Your email")
+                input.input.required(type="email" name="email" placeholder="Your email")
                 .note Ми не будемо оприлюднювати ваш імейл на сайті
 
         .form-row

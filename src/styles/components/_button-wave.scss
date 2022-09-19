@@ -1,6 +1,6 @@
 .button-wave {
     $self: &;
-    transition: 0.6s;
+    transition: .3s;
     // transform: translateY(0);
     transform: translate3d(0, 0, 0);
     position: relative;
@@ -23,8 +23,10 @@
     }
 
     &:hover {
-        color: $color-black;
-        border-color: $color-primary;
+        // color: $color-black;
+        color: $color-white;
+        background: $color-primary;
+        // border-color: $color-primary;
     }
 
     &--wave-white {
@@ -67,10 +69,12 @@
         }
 
         &:hover {
-            color: $color-white;
-            fill: $color-white;
+            // color: $color-white;
+            // fill: $color-white;
             // background: $color-black;
             border: none;
+            color: $color-white;
+            background: $color-black;
         }
     }
 

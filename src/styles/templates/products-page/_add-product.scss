@@ -95,6 +95,19 @@
                 width: calc(100% - 193px - 32px);
             }
         }
+
+        &.error {
+            .input,
+            .nice-select,
+            .tox.tox-tinymce {
+                border: 1px solid $color-error;
+            }
+
+            .error-message {
+                display: block;
+                color: $color-error;
+            }
+        }
     }
 
     .input {
@@ -312,6 +325,17 @@
                 & + .chip,
                 & + .textarea {
                     margin-top: 16px;
+                }
+            }
+
+            &.error {
+                .input {
+                    border: 1px solid $color-error;
+                }
+    
+                .error-message {
+                    display: block;
+                    color: $color-error;
                 }
             }
         }

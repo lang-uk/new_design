@@ -99,15 +99,15 @@
               <div class="form-row">
                 <div class="form-row__title text-m">Назва продукту*</div>
                 <div class="form-row__content">
-                  <input class="input" type="text" name="name-product" placeholder="Введіть назву продукту"/>
+                  <input class="input required" type="text" name="name-product" placeholder="Введіть назву продукту"/>
                   <div class="error-message">Enter product name</div>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-row__title text-m">Категорія*</div>
                 <div class="form-row__content">
-                  <select class="select-css" name="select">
-                    <option disabled="disabled" selected="Виберіть категорію">Виберіть категорію</option>
+                  <select class="required select-css" name="select">
+                    <option disabled="disabled" selected="selected" value="0">Виберіть категорію</option>
                     <option value="Бібліотеки">Бібліотеки</option>
                     <option value="Ґазетіри">Ґазетіри</option>
                     <option value="Сервіси">Сервіси</option>
@@ -120,7 +120,7 @@
               <div class="form-row">
                 <div class="form-row__title text-m">Текстовий опис*</div>
                 <div class="form-row__content">
-                  <textarea class="editor" name="description"></textarea>
+                  <textarea class="required editor" name="description"></textarea>
                 </div>
               </div>
               <div class="form-row">
@@ -129,7 +129,7 @@
                   <div class="copy-block">
                     <div class="copy-block-content">
                       <div class="copy-block-content__count"></div>
-                      <input class="input" type="text" name="authors[]" placeholder="Ім’я автора"/>
+                      <input class="required input" type="text" name="authors[]" placeholder="Ім’я автора"/>
                       <div class="chip">
                         <input class="chip-input" type="text" name="authors_links[]" placeholder="Посилання на соц. мережі (опціонально)"/>
                       </div>
@@ -147,8 +147,8 @@
               <div class="form-row">
                 <div class="form-row__title text-m">Ліцензія*</div>
                 <div class="form-row__content">
-                  <select class="select-css" name="select">
-                    <option disabled="disabled" selected="Виберіть категорію">Виберіть ліцензію</option>
+                  <select class="required select-css" name="select">
+                    <option disabled="disabled" selected="selected" value="0">Виберіть ліцензію</option>
                     <option value="Ліцензія 1">Ліцензія 1</option>
                     <option value="Ліцензія 2">Ліцензія 2</option>
                   </select>
@@ -157,7 +157,7 @@
               <div class="form-row">
                 <div class="form-row__title text-m">Приклад цитування</div>
                 <div class="form-row__content">
-                  <textarea class="textarea textarea--quote" name="quote" placeholder="Приклад цитування (опціонально)"></textarea>
+                  <textarea class="textarea textarea--quote" name="quote" placeholder="Приклад цитування (опціонально)">    </textarea>
                 </div>
               </div>
               <div class="form-row">
@@ -196,7 +196,7 @@
               <div class="form-row">
                 <div class="form-row__title text-m">Email для зворотнього зв’язку *</div>
                 <div class="form-row__content">
-                  <input class="input" type="email" name="email" placeholder="Your email"/>
+                  <input class="input required" type="email" name="email" placeholder="Your email"/>
                   <div class="note">Ми не будемо оприлюднювати ваш імейл на сайті</div>
                 </div>
               </div>

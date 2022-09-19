@@ -68,6 +68,7 @@ export const initAddProduct = () => {
                 let chips = extra.querySelectorAll('.chip-list-item');
 
                 extra.classList.add('extra');
+                extra.classList.remove('error');
                 extraButton.classList.remove('copy-block-content__add')
                 extraButton.classList.add('copy-block-content__remove')
 
@@ -100,14 +101,80 @@ export const initAddProduct = () => {
         });
 
 
-
+        
         // form submit
         form.addEventListener('submit', (e) => {
             e.preventDefault();
+
+            const formRequiredFields = form.querySelectorAll('.required');
     
-            // console.log('submit');
+            let countErrors = 0;
+
+            formRequiredFields.forEach((field) => {
+                if (field.name == 'email') {
+                    if (!validateEmail(field.value)) {
+                        field.closest('.form-row').classList.add('error');
+                        countErrors++;
+                    } else {
+                        field.closest('.form-row').classList.remove('error');
+                    }
+                } else if (field.tagName.toLowerCase() == 'input' && !field.parentNode.classList.contains('copy-block-content')
+                            || field.tagName.toLowerCase() == 'textarea' && !field.classList.contains('editor')) {
+                    if (field.value.length < 1) {
+                        field.closest('.form-row').classList.add('error');
+                        countErrors++;
+                    } else {
+                        field.closest('.form-row').classList.remove('error');
+                    }
+                } else if (field.tagName.toLowerCase() == 'select') {
+                    if (field.options[field.selectedIndex].value == 0) {
+                        field.closest('.form-row').classList.add('error');
+                        countErrors++;
+                    } else {
+                        field.closest('.form-row').classList.remove('error');
+                    }
+                } else if (field.tagName.toLowerCase() == 'input' && field.parentNode.classList.contains('copy-block-content')) {
+                    if (field.value.length < 1) {
+                        field.closest('.copy-block-content').classList.add('error');
+                        countErrors++;
+                    } else {
+                        field.closest('.copy-block-content').classList.remove('error');
+                    }
+                }
+            });
+
+            if (countErrors > 0) {
+                formRequiredFields.forEach((field) => {
+                    field.addEventListener('focus', function(e) {
+                        if (field.closest('.form-row')) field.closest('.form-row').classList.remove('error')
+                        if (field.closest('.copy-block-content')) field.closest('.copy-block-content').classList.remove('error');
+                    })
+                });                
+
+                return false;
+            }
+
+            formAjaxSend(form);
         });
     }
+}
+
+function formAjaxSend(form) {
+    const redirect = form.querySelector('input[name="redirect"]');
+	const formFields = form.querySelectorAll('input:not([type="hidden"], [type="radio"], [type="checkbox"])');
+
+	formFields.forEach((field) => {
+		field.value = '';
+	});
+
+    if (redirect) {
+        window.location.pathname = redirect.value
+    }
+}
+
+function validateEmail(email) {
+	let re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	return re.test(email);
 }
 
 export const initTinyMce = () => {

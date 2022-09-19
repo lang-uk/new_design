@@ -1294,6 +1294,15 @@ h4 {
     width: calc(100% - 193px - 32px);
   }
 }
+.add-product-form .form-row.error .input,
+.add-product-form .form-row.error .nice-select,
+.add-product-form .form-row.error .tox.tox-tinymce {
+  border: 1px solid #ff3f3f;
+}
+.add-product-form .form-row.error .error-message {
+  display: block;
+  color: #ff3f3f;
+}
 .add-product-form .input {
   width: 100%;
   height: 48px;
@@ -1554,6 +1563,13 @@ h4 {
 }
 .add-product-form .copy-block-content .input + .input, .add-product-form .copy-block-content .input + .chip, .add-product-form .copy-block-content .input + .textarea {
   margin-top: 16px;
+}
+.add-product-form .copy-block-content.error .input {
+  border: 1px solid #ff3f3f;
+}
+.add-product-form .copy-block-content.error .error-message {
+  display: block;
+  color: #ff3f3f;
 }
 .add-product-form .chip {
   display: -webkit-box;
@@ -5123,9 +5139,9 @@ h4 {
 }
 
 .button-wave {
-  -webkit-transition: 0.6s;
-  -o-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   position: relative;
@@ -5153,8 +5169,8 @@ h4 {
   background: #aae2bf;
 }
 .button-wave:hover {
-  color: #000000;
-  border-color: #aae2bf;
+  color: #ffffff;
+  background: #aae2bf;
 }
 .button-wave--wave-white .button-wave__wave {
   background: #ffffff;
@@ -5189,9 +5205,9 @@ h4 {
   background: #000000;
 }
 .button-wave--produckt:hover {
-  color: #ffffff;
-  fill: #ffffff;
   border: none;
+  color: #ffffff;
+  background: #000000;
 }
 .button-wave__wave.button-wave__restore {
   position: absolute;
@@ -8916,6 +8932,7 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 4rem;
 }
 .become-part__container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8953,12 +8970,22 @@ body::-webkit-scrollbar-thumb {
 }
 @media (min-width: 767px) {
   .become-part {
-    background: url("../img/grid.svg") no-repeat;
-    background-size: cover;
     padding: 72px calc(8.5% + 2px);
     height: auto;
     margin-top: 10rem;
     margin-bottom: 6.5rem;
+  }
+  .become-part::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: url("../img/grid.svg") no-repeat;
+    background-size: cover;
   }
   .become-part__container {
     height: 100%;
@@ -9003,6 +9030,7 @@ body::-webkit-scrollbar-thumb {
           align-items: center;
   top: 0;
   left: 0;
+  z-index: 0;
   -webkit-transition: 0.8s;
   -o-transition: 0.8s;
   transition: 0.8s;

@@ -9,6 +9,7 @@
     margin-bottom: $spacer * 8;
 
     &__container {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -51,8 +52,7 @@
 
     @media (min-width: $sm) {
         // background: url("../img/grid.png") no-repeat center;
-        background: url("../img/grid.svg") no-repeat;
-        background-size: cover;
+       
         // padding: 8.5%;
         padding: calc(72px) calc(8.5% + 2px);
         // TODO: fix height
@@ -60,6 +60,19 @@
         height: auto;
         margin-top: $spacer * 20;
         margin-bottom: $spacer * 13;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            background: url("../img/grid.svg") no-repeat;
+            background-size: cover;
+        }
 
         &__container {
             height: 100%;
@@ -120,6 +133,7 @@
         align-items: center;
         top: 0;
         left: 0;
+        z-index: 0;
 
         transition: 0.8s;
         transform: scale(0.5);
