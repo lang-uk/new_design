@@ -1357,8 +1357,8 @@ h4 {
   background: #f4f1ef;
   resize: none;
 }
-.add-product-form .textarea + .textarea {
-  margin-top: 16px;
+.add-product-form .textarea:not(:last-child) {
+  margin-bottom: 16px;
 }
 .add-product-form .textarea::-webkit-input-placeholder {
   font-family: "Gilroy-Regular", sans-serif;
