@@ -1,56 +1,51 @@
 .button-wave {
     $self: &;
-    transition: .8s;
-    // transform: translateY(0);
     transform: translate3d(0, 0, 0);
     position: relative;
+    z-index: 3;
     overflow: hidden;
-    // border: 0.125rem solid $color-black;
-    border: 0.125rem solid transparent;
+    clip-path: inset(0px 0px 0px round 60px);
     color: $color-white;
     background: $color-black;
+    transition: color .4s;
 
-    &__wave {
-        transform: scale(0);
-        height: 0.125rem;
-        width: 0.125rem;
-        border-radius: 50%;
-        clip-path: circle(50% at 50% 50%);
-        transition: 0.8s transform;
+    &::before {
+        content: '';
+        display: block;
         position: absolute;
         z-index: -1;
         background: $color-primary;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 200%;
+        border-radius: 40%;
+        transform: translate3d(0, 55%, 0);
+        transition: transform .4s ease-in 0s, border-radius .5s ease .1s;
     }
 
     &:hover {
-         color: $color-black;
-        //color: $color-white;
-        box-shadow: inset 0 -3em 0 0 $color-primary;
-        background: $color-primary;
-        border-color: $color-primary;
+        color: $color-black;
+
+        &::before {
+            transform: translate3d(0, 0%, 0);
+            border-radius: 10%;
+        }
     }
 
-    //&--wave-white {
-    //    #{$self}__wave {
-    //        background: $color-white;
-    //    }
-    //}
 
     &--transparent {
         color: $color-black;
         background: transparent;
-        border: 0.125rem solid $color-black;
+        border: 2px solid $color-black;
 
-        //#{$self}__wave {
-        //    background: $color-black;
-        //}
+        &::before {
+            background: $color-black;
+        }
 
         &:hover {
-            box-shadow: inset 0 -3em 0 0 $color-black;
             color: $color-white;
             fill: $color-white;
-            border-color: $color-black;
-            background: $color-black;
         }
     }
 
@@ -71,26 +66,12 @@
             background: $color-black;
         }
 
-        &:hover {
-            // color: $color-white;
-            // fill: $color-white;
-            // background: $color-black;
-            box-shadow: inset 0 -3em 0 0 $color-black;
-            border: none;
-            color: $color-white;
+        &::before {
             background: $color-black;
         }
-    }
 
-    &__wave.button-wave__restore {
-        position: absolute;
-        transform: scale(900);
-        z-index: -1;
-    }
-
-    @media (min-width: $sm) {
-        &__wave.button-wave__restore {
-            transform: scale(250);
+        &:hover {
+            color: $color-white;
         }
     }
 }

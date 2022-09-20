@@ -1,165 +1,172 @@
 .card-container {
-  display: grid;
-  justify-content: center;
-  gap: $spacer * 3 $spacer * 2;
-  grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    justify-content: center;
+    gap: $spacer * 3 $spacer * 2;
+    grid-template-columns: repeat(2, 1fr);
 
-  &--text {
-    grid-template-columns: repeat(1, 1fr);
+    &--text {
+        grid-template-columns: repeat(1, 1fr);
 
-    @media (min-width: $xs) {
-      grid-template-columns: repeat(2, 1fr);
+        @media (min-width: $xs) {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
-  }
 
-  @media (min-width: $md) {
-    gap: $spacer * 4;
-    grid-template-columns: repeat(3, 1fr);
-  }
+    @media (min-width: $md) {
+        gap: $spacer * 4;
+        grid-template-columns: repeat(3, 1fr);
+    }
 
 }
 
 .card {
-  $self: &;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  height: 340px;
-  min-height: 172px;
-  border: 1px solid $color-black;
-  padding: $spacer * 2;
-  position: relative;
-  transition: 0.4s all ease;
-
-  @media (min-width: $sm) {
-    height: 372px;
-  }
-
-  &__home {
-  height: 172px;
-    @media (min-width: $sm) {
-      height: 216px;
-    }
-
-}
-
-  &__top{
+    $self: &;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-  }
-
-  &__icon {
-    display: flex;
-    align-self: flex-end;
-  }
-
-  &__text{
-    margin-top: $spacer * 3;
-
-  }
-
-  &--text{
-    justify-content: flex-start;
-
-    #{$self}__icon{
-      align-self: center;
-    }
-  }
-
-
-  &__strip {
-    position: absolute;
-    height: $spacer;
     width: 100%;
-    bottom: 0;
-    left: 0;
-    background: $color-black;
-    transition: 0.4s all ease;
-
-    &:before {
-      content: '';
-      position: absolute;
-      right: 0;
-      width: 0;
-      height: 0;
-      border-top: $spacer solid $color-bg;
-      border-left: $spacer solid $color-black;
-      transition: 0.4s all ease;
-    }
-  }
-
-  &:hover {
-    background: $color-white;
-    transition: 0.4s all ease;
-
-    #{$self}__strip {
-      height: 0;
-
-      &:before {
-        border-top: 0 solid $color-bg;
-        border-left: 0 solid $color-black;
-        transition: 0.4s all ease;
-      }
-    }
-  }
-
-  @media (min-width: $sm) {
-    min-height: 216px;
-    padding: $spacer * 4;
-  }
-
-  .h3 {
+    height: 340px;
+    min-height: 172px;
+    border: 1px solid $color-black;
+    padding: $spacer * 2;
     position: relative;
-    transition: 0.8s;
+    transition: 0.4s all ease;
 
-    span {
-      position: relative;
-      transition: 0.3s;
+    @media (min-width: $sm) {
+        height: 372px;
+    }
 
-      svg {
+    &__home {
+        height: 172px;
+        text-decoration: none;
+
+        @media (min-width: $sm) {
+            height: 216px;
+        }
+
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__icon {
+        display: flex;
+        align-self: flex-end;
+    }
+
+    &__text {
+        margin-top: $spacer * 3;
+
+    }
+
+    &--text {
+        justify-content: flex-start;
+        text-decoration: none;
+
+        #{$self}__icon {
+            align-self: center;
+        }
+    }
+
+
+    &__strip {
         position: absolute;
-        top: 4px;
-        cursor: pointer;
+        height: $spacer;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background: $color-black;
+        transition: 0.4s all ease;
 
-        @media (min-width: $xs) {
-          top: 6px;
+        &:before {
+            content: '';
+            position: absolute;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-top: $spacer solid $color-bg;
+            border-left: $spacer solid $color-black;
+            transition: 0.4s all ease;
         }
-        @media (min-width: $md) {
-          top: 8px;
+    }
+
+    &:hover {
+        background: $color-white;
+        transition: 0.4s all ease;
+
+        #{$self}__strip {
+            height: 0;
+
+            &:before {
+                border-top: 0 solid $color-bg;
+                border-left: 0 solid $color-black;
+                transition: 0.4s all ease;
+            }
         }
-      }
-    }
-    .star-text,
-    .star-text__top {
-      position: absolute;
-      color: $color-grey-1;
-      font-size: 12px;
-      line-height: 16px;
-      white-space: nowrap;
-      font-family: $font-family-gilroy-regular;
-      transition: 0.8s;
-      display: none;
-    }
-    .star-text {
-      top: 28px;
-      left: -95px;
-
-      @media (min-width: $xs) {
-        top:-8px;
-        left: 4px;
-      }
-    }
-    .star-text__top {
-      top:-10px;
-      left: 4px;
     }
 
-    .svg:hover .star-text,
-    .svg:hover .star-text__top {
-      transition: 0.8s;
-      display: block;
+    @media (min-width: $sm) {
+        min-height: 216px;
+        padding: $spacer * 4;
     }
-  }
+
+    .h3 {
+        position: relative;
+        transition: 0.8s;
+
+        span {
+            position: relative;
+            transition: 0.3s;
+
+            svg {
+                position: absolute;
+                top: 4px;
+                cursor: pointer;
+
+                @media (min-width: $xs) {
+                    top: 6px;
+                }
+
+                @media (min-width: $md) {
+                    top: 8px;
+                }
+            }
+        }
+
+        .star-text,
+        .star-text__top {
+            position: absolute;
+            color: $color-grey-1;
+            font-size: 12px;
+            line-height: 16px;
+            white-space: nowrap;
+            font-family: $font-family-gilroy-regular;
+            transition: 0.8s;
+            display: none;
+        }
+
+        .star-text {
+            top: 28px;
+            left: -95px;
+
+            @media (min-width: $xs) {
+                top: -8px;
+                left: 4px;
+            }
+        }
+
+        .star-text__top {
+            top: -10px;
+            left: 4px;
+        }
+
+        .svg:hover .star-text,
+        .svg:hover .star-text__top {
+            transition: 0.8s;
+            display: block;
+        }
+    }
 }

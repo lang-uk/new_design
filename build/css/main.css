@@ -5139,54 +5139,57 @@ h4 {
 }
 
 .button-wave {
-  -webkit-transition: 0.8s;
-  -o-transition: 0.8s;
-  transition: 0.8s;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   position: relative;
+  z-index: 3;
   overflow: hidden;
-  border: 0.125rem solid transparent;
+  -webkit-clip-path: inset(0px 0px 0px round 60px);
+          clip-path: inset(0px 0px 0px round 60px);
   color: #ffffff;
   background: #000000;
+  -webkit-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
 }
-.button-wave__wave {
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
-  height: 0.125rem;
-  width: 0.125rem;
-  border-radius: 50%;
-  -webkit-clip-path: circle(50% at 50% 50%);
-          clip-path: circle(50% at 50% 50%);
-  -webkit-transition: 0.8s -webkit-transform;
-  transition: 0.8s -webkit-transform;
-  -o-transition: 0.8s transform;
-  transition: 0.8s transform;
-  transition: 0.8s transform, 0.8s -webkit-transform;
+.button-wave::before {
+  content: "";
+  display: block;
   position: absolute;
   z-index: -1;
   background: #aae2bf;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200%;
+  border-radius: 40%;
+  -webkit-transform: translate3d(0, 55%, 0);
+          transform: translate3d(0, 55%, 0);
+  -webkit-transition: border-radius 0.5s ease 0.1s, -webkit-transform 0.4s ease-in 0s;
+  transition: border-radius 0.5s ease 0.1s, -webkit-transform 0.4s ease-in 0s;
+  -o-transition: transform 0.4s ease-in 0s, border-radius 0.5s ease 0.1s;
+  transition: transform 0.4s ease-in 0s, border-radius 0.5s ease 0.1s;
+  transition: transform 0.4s ease-in 0s, border-radius 0.5s ease 0.1s, -webkit-transform 0.4s ease-in 0s;
 }
 .button-wave:hover {
   color: #000000;
-  -webkit-box-shadow: inset 0 -3em 0 0 #aae2bf;
-          box-shadow: inset 0 -3em 0 0 #aae2bf;
-  background: #aae2bf;
-  border-color: #aae2bf;
+}
+.button-wave:hover::before {
+  -webkit-transform: translate3d(0, 0%, 0);
+          transform: translate3d(0, 0%, 0);
+  border-radius: 10%;
 }
 .button-wave--transparent {
   color: #000000;
   background: transparent;
-  border: 0.125rem solid #000000;
+  border: 2px solid #000000;
+}
+.button-wave--transparent::before {
+  background: #000000;
 }
 .button-wave--transparent:hover {
-  -webkit-box-shadow: inset 0 -3em 0 0 #000000;
-          box-shadow: inset 0 -3em 0 0 #000000;
   color: #ffffff;
   fill: #ffffff;
-  border-color: #000000;
-  background: #000000;
 }
 .button-wave--produckt {
   color: #000000;
@@ -5204,26 +5207,11 @@ h4 {
 .button-wave--produckt .button-wave__wave {
   background: #000000;
 }
-.button-wave--produckt:hover {
-  -webkit-box-shadow: inset 0 -3em 0 0 #000000;
-          box-shadow: inset 0 -3em 0 0 #000000;
-  border: none;
-  color: #ffffff;
+.button-wave--produckt::before {
   background: #000000;
 }
-.button-wave__wave.button-wave__restore {
-  position: absolute;
-  -webkit-transform: scale(900);
-      -ms-transform: scale(900);
-          transform: scale(900);
-  z-index: -1;
-}
-@media (min-width: 767px) {
-  .button-wave__wave.button-wave__restore {
-    -webkit-transform: scale(250);
-        -ms-transform: scale(250);
-            transform: scale(250);
-  }
+.button-wave--produckt:hover {
+  color: #ffffff;
 }
 
 .badge {
@@ -6625,6 +6613,7 @@ h4 {
 }
 .card__home {
   height: 172px;
+  text-decoration: none;
 }
 @media (min-width: 767px) {
   .card__home {
@@ -6656,6 +6645,7 @@ h4 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  text-decoration: none;
 }
 .card--text .card__icon {
   -ms-flex-item-align: center;
