@@ -1,4 +1,3 @@
-
 export const initButtons = () => {
 	// const btn = document.querySelectorAll('.button-wave')
 

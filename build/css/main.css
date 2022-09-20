@@ -5139,9 +5139,9 @@ h4 {
 }
 
 .button-wave {
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   position: relative;
@@ -5159,34 +5159,34 @@ h4 {
   border-radius: 50%;
   -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%);
-  -webkit-transition: 0.6s -webkit-transform;
-  transition: 0.6s -webkit-transform;
-  -o-transition: 0.6s transform;
-  transition: 0.6s transform;
-  transition: 0.6s transform, 0.6s -webkit-transform;
+  -webkit-transition: 0.8s -webkit-transform;
+  transition: 0.8s -webkit-transform;
+  -o-transition: 0.8s transform;
+  transition: 0.8s transform;
+  transition: 0.8s transform, 0.8s -webkit-transform;
   position: absolute;
   z-index: -1;
   background: #aae2bf;
 }
 .button-wave:hover {
-  color: #ffffff;
+  color: #000000;
+  -webkit-box-shadow: inset 0 -3em 0 0 #aae2bf;
+          box-shadow: inset 0 -3em 0 0 #aae2bf;
   background: #aae2bf;
-}
-.button-wave--wave-white .button-wave__wave {
-  background: #ffffff;
+  border-color: #aae2bf;
 }
 .button-wave--transparent {
   color: #000000;
   background: transparent;
   border: 0.125rem solid #000000;
 }
-.button-wave--transparent .button-wave__wave {
-  background: #000000;
-}
 .button-wave--transparent:hover {
+  -webkit-box-shadow: inset 0 -3em 0 0 #000000;
+          box-shadow: inset 0 -3em 0 0 #000000;
   color: #ffffff;
   fill: #ffffff;
   border-color: #000000;
+  background: #000000;
 }
 .button-wave--produckt {
   color: #000000;
@@ -5205,6 +5205,8 @@ h4 {
   background: #000000;
 }
 .button-wave--produckt:hover {
+  -webkit-box-shadow: inset 0 -3em 0 0 #000000;
+          box-shadow: inset 0 -3em 0 0 #000000;
   border: none;
   color: #ffffff;
   background: #000000;
