@@ -35,6 +35,18 @@ export const initHeader = () => {
 		});
 	})
 
+
+	// для выпадающего меню
+	const productsToggle = document.querySelector('.navigation__link--toggle');
+
+	if (productsToggle) {
+		const productsWrapper = productsToggle.parentNode
+
+		productsToggle.addEventListener('click', () => {
+			if (window.innerWidth < 992) productsWrapper.classList.toggle('open')
+		})
+	}
+
 	
 	// для кнопки меню в адаптиве
 	const body = document.querySelector('body');
@@ -54,7 +66,6 @@ export const initHeader = () => {
 			gsap.set([body], { 'overflow': '' })
 		}
 	})
-
 }
 
 export const initHeaderTransition = () => {
@@ -74,4 +85,6 @@ export const initHeaderTransition = () => {
 	burger.classList.remove('is__active')
 	navList.classList.remove('active')
 	gsap.set([body], { 'overflow': '' })
+
+
 }

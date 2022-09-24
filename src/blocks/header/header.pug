@@ -6,15 +6,20 @@ header.header
 		.header__navigation
 			nav.navigation
 				span.navigation__item
-					a.navigation__link.underline-animation(href="products.html") Продукти
+					//- a.navigation__link.underline-animation(href="products.html") Продукти
+					span.navigation__link.navigation__link--toggle.underline-animation(href="products.html") Продукти
 						span.svg
 							include ../../svg/star.svg
+						span.arrow
+							include ../../svg/header_arrow.svg
+
 					.navigation__sub
 						ul.sub__navigation--list
 							li.sub__navigation--item
 								a.navigation__link.underline-animation(href="services.html") Сервіси
 									span.svg
 										include ../../svg/star.svg
+									
 								.card__icon
 									include ../../svg/wave_2.svg
 							li.sub__navigation--item

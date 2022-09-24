@@ -127,10 +127,35 @@
             .navigation__link {
                 position: relative;
                 z-index: 3;
+                display: flex;
+                align-items: center;
+                max-width: max-content;
+                cursor: pointer;
+            }
+
+            .arrow {
+                display: none;
+                justify-content: center;
+                align-items: center;
+                width: 16px;
+                height: 16px;
+                margin-left: 14px;
+
+                @media (max-width: $md) {
+                    display: flex;
+                }
             }
 
             .navigation__sub {
                 display: none;
+                width: 100%;
+                max-width: 260px;
+                padding-top: 8px;
+
+                @media (min-width: $xs) {
+                    max-width: 384px;
+                    padding-top: 16px;
+                }
                 
                 @media (min-width: $md) {
                     display: block;
@@ -143,32 +168,59 @@
                     width: 184px;
                     transition: opacity .5s ease;
                 }
+
+                .navigation__link {
+                    @media (max-width: $md) {
+                        font-size: 24px;
+                        line-height: 1.5;
+                        font-family: $font-family-gilroy-regular !important;
+                        font-weight: 600 !important;
+                    }
+
+                    @media (max-width: $xs) {
+                        font-size: 15px;
+                    }
+                }
             }
 
             .sub__navigation--list {
-                display: none;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
                 
+
                 @media (min-width: $md) {
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
                     background: $color-grey-5;
                     border: 1px solid $color-black;
+                }
 
-                    .sub__navigation--item {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
+                .sub__navigation--item {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 8px 16px;
+
+                    @media (max-width: $md) {
+                        padding: 12px 32px;
+                    }
+
+                    @media (max-width: $xs) {
                         padding: 8px 16px;
+                    }
 
-                        &:hover {
-                            background: $color-grey-3;
-                            transition: 0.3s ease;
-                        }
+                    &:hover {
+                        background: $color-grey-3;
+                        transition: 0.3s ease;
+                    }
 
-                        .card__icon {
-                            width: 24px;
-                            height: 24px;
+                    .card__icon {
+                        width: 24px;
+                        height: 24px;
+                        align-self: center;
+
+                        svg {
+                            transform: translate3d(0, 0, 0);
                         }
                     }
                 }
@@ -177,6 +229,12 @@
             &:hover .navigation__sub {
                 opacity: 1;
                 pointer-events: auto;
+            }
+
+            &.open {
+                .navigation__sub {
+                    display: block;
+                }
             }
         }
 
@@ -203,9 +261,28 @@
     }
 
     .svg {
-        position: absolute;
-        top: -10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10px;
+        height: 10px;
+        align-self: start;
+        // top: -10px;
+        // right: -10px;
+
+        @media (min-width: $md) {
+            position: absolute;
+            top: 0px;
+            right: -10px;
+        }
+
+        svg {
+            transform: translate3d(0, 0, 0);
+        }
     }
+
+
 
     &__burger-wrap {
         position: relative;
@@ -356,6 +433,7 @@
     justify-content: flex-end;
     align-items: center;
     position: relative;
+    z-index: 3;
 
     @media (max-width: $md) {
         width: calc(100% - (135px + 48px) - (48px + 24px));
