@@ -9,10 +9,6 @@ export const initCopyText = () => {
 			console.log(text.textContent)
 			window.navigator.clipboard.writeText(text.textContent)
 		})
-<<<<<<< HEAD
 	});
 }
-=======
-	})
-})()
->>>>>>> 85d2e0d62a90d9ecfd96750629c17bb8d017cf80
+

@@ -135,10 +135,7 @@ gulp.task('build', gulp.series(
 ));
 
 gulp.task('dev', gulp.series(
-<<<<<<< HEAD
-    'build', 'server'
+	'build',
+	'server'
 ));
-=======
-  'build', 'server'
-));
->>>>>>> 85d2e0d62a90d9ecfd96750629c17bb8d017cf80
+
