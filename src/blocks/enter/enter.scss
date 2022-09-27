@@ -11,6 +11,7 @@
         margin-top: $spacer * 8;
     }
 
+<<<<<<< HEAD
     @media (min-width: $md) {
         margin-top: $spacer * 14;
     }
@@ -20,3 +21,10 @@
         max-width: 100%;
     }
 }
+=======
+  @media (min-width: $sm) {
+    width: initial;
+    margin-top: $spacer * 14;
+  }
+}
+>>>>>>> 85d2e0d62a90d9ecfd96750629c17bb8d017cf80

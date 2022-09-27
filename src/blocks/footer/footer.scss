@@ -139,6 +139,7 @@
         font-weight: 600;
     }
 
+<<<<<<< HEAD
     @media (min-width: $xs) {
         &__item {
             & + & {
@@ -151,4 +152,10 @@
         margin-top: initial;
         margin-bottom: initial;
     }
+=======
+  @media (min-width: $sm) {
+    margin-top: initial;
+    margin-bottom: initial;
+  }
+>>>>>>> 85d2e0d62a90d9ecfd96750629c17bb8d017cf80
 }
