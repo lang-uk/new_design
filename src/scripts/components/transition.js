@@ -25,7 +25,7 @@ export const initTransition = () => {
                 yPercent: 110
             },
             {
-                duration: 1.2,
+                duration: .6,
                 yPercent: 0,
                 ease: 'Power4.inOut',
             });
@@ -33,7 +33,7 @@ export const initTransition = () => {
 
     function loaderAway() {
         return gsap.to(loader, {
-            duration: 1.2,
+            duration: .6,
             yPercent: -110,
             ease: 'Power4.inOut'
         });
