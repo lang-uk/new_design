@@ -1,57 +1,77 @@
 .button-wave {
-  $self: &;
-  transition: .6s all ease;
-  transform: translateY(0);
-  position: relative;
-  overflow: hidden;
-  border: $spacer / 4 solid $color-black;
-  color: $color-white;
-  background: $color-black;
+    $self: &;
+    transform: translate3d(0, 0, 0);
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    clip-path: inset(0px 0px 0px round 60px);
+    color: $color-white;
+    background: $color-black;
+    transition: color .4s;
 
-  &__wave {
-    transform: scale(0);
-    height: $spacer / 4;
-    width: $spacer / 4;
-    border-radius: 50%;
-    transition: .6s all linear;
-    position: absolute;
-    z-index: -1;
-    background: $color-bg;
-  }
-
-  &:hover {
-    color: $color-black;
-  }
-
-  &--wave-white{
-    #{$self}__wave {
-      background: $color-white;
-    }
-  }
-
-  &--transparent {
-    color: $color-black;
-    background: transparent;
-
-    #{$self}__wave {
-      background: $color-black;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: -1;
+        background: $color-primary;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 200%;
+        border-radius: 40%;
+        transform: translate3d(0, 55%, 0);
+        transition: transform .4s ease-in 0s, border-radius .5s ease .1s;
     }
 
     &:hover {
-      color: $color-white;
-      fill: $color-white;
-    }
-  }
+        color: $color-black;
 
-  &__wave.button-wave__restore {
-    position: absolute;
-    transform: scale(700);
-    z-index: -1;
-  }
-
-  @media (min-width: $sm) {
-    &__wave.button-wave__restore {
-      transform: scale(250);
+        &::before {
+            transform: translate3d(0, 0%, 0);
+            border-radius: 10%;
+        }
     }
-  }
+
+
+    &--transparent {
+        color: $color-black;
+        background: transparent;
+        border: 2px solid $color-black;
+
+        &::before {
+            background: $color-black;
+        }
+
+        &:hover {
+            color: $color-white;
+            fill: $color-white;
+        }
+    }
+
+    &--produckt {
+        color: $color-black;
+        background: $color-primary;
+        border: none;
+        height: 48px;
+        width: 196px;
+        padding: $spacer * 1.5 $spacer * 3;
+        font-family: $font-family-open-sans;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: $spacer * 3;
+        white-space: nowrap;
+
+        #{$self}__wave {
+            background: $color-black;
+        }
+
+        &::before {
+            background: $color-black;
+        }
+
+        &:hover {
+            color: $color-white;
+        }
+    }
 }

@@ -1,11 +1,14 @@
-(() => {
-	const container = document.getElementsByClassName('copy')
+export const initCopyText = () => {
+	const copyLinks = document.querySelectorAll('.copy')
 
-	Array.from(container).forEach(item => {
-		const btn = item.getElementsByClassName('copy__button')[0]
-		const text = item.getElementsByClassName('copy__text')[0]
-		btn.addEventListener('click', () => {
+	copyLinks&&copyLinks.length&&copyLinks.forEach((item) => {
+		const btn = item.querySelector('.copy__button')
+		const text = item.querySelector('.copy__text')
+
+		btn&&text&&btn.addEventListener('click', () => {
+			console.log(text.textContent)
 			window.navigator.clipboard.writeText(text.textContent)
 		})
-	})
-})()
+	});
+}
+

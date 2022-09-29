@@ -2,14 +2,22 @@
 html(lang="uk")
 	include ../templates/head/head.pug
 
-	body
+	body(data-barba="wrapper")
+		.loader
+		
 		.layout
-
 			include ../blocks/header/header.pug
 
-			main.main
+			main.main(data-barba="container")
 				.main__container
-					h2.h2 About us
+					include ../templates/about-us/breadcrumbs.pug
+					include ../templates/about-us/intro-section.pug
+					include ../templates/about-us/info-section.pug
+					include ../templates/about-us/our_team.pug
+					include ../templates/about-us/team_helper.pug
+					include ../blocks/media-articles/media-articles.pug
+					include ../blocks/become-part/become-part.pug
+
 
 			include ../blocks/footer/footer.pug
 

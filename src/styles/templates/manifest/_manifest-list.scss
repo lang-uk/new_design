@@ -1,0 +1,122 @@
+.manifest__item {
+  @include flex-column;
+  align-content: space-between;
+  align-items: stretch;
+
+  .list__item {
+    @include flex-column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: $spacer * 6;
+
+    @media (min-width: $sm) {
+      margin-bottom: $spacer * 8;
+    }
+
+    @media (min-width: $md) {
+      @include flex-row;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: $spacer * 13;
+    }
+
+    .list__item-title {
+      @include flex-column;
+      align-items: flex-start;
+      padding-bottom: $spacer * 3;
+
+      @media (min-width: $xs) {
+        @include flex-row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 0;
+      }
+
+      .list__item-title:first-child {
+        @media (min-width: $xs) {
+          transform: translateY(-2.5rem);
+        }
+      }
+
+      .item__icon {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 80px;
+        height: 80px;
+        margin-bottom: $spacer * 3;
+      }
+
+      .item__icon {
+        @media (min-width: $xs) {
+          margin-bottom: 0;
+          transform: translateY(-1.7rem);
+        }
+      }
+
+      .icon1 {
+        @media (min-width: $xs) {
+          transform: translateY(-2.5rem);
+          margin-bottom: 0;
+        }
+      }
+
+      .icon3 {
+        @media (min-width: $xs) {
+          transform: translateY(-2.2rem);
+          margin-bottom: 0;
+        }
+      }
+
+      .item__title {
+        @media (min-width: 430px) {
+          max-width: 22rem;
+        }
+
+        @media (min-width: $xs) {
+          padding-bottom: 1.5rem;
+          padding-left: 1rem;
+        }
+
+        @media (min-width: $md) {
+          padding-left: 1.5rem;
+        }
+      }
+    }
+
+    .item__text {
+      @media (min-width: $xs) {
+        max-width: 40rem;
+      }
+
+      @media (min-width: $md) {
+        max-width: 28rem;
+      }
+
+      @media (min-width: 1100px) {
+        max-width: 34rem;
+      }
+
+      .list__text-content {
+        margin: $spacer * 3 0 $spacer;
+
+        .text-l {
+          position: relative;
+          padding: 0 0 $spacer * 2 $spacer * 3.25;
+        }
+
+        .text-l::before {
+          position: absolute;
+          display: block;
+          content: '';
+          top: 8px;
+          left: 0;
+          width: 12px;
+          height: 16px;
+          clip-path: polygon(50% 100%, 0 0, 100% 0);
+          background: $color-success;
+        }
+      }
+    }
+  }
+}

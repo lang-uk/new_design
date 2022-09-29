@@ -1,0 +1,41 @@
+.page__error {
+    @include flex-column;
+    align-content: center;
+    // margin: $spacer * 4 0;
+    margin: 100px 0 128px;
+
+    @media (min-width: $xs) {
+        margin: 116px 0 148px
+    }
+
+    @media (min-width: $md) {
+        margin: 80px 0 88px
+    }
+
+    @media (min-width: $xl) {
+        margin: 150px 0 140px
+    }
+
+    .error__content {
+        @include flex-column;
+        justify-content: center;
+        width: 100%;
+
+        .error__image {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            max-width: 564px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: $spacer * 5;
+
+            @media (min-width: $xl) {
+               max-width: 928px;
+            }
+        }
+        .button {
+            max-width: 14.875rem;
+        }
+    }
+}

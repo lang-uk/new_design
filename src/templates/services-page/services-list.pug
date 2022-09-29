@@ -1,26 +1,170 @@
-.services-list
-	.services-list__item
-		.services-list__actions
-			.button-fill-container
-				.button-fill-container__item
-					span.button-fill
-						span.button-fill__content Картки
-				.button-fill-container__item
-					span.button-fill
-						span.button-fill__content Список
-	.services-list__item
-		.collapse(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass1')
-			p.h3.collapse__title Мікросервіс NER
-		.nameOfCollapseClass1 ffffff
-	.services-list__item
-		.collapse(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass2')
-			p.h3.collapse__title Мікросервіс NLP_UK
-		.nameOfCollapseClass2 ffffff
-	.services-list__item
-		.collapse(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass3')
-			p.h3.collapse__title Мікросервіс розпізнавання мови (WILD)
-		.nameOfCollapseClass3 ffffff
-	.services-list__item
-		.collapse(data-collapse='' data-collapse-open='true' data-collapse-target='.nameOfCollapseClass4')
-			p.h3.collapse__title Веб-сервіс оцінки когерентності тексту
-		.nameOfCollapseClass4 ffffff
+
+.services
+	.services-types
+		.button-fill-container
+			.button-fill-container__item
+				span.button-fill.active(data-type="cards")
+					span.button-fill__content Картки
+			.button-fill-container__item
+				span.button-fill(data-type="list")
+					span.button-fill__content Список
+	
+	.services-list.cards
+		.service.accordion
+			.service-head.accordion-toggle
+				.service-head__title Мікросервіс NER
+				.service-head__toggle
+					.service-button
+						.service-button__text(data-open="Показати більше" data-close="Показати менше")
+						.service-button__icon
+							include ../../svg/service-arrow.svg
+
+			.service-body.accordion-body
+				.service-wrapper
+					.service-content
+						<p><a href="#">Мікросервіс NER</a> дозволяє здійснити NER-розмітку токенізованого тексту з використанням <a href="#">моделей</a>, натренованих з допомогою бібліотеки MITIE для української, російської та </p>
+
+						<p><a href="#">Мікросервіс NER</a> дозволяє здійснити NER-розмітку токенізованого тексту з використанням <a href="#">моделей</a>, натренованих з допомогою бібліотеки MITIE для української, російської та </p>
+					
+					.service-wrapper__toggle
+						.service-button.accordion-toggle
+							.service-button__text(data-open="Показати більше" data-close="Показати менше")
+							.service-button__icon
+								include ../../svg/service-arrow.svg
+
+		.service.accordion
+			.service-head.accordion-toggle
+				.service-head__title Мікросервіс NLP_UK
+				.service-head__toggle
+					.service-button
+						.service-button__text(data-open="Показати більше" data-close="Показати менше")
+						.service-button__icon
+							include ../../svg/service-arrow.svg
+
+			.service-body.accordion-body
+				.service-wrapper
+					.service-content
+						<p><a href="https://github.com/arysin/api_nlp_uk">Мікросервіс на основі бібліотеки NLP_UK</a> дає змогу виконати лематизацію вхідного тексту за словником <a href="https://github.com/brown-uk/dict_uk">dict_uk</a> , яка також включає його токенізацію. Мікросервіс розробив&nbsp; <a href="https://github.com/arysin/">Андрій Рисін</a></p>
+					
+					.service-wrapper__toggle
+						.service-button.accordion-toggle
+							.service-button__text(data-open="Показати більше" data-close="Показати менше")
+							.service-button__icon
+								include ../../svg/service-arrow.svg
+
+		.service.accordion
+			.service-head.accordion-toggle
+				.service-head__title Мікросервіс розпізнавання мови (WILD)
+				.service-head__toggle
+					.service-button
+						.service-button__text(data-open="Показати більше" data-close="Показати менше")
+						.service-button__icon
+							include ../../svg/service-arrow.svg
+
+			.service-body.accordion-body
+				.service-wrapper
+					.service-content
+						<p><a href="https://github.com/vseloved/wiki-lang-detect">Мікросервіс WILD</a> дозволяє розпізнати мову вхідного тексту з переліку 156 мов, які використовуються в інтернеті, за допомогою бібліотеки&nbsp;wiki-lang-detect.</p>
+					
+					.service-wrapper__toggle
+						.service-button.accordion-toggle
+							.service-button__text(data-open="Показати більше" data-close="Показати менше")
+							.service-button__icon
+								include ../../svg/service-arrow.svg
+
+		.service.accordion
+			.service-head.accordion-toggle
+				.service-head__title Веб-сервіс оцінки когерентності тексту
+				.service-head__toggle
+					.service-button
+						.service-button__text(data-open="Показати більше" data-close="Показати менше")
+						.service-button__icon
+							include ../../svg/service-arrow.svg
+						
+
+			.service-body.accordion-body
+				.service-wrapper
+					.service-content
+						<p>Веб-сервіс <a href="#">(Docker image)</a> створений з метою здійснення наступних операцій обробки україномовних текстів</p>
+
+						<ul class="list__item-left">
+							<li>Оцінка когерентності тексту (розмір тексту має складати мінімум 3 речення)</li>
+							<li>Виділення іменних груп</li>
+							<li>Пошук кореферентних пар (тестовий варіант)</li>
+						</ul>
+
+						<p>Веб-сервіс реалізований у вигляді REST API. Обробка даних відбувається шляхом відправки POST-запитів на відповідні адреси</p>
+
+						<ul>
+							<li>Оцінка когерентності тексту: <code> /api/ get_coherence</code></li>
+							<li>Виділення іменних груп: <code> /api/ get_phrases</code></li>
+							<li>Пошук кореферентних пар: <code> /api/ get_coreferent_clusters</code></li>
+						</ul>
+
+						<h4>Вхідний формат тіла запиту (JSON): </h4>
+
+						<code class="code">{"text": "&lt;:text&gt;"}</code>
+
+
+						<p>Відповідь від серверу повертається у форматі JSON залежно від точки доступу.</p>
+						
+						<p>Веб-сервіс створений <a href="#">Артемом Крамовим</a></p>
+
+						<p>
+							<b>Будь ласка, процитуйте цю роботу, якщо ви її використовуєте:</b>
+						</p>
+
+						<pre class="copy">
+							<code class="copy__text">
+								|@inproceedings{akbik2019flair, 
+								br
+								br
+								|  title={FLAIR: An easy-to-use framework for state-of-the-art NLP},
+								br
+								|  author={Akbik, Alan and Bergmann, Tanja and Blythe, Duncan and Rasul, Kashif and Schweter, Stefan and Vollgraf, Roland}
+								br
+								|  booktitle={{NAACL} 2019, 2019 Annual Conference of the North American Chapter of the Association for Computational Linguistics(Demonstrations)},
+								br
+								|  pages={54--59},
+								br
+								|  year={2019}
+								br
+								|}
+							</code>
+
+							button.copy__button(type="button")
+								.copy__icon
+									include ../../svg/copy-document.svg
+								.copy__icon.copy__icon--hover
+									include ../../svg/copy-document--green.svg
+						</pre>
+
+					
+					.service-info
+						.info-block
+							.info-block__title About
+							.info-block__text
+								p A very simple framework for state-of-the-art Natural Language Processing (NLP)
+						
+						.info-block.info-block--releases
+							.info-block__title Releases <span>18</span>
+							.info-block__text A very simple framework for state-of-the-art Natural Language Processing (NLP)
+						
+						.info-block
+							.info-block__title Packages
+							.info-block__text 
+								p Release 0.9 <b class="green">Latest</b>
+								p <b>on 30 Aug</b>
+							.info-block__comment +17 releases
+
+						.info-block
+							a.info-block__download(href="#" download)
+								include ../../svg/service-download.svg
+								span Download
+
+
+					.service-wrapper__toggle
+						.service-button.accordion-toggle
+							.service-button__text(data-open="Показати більше" data-close="Показати менше")
+							.service-button__icon
+								include ../../svg/service-arrow.svg

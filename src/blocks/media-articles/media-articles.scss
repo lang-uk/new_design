@@ -2,6 +2,14 @@
   display: flex;
   flex-direction: column;
   margin-bottom: $spacer * 13;
+  overflow: hidden;
+  width: calc(100% + 32px);
+  margin-left: -16px;
+  margin-right: -16px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+
 
   &__title {
     margin-bottom: $spacer * 5;
@@ -29,28 +37,28 @@
     border-bottom: 1px solid $color-black;
   }
 
-  &__head-item{
+  &__head-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  &__head-logo{
+  &__head-logo {
     width: 44px;
     height: 44px;
     margin-bottom: $spacer * 2;
   }
 
-  &__head-text{
+  &__head-text {
     font-family: $font-family-gilroy-regular;
     font-size: 14px;
     line-height: 20px;
 
-    &--bold{
+    &--bold {
       font-family: $font-family-gilroy-bold;
     }
 
-    &--label{
+    &--label {
       color: $color-grey-2;
     }
   }
@@ -66,7 +74,7 @@
     position: relative;
     overflow: initial;
 
-    &__body{
+    &__body {
       flex: 1;
       height: initial;
     }
@@ -83,7 +91,7 @@
 
     &:hover {
       &:before {
-        transform: translate($spacer / 2, $spacer / 2);
+        transform: translate(0.25rem, 0.25rem);
         transition: 0.4s all ease;
       }
     }
@@ -93,4 +101,7 @@
     margin-left: $spacer * 2;
     margin-right: $spacer * 2;
   }
+
+
 }
+

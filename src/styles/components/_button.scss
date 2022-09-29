@@ -10,9 +10,11 @@
   line-height: $spacer * 3;
   border: none;
   background: transparent;
+  text-decoration: none;
 
   &--primary {
     background: $color-primary;
+
   }
 
   @media (min-width: $sm) {

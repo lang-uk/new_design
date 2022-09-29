@@ -11,36 +11,480 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="css/main.css"/>
   </head>
-  <body>
+  <body data-barba="wrapper">
+    <div class="loader"></div>
     <div class="layout">
       <header class="header">
         <div class="header__container">
           <div class="header-logo"><a href="index.html"><img class="header-logo__logo" src="./img/logo.svg" alt="lang uk"/></a></div>
           <div class="header__navigation">
-            <nav class="navigation"><span class="navigation__item"><a class="navigation__link underline-animation" href="products.html">Продукти</a></span><span class="navigation__item"><a class="navigation__link underline-animation" href="services.html">Сервіси</a></span><span class="navigation__item"><a class="navigation__link underline-animation" href="about-us.html">Про нас</a></span><span class="navigation__item"><a class="navigation__link underline-animation" href="manifest.html">Маніфест</a></span><span class="navigation__item"><a class="navigation__link underline-animation" href="contact-us.html">Контакти</a></span></nav>
+            <nav class="navigation"><span class="navigation__item"><span class="navigation__link navigation__link--toggle underline-animation" href="products.html">Продукти<span class="svg"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.92857 10V6.82081L1.07143 8.41041L0 6.5896L2.82738 5L0 3.4104L1.07143 1.5896L3.92857 3.17919V0H6.10119V3.17919L8.92857 1.5896L10 3.4104L7.17262 5L10 6.5896L8.92857 8.41041L6.10119 6.82081V10H3.92857Z" fill="#FF3F3F"/>
+</svg>
+</span><span class="arrow"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.66699 5.33334L8.00033 12L13.3337 5.33334" stroke="black" stroke-width="2.66667" stroke-linecap="round"/>
+</svg></span></span>
+                <div class="navigation__sub">
+                  <ul class="sub__navigation--list">
+                    <li class="sub__navigation--item"><a class="navigation__link underline-animation" href="services.html">Сервіси<span class="svg"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.92857 10V6.82081L1.07143 8.41041L0 6.5896L2.82738 5L0 3.4104L1.07143 1.5896L3.92857 3.17919V0H6.10119V3.17919L8.92857 1.5896L10 3.4104L7.17262 5L10 6.5896L8.92857 8.41041L6.10119 6.82081V10H3.92857Z" fill="#FF3F3F"/>
+</svg>
+</span></a>
+                      <div class="card__icon"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24.3192 19.5097L18.5313 9.99957L12.4218 19.7591L6.64232 10.249L1.00303 19.9991" stroke="black"/>
+<path d="M24.3211 10.51L18.5317 0.999939L12.4237 10.7594L6.64278 1.24939L1.005 10.9995" stroke="black"/>
+</svg>
+
+                      </div>
+                    </li>
+                    <li class="sub__navigation--item"><a class="navigation__link underline-animation" href="services.html">Моделі</a>
+                      <div class="card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.707107" y="12" width="15.9706" height="15.9706" transform="rotate(-45 0.707107 12)" stroke="black"/>
+<rect x="7.79304" y="12" width="5.98601" height="5.98601" transform="rotate(-45 7.79304 12)" stroke="black"/>
+</svg>
+
+                      </div>
+                    </li>
+                    <li class="sub__navigation--item"><a class="navigation__link underline-animation" href="services.html">Бібліотеки</a>
+                      <div class="card__icon"><svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="8.92732" y="8" width="10.3137" height="10.3137" transform="rotate(-45 8.92732 8)" stroke="black"/>
+<rect x="0.707107" y="8" width="10.3137" height="10.3137" transform="rotate(-45 0.707107 8)" stroke="black"/>
+</svg>
+
+                      </div>
+                    </li>
+                    <li class="sub__navigation--item"><a class="navigation__link underline-animation" href="services.html">Словники</a>
+                      <div class="card__icon"><svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.844 11.5L19.5 1.0504L25.156 11.5H13.844Z" stroke="black"/>
+<path d="M1.84398 11.5L7.5 1.0504L13.156 11.5L1.84398 11.5Z" stroke="black"/>
+</svg>
+
+                      </div>
+                    </li>
+                    <li class="sub__navigation--item"><a class="navigation__link underline-animation" href="services.html">Корпуси<span class="svg"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.92857 10V6.82081L1.07143 8.41041L0 6.5896L2.82738 5L0 3.4104L1.07143 1.5896L3.92857 3.17919V0H6.10119V3.17919L8.92857 1.5896L10 3.4104L7.17262 5L10 6.5896L8.92857 8.41041L6.10119 6.82081V10H3.92857Z" fill="#FF3F3F"/>
+</svg>
+</span></a>
+                      <div class="card__icon"><svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.707107" y="9.8335" width="12.9066" height="12.9066" transform="rotate(-45 0.707107 9.8335)" stroke="black"/>
+<rect x="3.31453" y="16.625" width="9.42993" height="9.42993" transform="rotate(-45 3.31453 16.625)" fill="white" stroke="black"/>
+</svg>
+
+                      </div>
+                    </li>
+                    <li class="sub__navigation--item"><a class="navigation__link underline-animation" href="services.html">Газетярі</a>
+                      <div class="card__icon"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.353623 4.80793L0 5.16963L0.349392 5.53582L5.13712 10.5537L0.353781 15.5782L0.00902288 15.9403L0.353781 16.3024L4.78976 20.962L5.47927 20.2378L1.38805 15.9403L5.82741 11.2772L11.2437 16.9538L11.5889 17.3156L11.9341 16.9538L17.3417 11.2863L21.7723 15.9403L17.6811 20.2378L18.3706 20.962L22.8065 16.3024L23.1513 15.9403L22.8065 15.5782L18.0319 10.5629L22.8284 5.53582L23.1736 5.17406L22.8284 4.81231L18.3873 0.157663L17.6969 0.881166L21.7929 5.17406L17.3424 9.83855L11.9249 4.14799L11.5802 3.78586L11.2354 4.14799L5.82667 9.82938L1.3891 5.1785L5.73607 0.732265L5.05422 0L0.353623 4.80793ZM6.51696 10.5528L11.5889 15.8686L16.6521 10.562L11.5802 5.2344L6.51696 10.5528Z" fill="black"/>
+</svg>
+
+                      </div>
+                    </li>
+                  </ul>
+                </div></span><span class="navigation__item"><a class="navigation__link underline-animation" href="about-us.html">Про нас</a></span><span class="navigation__item"><a class="navigation__link underline-animation active" href="manifest.html">Маніфест</a></span><span class="navigation__item"><a class="navigation__link underline-animation" href="contact-us.html">Контакти</a></span></nav>
             <div class="navigation-action">
-              <div class="navigation-action__item"><span>UA</span></div>
+              <div class="navigation-action__item lang"><a class="lang__item" href="#">UA<span class="lang-arrow"><svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 1L5 5L1 0.999999" stroke="black" stroke-width="2" stroke-linecap="round"/>
+</svg>
+</span></a><a class="lang__item lang-en" href="#">EN</a></div>
               <div class="navigation-action__item">
-                <!--span O-->
-                <div class="header-input">
-                  <input class="header-input__input" type="text" placeholder="Пошук"/><span class="header-input__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <form class="search-form" action="/search-result.html">
+                  <div class="search-form__wrapper">
+                    <input class="search-form__input" name="search" type="text" placeholder="Пошук" autocomplete="off"/>
+                    <div class="search-form__result">
+                      <ul>
+                        <li><a class="text-m" href="search-result.html">Мікро <b>сервіс</b> NLP_UK</a></li>
+                        <li><a class="text-m" href="">Мікро<b>сервіс</b> NER</a></li>
+                        <li><a class="text-m" href="">Мікро<b>сервіс</b> розпізнавання мови (WILD)</a></li>
+                        <li><a class="text-m" href="">Веб-<b>сервіс</b> оцінки когерентності тексту</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <button class="search-form__button" type="submit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M11.25 18C14.9779 18 18 14.9779 18 11.25C18 7.52208 14.9779 4.5 11.25 4.5C7.52208 4.5 4.5 7.52208 4.5 11.25C4.5 14.9779 7.52208 18 11.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M23.2484 22.5L16.6484 16.65" stroke="black" stroke-width="2" stroke-linejoin="round"/>
 </svg>
-</span>
-                </div>
+
+                  </button>
+                </form>
               </div>
-              <div class="navigation-action__item"><a class="header-product-action" href="#">Доповнити продукт</a></div>
+              <div class="navigation-action__item"><a class="button button-wave button-wave--produckt" href="add-product.html">Доповнити продукт</a></div>
             </div>
           </div>
+          <form class="search-form search-form--mobile" action="/search-result.html">
+            <div class="search-form__wrapper">
+              <input class="search-form__input" name="search" type="text" placeholder="Пошук" autocomplete="off"/>
+              <div class="live-search search-form__result">
+                <ul>
+                  <li><a class="text-m" href="search-result.html">Мікро <b>сервіс</b> NLP_UK</a></li>
+                  <li><a class="text-m" href="">Мікро<b>сервіс</b> NER</a></li>
+                  <li><a class="text-m" href="">Мікро<b>сервіс</b> розпізнавання мови (WILD)</a></li>
+                  <li><a class="text-m" href="">Веб-<b>сервіс</b> оцінки когерентності тексту</a></li>
+                </ul>
+              </div>
+            </div>
+            <button class="search-form__button" type="submit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.25 18C14.9779 18 18 14.9779 18 11.25C18 7.52208 14.9779 4.5 11.25 4.5C7.52208 4.5 4.5 7.52208 4.5 11.25C4.5 14.9779 7.52208 18 11.25 18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M23.2484 22.5L16.6484 16.65" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+</svg>
+
+            </button>
+          </form>
           <div class="header__burger-wrap">
-            <button class="header__burger"><span class="header__burger-line"></span></button>
+            <button class="header__burger"><span class="header__burger-line"></span><span class="svg-burger"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.92857 10V6.82081L1.07143 8.41041L0 6.5896L2.82738 5L0 3.4104L1.07143 1.5896L3.92857 3.17919V0H6.10119V3.17919L8.92857 1.5896L10 3.4104L7.17262 5L10 6.5896L8.92857 8.41041L6.10119 6.82081V10H3.92857Z" fill="#FF3F3F"/>
+</svg>
+</span></button>
           </div>
         </div>
       </header>
-      <main class="main">
+      <main class="main" data-barba="container">
         <div class="main__container">
-          <h2 class="h2">About us</h2>
+          <ul class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a class="breadcrumbs__item" href="index.html" itemid="index.html" itemscope="" itemtype="http://schema.org/Thing" itemprop="item"><span itemprop="name">Головна</span></a><meta itemprop="position" content="1"></li>
+            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><span class="breadcrumbs__item" itemid="about-us.html" itemscope="" itemtype="http://schema.org/Thing" itemprop="item"><span itemprop="name">Про нас</span></span><meta itemprop="position" content="2"></li>
+          </ul>
+          <div class="intro">
+            <div class="cols">
+              <div class="cols__item cols__item--md">
+                <p class="h0 intro__title">Про нас</p>
+              </div>
+              <div class="cols__item cols__item--md">
+                <div class="intro__image"><img src="./img/au_1.svg"/></div>
+              </div>
+            </div><span class="intro__actions">
+              <div class="intro__button"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 12L5.46154 12L5.46154 0.688528L19.3077 0.688528L19.3077 12L22 12L12.3846 23.3115L2 12Z" stroke="black"/>
+</svg>
+
+              </div></span>
+          </div>
+          <div class="separator separator--line"></div>
+          <div class="info__about-us">
+            <div class="aboutus__content">
+              <div class="aboutus__content-subtitle text-center">
+                <p class="text-l"><span class="h4">Lang-uk</span> - це відкрита для приєднання спільнота фахівців в галузі комп'ютерної обробки текстів (програмістів, лінгвістів, дослідників), яка побудована на єдиних принципах і буде займатися підтримкою наявних і розвитком нових проектів по збору українських корпусів та інших текстових даних.</p>
+              </div>
+              <div class="aboutus__content-title text-center">
+                <p class="h2">Основні напрямки роботи нашої групи</p>
+              </div>
+              <div class="aboutus__content-items">
+                <div class="content-item">
+                  <div class="item__icon"><svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="17.5541" y="38.6719" width="17.5561" height="17.5561" transform="rotate(-45 17.5541 38.6719)" stroke="black" stroke-width="2"/>
+<rect x="12.6642" y="25.9377" width="24.0748" height="24.0748" transform="rotate(-45 12.6642 25.9377)" stroke="black" stroke-width="2"/>
+<mask id="path-3-inside-1_704_10663" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M39.5318 34.6258L29.6258 44.5318L20 34.906L29.906 25L39.5318 34.6258Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M39.5318 34.6258L29.6258 44.5318L20 34.906L29.906 25L39.5318 34.6258Z" fill="black"/>
+<path d="M39.5318 34.6258L40.946 36.04L42.3603 34.6258L40.946 33.2116L39.5318 34.6258ZM29.6258 44.5318L28.2116 45.946L29.6258 47.3603L31.04 45.946L29.6258 44.5318ZM20 34.906L18.5858 33.4918L17.1716 34.906L18.5858 36.3202L20 34.906ZM29.906 25L31.3202 23.5858L29.906 22.1716L28.4918 23.5858L29.906 25ZM38.1176 33.2116L28.2116 43.1176L31.04 45.946L40.946 36.04L38.1176 33.2116ZM31.04 43.1176L21.4142 33.4918L18.5858 36.3202L28.2116 45.946L31.04 43.1176ZM21.4142 36.3202L31.3202 26.4142L28.4918 23.5858L18.5858 33.4918L21.4142 36.3202ZM28.4918 26.4142L38.1176 36.04L40.946 33.2116L31.3202 23.5858L28.4918 26.4142Z" fill="black" mask="url(#path-3-inside-1_704_10663)"/>
+</svg>
+
+                  </div>
+                  <p class="text-m text-center">збір і публікація корпусів та інших наборів текстових даних українською мовою</p>
+                </div>
+                <div class="content-item">
+                  <div class="item__icon"><svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="8.91421" y="30" width="29.8198" height="29.8198" transform="rotate(-45 8.91421 30)" stroke="black" stroke-width="2"/>
+<rect x="22.2003" y="30" width="11.0988" height="11.0988" transform="rotate(-45 22.2003 30)" fill="black" stroke="black" stroke-width="2"/>
+</svg>
+
+                  </div>
+                  <p class="text-m text-center">створення на основі цих даних моделей для вирішення прикладних завдань обробки українських текстів</p>
+                </div>
+                <div class="content-item">
+                  <div class="item__icon"><svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="24.3258" y="30" width="19.2132" height="19.2132" transform="rotate(-45 24.3258 30)" stroke="black" stroke-width="2"/>
+<rect x="8.91421" y="30" width="19.2132" height="19.2132" transform="rotate(-45 8.91421 30)" stroke="black" stroke-width="2"/>
+<mask id="path-3-inside-1_704_10674" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M30 22.5L37.5 30L30 37.5L22.5 30L30 22.5Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M30 22.5L37.5 30L30 37.5L22.5 30L30 22.5Z" fill="black"/>
+<path d="M30 22.5L31.4142 21.0858L30 19.6716L28.5858 21.0858L30 22.5ZM37.5 30L38.9142 31.4142L40.3284 30L38.9142 28.5858L37.5 30ZM30 37.5L28.5858 38.9142L30 40.3284L31.4142 38.9142L30 37.5ZM22.5 30L21.0858 28.5858L19.6716 30L21.0858 31.4142L22.5 30ZM28.5858 23.9142L36.0858 31.4142L38.9142 28.5858L31.4142 21.0858L28.5858 23.9142ZM36.0858 28.5858L28.5858 36.0858L31.4142 38.9142L38.9142 31.4142L36.0858 28.5858ZM31.4142 36.0858L23.9142 28.5858L21.0858 31.4142L28.5858 38.9142L31.4142 36.0858ZM23.9142 31.4142L31.4142 23.9142L28.5858 21.0858L21.0858 28.5858L23.9142 31.4142Z" fill="black" mask="url(#path-3-inside-1_704_10674)"/>
+</svg>
+
+                  </div>
+                  <p class="text-m text-center">імплементація цих моделей у наборі публічно-доступних мікросервісів</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="our__team">
+            <p class="h1">Наша команда</p>
+            <div class="team__items">
+              <div class="team__item">
+                <div class="team__icon"><img class="icon" src="./img/team_1.png"/>
+                  <div class="team__item-line">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3 top"></div>
+                    <div class="line4"></div>
+                  </div>
+                  <div class="team__hand">
+                    <div class="team__hand-icon"><svg width="39" height="145" viewBox="0 0 39 145" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.43616 144.42L7.99454 56.1718C7.99454 56.1718 3.09649 42.3671 2.11612 33.5477C0.707085 20.872 1.30265 1.04544 3.85209 1.04545C6.40154 1.04547 9.12641 28.4493 9.12641 28.4493C9.12641 28.4493 9.44506 19.5271 12.137 19.5271C14.8289 19.5271 15.6421 27.1747 15.6421 27.1747C15.6421 27.1747 17.2354 19.5271 19.7846 19.5271C22.3337 19.5271 22.8283 28.768 22.8283 28.768C22.8283 28.768 25.0901 1.04545 28.0695 1.04545C31.0488 1.04546 30.9373 30.0426 30.9373 30.0426L31.0488 53.9413L30.9373 56.1718L32.2119 144.42H2.43616Z" fill="#F4F1EF"/>
+<path d="M9.12641 28.4493C9.12641 28.4493 6.40154 1.04547 3.85209 1.04545C1.30265 1.04544 0.707085 20.872 2.11612 33.5477C3.09649 42.3671 7.99454 56.1718 7.99454 56.1718L2.43616 144.42H32.2119L30.9373 56.1718L31.0488 53.9413L30.9373 30.0426C30.9373 30.0426 31.0488 1.04546 28.0695 1.04545C25.0901 1.04545 22.8283 28.768 22.8283 28.768M9.12641 28.4493C9.12641 28.4493 9.44506 19.5271 12.137 19.5271C14.8289 19.5271 15.6421 27.1747 15.6421 27.1747M9.12641 28.4493C9.12641 28.4493 10.7197 40.9886 13.2689 40.9886C15.818 40.9886 15.6421 27.1747 15.6421 27.1747M15.6421 27.1747C15.6421 27.1747 17.2354 19.5271 19.7846 19.5271C22.3337 19.5271 22.8283 28.768 22.8283 28.768M15.6421 27.1747C15.6421 27.1747 18.1914 40.67 20.1032 40.67C22.0151 40.67 22.8283 28.768 22.8283 28.768" stroke="black"/>
+<path d="M38.2641 36.7343C38.264 38.3275 30.9352 51.9205 30.9352 51.9205C30.9352 51.9205 29.9066 50.0118 29.8379 47.2497C29.7538 43.8701 31.0453 42.3436 30.9352 38.9648C30.7454 33.1391 25.837 25.5815 26.7927 24.6256C27.7485 23.6696 38.2642 35.141 38.2641 36.7343Z" fill="#F4F1EF" stroke="black" stroke-width="0.840909"/>
+<path d="M31.2159 76.7273H7.25V81.7728H31.2159V76.7273Z" fill="black" stroke="black" stroke-width="0.840909"/>
+<path d="M10.6135 78.8296H11.2802L10.1372 79.9726L10.6135 78.8296Z" fill="white" stroke="white" stroke-width="0.840909"/>
+<path d="M27.4315 78.8296H26.7647L27.9077 79.9726L27.4315 78.8296Z" fill="white" stroke="white" stroke-width="0.840909"/>
+<path d="M18.7389 78.8296L19.0796 80.0215L19.5335 78.8296H18.7389Z" fill="white" stroke="white" stroke-width="0.840909"/>
+</svg>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="team__item-content">
+                  <p class="text-m--bold">Дмитро Чаплинський</p>
+                  <p class="caption-2">Засновник групи</p>
+                  <div class="team__info-socialnetworks"><a href="#"><svg class="svg-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.99286 0.218751C3.57679 0.216965 0 3.79197 0 8.20447C0 11.6938 2.2375 14.6598 5.35357 15.7491C5.77321 15.8545 5.70893 15.5563 5.70893 15.3527V13.9688C3.28571 14.2527 3.1875 12.6491 3.025 12.3813C2.69643 11.8205 1.91964 11.6777 2.15179 11.4098C2.70357 11.1259 3.26607 11.4813 3.91786 12.4438C4.38929 13.142 5.30893 13.0241 5.775 12.908C5.87679 12.4884 6.09464 12.1134 6.39464 11.8223C3.88393 11.3723 2.8375 9.84018 2.8375 8.01875C2.8375 7.13482 3.12857 6.32232 3.7 5.66697C3.33571 4.58661 3.73393 3.66161 3.7875 3.52411C4.825 3.43125 5.90357 4.26697 5.9875 4.33304C6.57679 4.17411 7.25 4.09018 8.00357 4.09018C8.76071 4.09018 9.43571 4.17768 10.0304 4.33839C10.2321 4.18482 11.2321 3.46697 12.1964 3.55447C12.2482 3.69197 12.6375 4.59554 12.2946 5.66161C12.8732 6.31875 13.1679 7.13839 13.1679 8.02411C13.1679 9.84911 12.1143 11.383 9.59643 11.8259C9.81209 12.038 9.98333 12.2909 10.1001 12.5699C10.217 12.8489 10.277 13.1484 10.2768 13.4509V15.4598C10.2911 15.6205 10.2768 15.7795 10.5446 15.7795C13.7071 14.7134 15.9839 11.7259 15.9839 8.20625C15.9839 3.79196 12.4054 0.218751 7.99286 0.218751V0.218751Z" />
+</svg>
+</a><a href="#"><svg class="svg-icon svg-icon--stroke" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.38567 12.1767L7.35325 11.8922L7.09148 11.7762L3.3153 10.1027L17.2938 4.80249L14.5675 16.1947L11.1614 13.9808L10.9241 13.8266L10.6698 13.9506L7.75003 15.3739L7.38567 12.1767Z" />
+</svg>
+</a><a href="#"><?xml version="1.0"?><svg fill="#898989" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="18px" height="18px">    <path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"/></svg></a><a href="#"><svg fill="#898989" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="20px" height="20px"><path d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z"/></svg></a></div>
+                </div>
+              </div>
+              <div class="team__item">
+                <div class="team__icon"><img class="icon" src="./img/team_2.png"/>
+                  <div class="team__item-line">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                    <div class="line4"></div>
+                  </div>
+                  <div class="team__hand">
+                    <div class="team__hand-icon2"><svg width="39" height="146" viewBox="0 0 39 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M34.4941 60.9199C34.4931 61.853 34.4941 144.594 34.4941 144.594H1.52627C1.52627 144.594 11.4776 78.0258 11.4776 60.9199C11.4776 43.814 13.0339 27.3295 13.0339 27.3295C13.0339 27.3295 12.7229 1.83739 14.278 1.21538C15.833 0.593363 20.4971 27.3297 20.4971 27.3297C20.4971 27.3297 22.9864 0.904329 25.4746 1.21537C27.9627 1.52641 27.0284 26.3964 27.0284 26.3964L36.0489 26.7187H37.292C37.292 26.7187 34.495 59.9869 34.4941 60.9199Z" fill="#F4F1EF" stroke="black"/>
+<path d="M8.99071 31.6843C8.99079 33.2394 11.4787 51.9004 11.4787 51.9004L13.9811 45.1238C13.9811 45.1238 14.4823 38.7144 14.5892 35.4165C14.6497 33.5504 23.9192 28.5741 22.9863 27.6411C22.0534 26.7081 8.99064 30.1292 8.99071 31.6843Z" fill="#F4F1EF" stroke="black"/>
+<path d="M37.4974 30.4893C37.4974 30.4893 35.2992 41.187 33.6474 40.527C31.9956 39.867 32.7525 29.5064 32.7525 29.5064C32.7525 29.5064 34.7697 20.5774 36.9638 21.5389C39.1578 22.5005 37.4974 30.4893 37.4974 30.4893Z" fill="#F4F1EF" stroke="black"/>
+<path d="M32.5643 29.8475C32.5643 29.8475 30.6896 39.6213 29.132 39.465C27.5743 39.3087 27.2989 32.5428 27.8101 29.1166C28.3585 25.4415 29.8904 20.1249 32.0416 21.0679C34.1927 22.011 32.5643 29.8475 32.5643 29.8475Z" fill="#F4F1EF" stroke="black"/>
+<path d="M18.1824 73.5228H10.6143V77.7273H18.1824H26.5915H34.5802L34.1597 73.5228H26.5915H18.1824Z" fill="black" stroke="black" stroke-width="0.840909"/>
+<circle cx="22.3868" cy="76.0455" r="4.625" fill="white" stroke="black" stroke-width="0.840909"/>
+<path d="M22.3866 71.4205V76.0455M22.3866 76.0455L19.0229 79.4092M22.3866 76.0455L25.7502 79.4092M22.3866 76.0455V80.6705" stroke="black" stroke-width="0.840909"/>
+</svg>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="team__item-content">
+                  <p class="text-m--bold">Всеволод Дьомкін</p>
+                  <p class="caption-2">Засновник групи</p>
+                  <div class="team__info-socialnetworks"><a href="#"><svg class="svg-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.99286 0.218751C3.57679 0.216965 0 3.79197 0 8.20447C0 11.6938 2.2375 14.6598 5.35357 15.7491C5.77321 15.8545 5.70893 15.5563 5.70893 15.3527V13.9688C3.28571 14.2527 3.1875 12.6491 3.025 12.3813C2.69643 11.8205 1.91964 11.6777 2.15179 11.4098C2.70357 11.1259 3.26607 11.4813 3.91786 12.4438C4.38929 13.142 5.30893 13.0241 5.775 12.908C5.87679 12.4884 6.09464 12.1134 6.39464 11.8223C3.88393 11.3723 2.8375 9.84018 2.8375 8.01875C2.8375 7.13482 3.12857 6.32232 3.7 5.66697C3.33571 4.58661 3.73393 3.66161 3.7875 3.52411C4.825 3.43125 5.90357 4.26697 5.9875 4.33304C6.57679 4.17411 7.25 4.09018 8.00357 4.09018C8.76071 4.09018 9.43571 4.17768 10.0304 4.33839C10.2321 4.18482 11.2321 3.46697 12.1964 3.55447C12.2482 3.69197 12.6375 4.59554 12.2946 5.66161C12.8732 6.31875 13.1679 7.13839 13.1679 8.02411C13.1679 9.84911 12.1143 11.383 9.59643 11.8259C9.81209 12.038 9.98333 12.2909 10.1001 12.5699C10.217 12.8489 10.277 13.1484 10.2768 13.4509V15.4598C10.2911 15.6205 10.2768 15.7795 10.5446 15.7795C13.7071 14.7134 15.9839 11.7259 15.9839 8.20625C15.9839 3.79196 12.4054 0.218751 7.99286 0.218751V0.218751Z" />
+</svg>
+</a><a href="#"><svg class="svg-icon svg-icon--stroke" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.38567 12.1767L7.35325 11.8922L7.09148 11.7762L3.3153 10.1027L17.2938 4.80249L14.5675 16.1947L11.1614 13.9808L10.9241 13.8266L10.6698 13.9506L7.75003 15.3739L7.38567 12.1767Z" />
+</svg>
+</a><a href="#"><?xml version="1.0"?><svg fill="#898989" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="18px" height="18px">    <path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"/></svg></a><a href="#"><svg fill="#898989" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="20px" height="20px"><path d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z"/></svg></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team__helper">
+            <p class="h2 text-center">В різних проектах допомогали нашій роботі волонтери</p>
+            <div class="team__heart">
+              <svg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_704_4368" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.2954 5.13542L13.2951 5.13509L13.2947 5.13542L8.95912 0.799805L0.199219 9.55971L8.95912 18.3196L8.95945 18.3193L13.2951 22.6549L17.4249 18.525L17.4253 18.5253L26.1852 9.76543L17.4253 1.00553L13.2954 5.13542Z"/>
+</mask>
+<path d="M13.2951 5.13509L14.7103 3.72191L13.2951 2.30459L11.8798 3.72191L13.2951 5.13509ZM13.2954 5.13542L11.8801 6.54859L13.2943 7.96488L14.7096 6.54963L13.2954 5.13542ZM13.2947 5.13542L11.8805 6.54963L13.2958 7.96488L14.71 6.54859L13.2947 5.13542ZM8.95912 0.799805L10.3733 -0.614409L8.95912 -2.02862L7.54491 -0.614409L8.95912 0.799805ZM0.199219 9.55971L-1.21499 8.14549L-2.62921 9.55971L-1.21499 10.9739L0.199219 9.55971ZM8.95912 18.3196L7.54491 19.7338L8.95912 21.148L10.3733 19.7338L8.95912 18.3196ZM8.95945 18.3193L10.3737 16.9051L8.95945 15.4909L7.54523 16.9051L8.95945 18.3193ZM13.2951 22.6549L11.8808 24.0691L13.2951 25.4833L14.7093 24.0691L13.2951 22.6549ZM17.4249 18.525L18.8392 17.1108L17.4249 15.6966L16.0107 17.1108L17.4249 18.525ZM17.4253 18.5253L16.0111 19.9395L17.4253 21.3538L18.8395 19.9395L17.4253 18.5253ZM26.1852 9.76543L27.5994 11.1796L29.0136 9.76543L27.5994 8.35122L26.1852 9.76543ZM17.4253 1.00553L18.8395 -0.40868L17.4253 -1.82289L16.0111 -0.40868L17.4253 1.00553ZM11.8798 6.54827L11.8801 6.54859L14.7106 3.72224L14.7103 3.72191L11.8798 6.54827ZM14.71 6.54859L14.7103 6.54827L11.8798 3.72191L11.8795 3.72224L14.71 6.54859ZM14.7089 3.7212L10.3733 -0.614409L7.54491 2.21402L11.8805 6.54963L14.7089 3.7212ZM7.54491 -0.614409L-1.21499 8.14549L1.61343 10.9739L10.3733 2.21402L7.54491 -0.614409ZM-1.21499 10.9739L7.54491 19.7338L10.3733 16.9054L1.61343 8.14549L-1.21499 10.9739ZM10.3733 19.7338L10.3737 19.7335L7.54523 16.9051L7.54491 16.9054L10.3733 19.7338ZM14.7093 21.2407L10.3737 16.9051L7.54523 19.7335L11.8808 24.0691L14.7093 21.2407ZM16.0107 17.1108L11.8808 21.2407L14.7093 24.0691L18.8392 19.9392L16.0107 17.1108ZM16.0107 19.9392L16.0111 19.9395L18.8395 17.1111L18.8392 17.1108L16.0107 19.9392ZM18.8395 19.9395L27.5994 11.1796L24.771 8.35122L16.0111 17.1111L18.8395 19.9395ZM27.5994 8.35122L18.8395 -0.40868L16.0111 2.41975L24.771 11.1796L27.5994 8.35122ZM16.0111 -0.40868L11.8812 3.7212L14.7096 6.54963L18.8395 2.41975L16.0111 -0.40868Z" fill="black" mask="url(#path-1-inside-1_704_4368)"/>
+</svg>
+              <svg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_704_4368" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.2954 5.13542L13.2951 5.13509L13.2947 5.13542L8.95912 0.799805L0.199219 9.55971L8.95912 18.3196L8.95945 18.3193L13.2951 22.6549L17.4249 18.525L17.4253 18.5253L26.1852 9.76543L17.4253 1.00553L13.2954 5.13542Z"/>
+</mask>
+<path d="M13.2951 5.13509L14.7103 3.72191L13.2951 2.30459L11.8798 3.72191L13.2951 5.13509ZM13.2954 5.13542L11.8801 6.54859L13.2943 7.96488L14.7096 6.54963L13.2954 5.13542ZM13.2947 5.13542L11.8805 6.54963L13.2958 7.96488L14.71 6.54859L13.2947 5.13542ZM8.95912 0.799805L10.3733 -0.614409L8.95912 -2.02862L7.54491 -0.614409L8.95912 0.799805ZM0.199219 9.55971L-1.21499 8.14549L-2.62921 9.55971L-1.21499 10.9739L0.199219 9.55971ZM8.95912 18.3196L7.54491 19.7338L8.95912 21.148L10.3733 19.7338L8.95912 18.3196ZM8.95945 18.3193L10.3737 16.9051L8.95945 15.4909L7.54523 16.9051L8.95945 18.3193ZM13.2951 22.6549L11.8808 24.0691L13.2951 25.4833L14.7093 24.0691L13.2951 22.6549ZM17.4249 18.525L18.8392 17.1108L17.4249 15.6966L16.0107 17.1108L17.4249 18.525ZM17.4253 18.5253L16.0111 19.9395L17.4253 21.3538L18.8395 19.9395L17.4253 18.5253ZM26.1852 9.76543L27.5994 11.1796L29.0136 9.76543L27.5994 8.35122L26.1852 9.76543ZM17.4253 1.00553L18.8395 -0.40868L17.4253 -1.82289L16.0111 -0.40868L17.4253 1.00553ZM11.8798 6.54827L11.8801 6.54859L14.7106 3.72224L14.7103 3.72191L11.8798 6.54827ZM14.71 6.54859L14.7103 6.54827L11.8798 3.72191L11.8795 3.72224L14.71 6.54859ZM14.7089 3.7212L10.3733 -0.614409L7.54491 2.21402L11.8805 6.54963L14.7089 3.7212ZM7.54491 -0.614409L-1.21499 8.14549L1.61343 10.9739L10.3733 2.21402L7.54491 -0.614409ZM-1.21499 10.9739L7.54491 19.7338L10.3733 16.9054L1.61343 8.14549L-1.21499 10.9739ZM10.3733 19.7338L10.3737 19.7335L7.54523 16.9051L7.54491 16.9054L10.3733 19.7338ZM14.7093 21.2407L10.3737 16.9051L7.54523 19.7335L11.8808 24.0691L14.7093 21.2407ZM16.0107 17.1108L11.8808 21.2407L14.7093 24.0691L18.8392 19.9392L16.0107 17.1108ZM16.0107 19.9392L16.0111 19.9395L18.8395 17.1111L18.8392 17.1108L16.0107 19.9392ZM18.8395 19.9395L27.5994 11.1796L24.771 8.35122L16.0111 17.1111L18.8395 19.9395ZM27.5994 8.35122L18.8395 -0.40868L16.0111 2.41975L24.771 11.1796L27.5994 8.35122ZM16.0111 -0.40868L11.8812 3.7212L14.7096 6.54963L18.8395 2.41975L16.0111 -0.40868Z" fill="black" mask="url(#path-1-inside-1_704_4368)"/>
+</svg>
+              <svg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_704_4368" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.2954 5.13542L13.2951 5.13509L13.2947 5.13542L8.95912 0.799805L0.199219 9.55971L8.95912 18.3196L8.95945 18.3193L13.2951 22.6549L17.4249 18.525L17.4253 18.5253L26.1852 9.76543L17.4253 1.00553L13.2954 5.13542Z"/>
+</mask>
+<path d="M13.2951 5.13509L14.7103 3.72191L13.2951 2.30459L11.8798 3.72191L13.2951 5.13509ZM13.2954 5.13542L11.8801 6.54859L13.2943 7.96488L14.7096 6.54963L13.2954 5.13542ZM13.2947 5.13542L11.8805 6.54963L13.2958 7.96488L14.71 6.54859L13.2947 5.13542ZM8.95912 0.799805L10.3733 -0.614409L8.95912 -2.02862L7.54491 -0.614409L8.95912 0.799805ZM0.199219 9.55971L-1.21499 8.14549L-2.62921 9.55971L-1.21499 10.9739L0.199219 9.55971ZM8.95912 18.3196L7.54491 19.7338L8.95912 21.148L10.3733 19.7338L8.95912 18.3196ZM8.95945 18.3193L10.3737 16.9051L8.95945 15.4909L7.54523 16.9051L8.95945 18.3193ZM13.2951 22.6549L11.8808 24.0691L13.2951 25.4833L14.7093 24.0691L13.2951 22.6549ZM17.4249 18.525L18.8392 17.1108L17.4249 15.6966L16.0107 17.1108L17.4249 18.525ZM17.4253 18.5253L16.0111 19.9395L17.4253 21.3538L18.8395 19.9395L17.4253 18.5253ZM26.1852 9.76543L27.5994 11.1796L29.0136 9.76543L27.5994 8.35122L26.1852 9.76543ZM17.4253 1.00553L18.8395 -0.40868L17.4253 -1.82289L16.0111 -0.40868L17.4253 1.00553ZM11.8798 6.54827L11.8801 6.54859L14.7106 3.72224L14.7103 3.72191L11.8798 6.54827ZM14.71 6.54859L14.7103 6.54827L11.8798 3.72191L11.8795 3.72224L14.71 6.54859ZM14.7089 3.7212L10.3733 -0.614409L7.54491 2.21402L11.8805 6.54963L14.7089 3.7212ZM7.54491 -0.614409L-1.21499 8.14549L1.61343 10.9739L10.3733 2.21402L7.54491 -0.614409ZM-1.21499 10.9739L7.54491 19.7338L10.3733 16.9054L1.61343 8.14549L-1.21499 10.9739ZM10.3733 19.7338L10.3737 19.7335L7.54523 16.9051L7.54491 16.9054L10.3733 19.7338ZM14.7093 21.2407L10.3737 16.9051L7.54523 19.7335L11.8808 24.0691L14.7093 21.2407ZM16.0107 17.1108L11.8808 21.2407L14.7093 24.0691L18.8392 19.9392L16.0107 17.1108ZM16.0107 19.9392L16.0111 19.9395L18.8395 17.1111L18.8392 17.1108L16.0107 19.9392ZM18.8395 19.9395L27.5994 11.1796L24.771 8.35122L16.0111 17.1111L18.8395 19.9395ZM27.5994 8.35122L18.8395 -0.40868L16.0111 2.41975L24.771 11.1796L27.5994 8.35122ZM16.0111 -0.40868L11.8812 3.7212L14.7096 6.54963L18.8395 2.41975L16.0111 -0.40868Z" fill="black" mask="url(#path-1-inside-1_704_4368)"/>
+</svg>
+
+            </div>
+            <div class="team__items">
+              <div class="team__item">
+                <div class="team__icon"><img class="icon" src="./img/helper_4.png"/></div>
+                <p class="text-m--bold">Анатолій Стегній</p>
+                <p class="caption-2">пост-обробка даних NER</p>
+                <div class="team__info-socialnetworks"><a href="#"><svg class="svg-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.99286 0.218751C3.57679 0.216965 0 3.79197 0 8.20447C0 11.6938 2.2375 14.6598 5.35357 15.7491C5.77321 15.8545 5.70893 15.5563 5.70893 15.3527V13.9688C3.28571 14.2527 3.1875 12.6491 3.025 12.3813C2.69643 11.8205 1.91964 11.6777 2.15179 11.4098C2.70357 11.1259 3.26607 11.4813 3.91786 12.4438C4.38929 13.142 5.30893 13.0241 5.775 12.908C5.87679 12.4884 6.09464 12.1134 6.39464 11.8223C3.88393 11.3723 2.8375 9.84018 2.8375 8.01875C2.8375 7.13482 3.12857 6.32232 3.7 5.66697C3.33571 4.58661 3.73393 3.66161 3.7875 3.52411C4.825 3.43125 5.90357 4.26697 5.9875 4.33304C6.57679 4.17411 7.25 4.09018 8.00357 4.09018C8.76071 4.09018 9.43571 4.17768 10.0304 4.33839C10.2321 4.18482 11.2321 3.46697 12.1964 3.55447C12.2482 3.69197 12.6375 4.59554 12.2946 5.66161C12.8732 6.31875 13.1679 7.13839 13.1679 8.02411C13.1679 9.84911 12.1143 11.383 9.59643 11.8259C9.81209 12.038 9.98333 12.2909 10.1001 12.5699C10.217 12.8489 10.277 13.1484 10.2768 13.4509V15.4598C10.2911 15.6205 10.2768 15.7795 10.5446 15.7795C13.7071 14.7134 15.9839 11.7259 15.9839 8.20625C15.9839 3.79196 12.4054 0.218751 7.99286 0.218751V0.218751Z" />
+</svg>
+</a><a href="#"><svg class="svg-icon svg-icon--stroke" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.38567 12.1767L7.35325 11.8922L7.09148 11.7762L3.3153 10.1027L17.2938 4.80249L14.5675 16.1947L11.1614 13.9808L10.9241 13.8266L10.6698 13.9506L7.75003 15.3739L7.38567 12.1767Z" />
+</svg>
+</a><a href="#"><?xml version="1.0"?><svg fill="#898989" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="18px" height="18px">    <path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"/></svg></a><a href="#"><svg fill="#898989" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="20px" height="20px"><path d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z"/></svg></a></div>
+              </div>
+              <div class="team__item">
+                <div class="team__icon"><img class="icon" src="./img/helper_2.png"/></div>
+                <p class="text-m--bold">Олександр Маріковський</p>
+                <p class="caption-2">надання первинних даних для тонального словника</p>
+                <div class="team__info-socialnetworks"><a href="#"><svg class="svg-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.99286 0.218751C3.57679 0.216965 0 3.79197 0 8.20447C0 11.6938 2.2375 14.6598 5.35357 15.7491C5.77321 15.8545 5.70893 15.5563 5.70893 15.3527V13.9688C3.28571 14.2527 3.1875 12.6491 3.025 12.3813C2.69643 11.8205 1.91964 11.6777 2.15179 11.4098C2.70357 11.1259 3.26607 11.4813 3.91786 12.4438C4.38929 13.142 5.30893 13.0241 5.775 12.908C5.87679 12.4884 6.09464 12.1134 6.39464 11.8223C3.88393 11.3723 2.8375 9.84018 2.8375 8.01875C2.8375 7.13482 3.12857 6.32232 3.7 5.66697C3.33571 4.58661 3.73393 3.66161 3.7875 3.52411C4.825 3.43125 5.90357 4.26697 5.9875 4.33304C6.57679 4.17411 7.25 4.09018 8.00357 4.09018C8.76071 4.09018 9.43571 4.17768 10.0304 4.33839C10.2321 4.18482 11.2321 3.46697 12.1964 3.55447C12.2482 3.69197 12.6375 4.59554 12.2946 5.66161C12.8732 6.31875 13.1679 7.13839 13.1679 8.02411C13.1679 9.84911 12.1143 11.383 9.59643 11.8259C9.81209 12.038 9.98333 12.2909 10.1001 12.5699C10.217 12.8489 10.277 13.1484 10.2768 13.4509V15.4598C10.2911 15.6205 10.2768 15.7795 10.5446 15.7795C13.7071 14.7134 15.9839 11.7259 15.9839 8.20625C15.9839 3.79196 12.4054 0.218751 7.99286 0.218751V0.218751Z" />
+</svg>
+</a><a href="#"><svg class="svg-icon svg-icon--stroke" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.38567 12.1767L7.35325 11.8922L7.09148 11.7762L3.3153 10.1027L17.2938 4.80249L14.5675 16.1947L11.1614 13.9808L10.9241 13.8266L10.6698 13.9506L7.75003 15.3739L7.38567 12.1767Z" />
+</svg>
+</a><a href="#"><?xml version="1.0"?><svg fill="#898989" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="18px" height="18px">    <path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"/></svg></a><a href="#"><svg fill="#898989" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="20px" height="20px"><path d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z"/></svg></a></div>
+              </div>
+              <div class="team__item">
+                <div class="team__icon"><img class="icon" src="./img/helper_2.png"/></div>
+                <p class="text-m--bold">В'ячеслав Тихонов</p>
+                <p class="caption-2">надання первинних даних для тонального словника</p>
+                <div class="team__info-socialnetworks"><a href="#"><svg class="svg-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.99286 0.218751C3.57679 0.216965 0 3.79197 0 8.20447C0 11.6938 2.2375 14.6598 5.35357 15.7491C5.77321 15.8545 5.70893 15.5563 5.70893 15.3527V13.9688C3.28571 14.2527 3.1875 12.6491 3.025 12.3813C2.69643 11.8205 1.91964 11.6777 2.15179 11.4098C2.70357 11.1259 3.26607 11.4813 3.91786 12.4438C4.38929 13.142 5.30893 13.0241 5.775 12.908C5.87679 12.4884 6.09464 12.1134 6.39464 11.8223C3.88393 11.3723 2.8375 9.84018 2.8375 8.01875C2.8375 7.13482 3.12857 6.32232 3.7 5.66697C3.33571 4.58661 3.73393 3.66161 3.7875 3.52411C4.825 3.43125 5.90357 4.26697 5.9875 4.33304C6.57679 4.17411 7.25 4.09018 8.00357 4.09018C8.76071 4.09018 9.43571 4.17768 10.0304 4.33839C10.2321 4.18482 11.2321 3.46697 12.1964 3.55447C12.2482 3.69197 12.6375 4.59554 12.2946 5.66161C12.8732 6.31875 13.1679 7.13839 13.1679 8.02411C13.1679 9.84911 12.1143 11.383 9.59643 11.8259C9.81209 12.038 9.98333 12.2909 10.1001 12.5699C10.217 12.8489 10.277 13.1484 10.2768 13.4509V15.4598C10.2911 15.6205 10.2768 15.7795 10.5446 15.7795C13.7071 14.7134 15.9839 11.7259 15.9839 8.20625C15.9839 3.79196 12.4054 0.218751 7.99286 0.218751V0.218751Z" />
+</svg>
+</a><a href="#"><svg class="svg-icon svg-icon--stroke" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.38567 12.1767L7.35325 11.8922L7.09148 11.7762L3.3153 10.1027L17.2938 4.80249L14.5675 16.1947L11.1614 13.9808L10.9241 13.8266L10.6698 13.9506L7.75003 15.3739L7.38567 12.1767Z" />
+</svg>
+</a><a href="#"><?xml version="1.0"?><svg fill="#898989" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="18px" height="18px">    <path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"/></svg></a><a href="#"><svg fill="#898989" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="20px" height="20px"><path d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z"/></svg></a></div>
+              </div>
+              <div class="team__item">
+                <div class="team__icon"><img class="icon" src="./img/helper_4.png"/></div>
+                <p class="text-m--bold">Олесь Петрів</p>
+                <p class="caption-2">розширення тонального словника</p>
+                <div class="team__info-socialnetworks"><a href="#"><svg class="svg-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.99286 0.218751C3.57679 0.216965 0 3.79197 0 8.20447C0 11.6938 2.2375 14.6598 5.35357 15.7491C5.77321 15.8545 5.70893 15.5563 5.70893 15.3527V13.9688C3.28571 14.2527 3.1875 12.6491 3.025 12.3813C2.69643 11.8205 1.91964 11.6777 2.15179 11.4098C2.70357 11.1259 3.26607 11.4813 3.91786 12.4438C4.38929 13.142 5.30893 13.0241 5.775 12.908C5.87679 12.4884 6.09464 12.1134 6.39464 11.8223C3.88393 11.3723 2.8375 9.84018 2.8375 8.01875C2.8375 7.13482 3.12857 6.32232 3.7 5.66697C3.33571 4.58661 3.73393 3.66161 3.7875 3.52411C4.825 3.43125 5.90357 4.26697 5.9875 4.33304C6.57679 4.17411 7.25 4.09018 8.00357 4.09018C8.76071 4.09018 9.43571 4.17768 10.0304 4.33839C10.2321 4.18482 11.2321 3.46697 12.1964 3.55447C12.2482 3.69197 12.6375 4.59554 12.2946 5.66161C12.8732 6.31875 13.1679 7.13839 13.1679 8.02411C13.1679 9.84911 12.1143 11.383 9.59643 11.8259C9.81209 12.038 9.98333 12.2909 10.1001 12.5699C10.217 12.8489 10.277 13.1484 10.2768 13.4509V15.4598C10.2911 15.6205 10.2768 15.7795 10.5446 15.7795C13.7071 14.7134 15.9839 11.7259 15.9839 8.20625C15.9839 3.79196 12.4054 0.218751 7.99286 0.218751V0.218751Z" />
+</svg>
+</a><a href="#"><svg class="svg-icon svg-icon--stroke" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.38567 12.1767L7.35325 11.8922L7.09148 11.7762L3.3153 10.1027L17.2938 4.80249L14.5675 16.1947L11.1614 13.9808L10.9241 13.8266L10.6698 13.9506L7.75003 15.3739L7.38567 12.1767Z" />
+</svg>
+</a><a href="#"><?xml version="1.0"?><svg fill="#898989" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="18px" height="18px">    <path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"/></svg></a><a href="#"><svg fill="#898989" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="20px" height="20px"><path d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z"/></svg></a></div>
+              </div>
+              <div class="team__item">
+                <div class="team__icon"><img class="icon" src="./img/helper_5.png"/></div>
+                <p class="text-m--bold">Христина Скопик</p>
+                <p class="caption-2">переклад англійською</p>
+                <div class="team__info-socialnetworks"><a href="#"><svg class="svg-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.99286 0.218751C3.57679 0.216965 0 3.79197 0 8.20447C0 11.6938 2.2375 14.6598 5.35357 15.7491C5.77321 15.8545 5.70893 15.5563 5.70893 15.3527V13.9688C3.28571 14.2527 3.1875 12.6491 3.025 12.3813C2.69643 11.8205 1.91964 11.6777 2.15179 11.4098C2.70357 11.1259 3.26607 11.4813 3.91786 12.4438C4.38929 13.142 5.30893 13.0241 5.775 12.908C5.87679 12.4884 6.09464 12.1134 6.39464 11.8223C3.88393 11.3723 2.8375 9.84018 2.8375 8.01875C2.8375 7.13482 3.12857 6.32232 3.7 5.66697C3.33571 4.58661 3.73393 3.66161 3.7875 3.52411C4.825 3.43125 5.90357 4.26697 5.9875 4.33304C6.57679 4.17411 7.25 4.09018 8.00357 4.09018C8.76071 4.09018 9.43571 4.17768 10.0304 4.33839C10.2321 4.18482 11.2321 3.46697 12.1964 3.55447C12.2482 3.69197 12.6375 4.59554 12.2946 5.66161C12.8732 6.31875 13.1679 7.13839 13.1679 8.02411C13.1679 9.84911 12.1143 11.383 9.59643 11.8259C9.81209 12.038 9.98333 12.2909 10.1001 12.5699C10.217 12.8489 10.277 13.1484 10.2768 13.4509V15.4598C10.2911 15.6205 10.2768 15.7795 10.5446 15.7795C13.7071 14.7134 15.9839 11.7259 15.9839 8.20625C15.9839 3.79196 12.4054 0.218751 7.99286 0.218751V0.218751Z" />
+</svg>
+</a><a href="#"><svg class="svg-icon svg-icon--stroke" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.38567 12.1767L7.35325 11.8922L7.09148 11.7762L3.3153 10.1027L17.2938 4.80249L14.5675 16.1947L11.1614 13.9808L10.9241 13.8266L10.6698 13.9506L7.75003 15.3739L7.38567 12.1767Z" />
+</svg>
+</a><a href="#"><?xml version="1.0"?><svg fill="#898989" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="18px" height="18px">    <path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"/></svg></a><a href="#"><svg fill="#898989" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="20px" height="20px"><path d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z"/></svg></a></div>
+              </div>
+              <div class="team__item">
+                <div class="team__icon"><img class="icon" src="./img/helper_2.png"/></div>
+                <p class="text-m--bold">Оксана Кунікевич</p>
+                <p class="caption-2">переклад англійською</p>
+                <div class="team__info-socialnetworks"><a href="#"><svg class="svg-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.99286 0.218751C3.57679 0.216965 0 3.79197 0 8.20447C0 11.6938 2.2375 14.6598 5.35357 15.7491C5.77321 15.8545 5.70893 15.5563 5.70893 15.3527V13.9688C3.28571 14.2527 3.1875 12.6491 3.025 12.3813C2.69643 11.8205 1.91964 11.6777 2.15179 11.4098C2.70357 11.1259 3.26607 11.4813 3.91786 12.4438C4.38929 13.142 5.30893 13.0241 5.775 12.908C5.87679 12.4884 6.09464 12.1134 6.39464 11.8223C3.88393 11.3723 2.8375 9.84018 2.8375 8.01875C2.8375 7.13482 3.12857 6.32232 3.7 5.66697C3.33571 4.58661 3.73393 3.66161 3.7875 3.52411C4.825 3.43125 5.90357 4.26697 5.9875 4.33304C6.57679 4.17411 7.25 4.09018 8.00357 4.09018C8.76071 4.09018 9.43571 4.17768 10.0304 4.33839C10.2321 4.18482 11.2321 3.46697 12.1964 3.55447C12.2482 3.69197 12.6375 4.59554 12.2946 5.66161C12.8732 6.31875 13.1679 7.13839 13.1679 8.02411C13.1679 9.84911 12.1143 11.383 9.59643 11.8259C9.81209 12.038 9.98333 12.2909 10.1001 12.5699C10.217 12.8489 10.277 13.1484 10.2768 13.4509V15.4598C10.2911 15.6205 10.2768 15.7795 10.5446 15.7795C13.7071 14.7134 15.9839 11.7259 15.9839 8.20625C15.9839 3.79196 12.4054 0.218751 7.99286 0.218751V0.218751Z" />
+</svg>
+</a><a href="#"><svg class="svg-icon svg-icon--stroke" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.38567 12.1767L7.35325 11.8922L7.09148 11.7762L3.3153 10.1027L17.2938 4.80249L14.5675 16.1947L11.1614 13.9808L10.9241 13.8266L10.6698 13.9506L7.75003 15.3739L7.38567 12.1767Z" />
+</svg>
+</a><a href="#"><?xml version="1.0"?><svg fill="#898989" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="18px" height="18px">    <path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"/></svg></a><a href="#"><svg fill="#898989" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="20px" height="20px"><path d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z"/></svg></a></div>
+              </div>
+              <div class="team__item">
+                <div class="team__icon"><img class="icon" src="./img/helper_7.png"/></div>
+                <p class="text-m--bold">Тетяна Кодлюк</p>
+                <p class="caption-2">розробка тестового датасету для Word Embeddings та їх оцінка</p>
+                <div class="team__info-socialnetworks"><a href="#"><svg class="svg-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.99286 0.218751C3.57679 0.216965 0 3.79197 0 8.20447C0 11.6938 2.2375 14.6598 5.35357 15.7491C5.77321 15.8545 5.70893 15.5563 5.70893 15.3527V13.9688C3.28571 14.2527 3.1875 12.6491 3.025 12.3813C2.69643 11.8205 1.91964 11.6777 2.15179 11.4098C2.70357 11.1259 3.26607 11.4813 3.91786 12.4438C4.38929 13.142 5.30893 13.0241 5.775 12.908C5.87679 12.4884 6.09464 12.1134 6.39464 11.8223C3.88393 11.3723 2.8375 9.84018 2.8375 8.01875C2.8375 7.13482 3.12857 6.32232 3.7 5.66697C3.33571 4.58661 3.73393 3.66161 3.7875 3.52411C4.825 3.43125 5.90357 4.26697 5.9875 4.33304C6.57679 4.17411 7.25 4.09018 8.00357 4.09018C8.76071 4.09018 9.43571 4.17768 10.0304 4.33839C10.2321 4.18482 11.2321 3.46697 12.1964 3.55447C12.2482 3.69197 12.6375 4.59554 12.2946 5.66161C12.8732 6.31875 13.1679 7.13839 13.1679 8.02411C13.1679 9.84911 12.1143 11.383 9.59643 11.8259C9.81209 12.038 9.98333 12.2909 10.1001 12.5699C10.217 12.8489 10.277 13.1484 10.2768 13.4509V15.4598C10.2911 15.6205 10.2768 15.7795 10.5446 15.7795C13.7071 14.7134 15.9839 11.7259 15.9839 8.20625C15.9839 3.79196 12.4054 0.218751 7.99286 0.218751V0.218751Z" />
+</svg>
+</a><a href="#"><svg class="svg-icon svg-icon--stroke" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.38567 12.1767L7.35325 11.8922L7.09148 11.7762L3.3153 10.1027L17.2938 4.80249L14.5675 16.1947L11.1614 13.9808L10.9241 13.8266L10.6698 13.9506L7.75003 15.3739L7.38567 12.1767Z" />
+</svg>
+</a><a href="#"><?xml version="1.0"?><svg fill="#898989" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="18px" height="18px">    <path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"/></svg></a><a href="#"><svg fill="#898989" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="20px" height="20px"><path d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z"/></svg></a></div>
+              </div>
+              <div class="team__item">
+                <div class="team__icon"><img class="icon" src="./img/helper_2.png"/></div>
+                <p class="text-m--bold">Сергій Шеховцов</p>
+                <p class="caption-2">розширення тонального словника</p>
+                <div class="team__info-socialnetworks"><a href="#"><svg class="svg-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.99286 0.218751C3.57679 0.216965 0 3.79197 0 8.20447C0 11.6938 2.2375 14.6598 5.35357 15.7491C5.77321 15.8545 5.70893 15.5563 5.70893 15.3527V13.9688C3.28571 14.2527 3.1875 12.6491 3.025 12.3813C2.69643 11.8205 1.91964 11.6777 2.15179 11.4098C2.70357 11.1259 3.26607 11.4813 3.91786 12.4438C4.38929 13.142 5.30893 13.0241 5.775 12.908C5.87679 12.4884 6.09464 12.1134 6.39464 11.8223C3.88393 11.3723 2.8375 9.84018 2.8375 8.01875C2.8375 7.13482 3.12857 6.32232 3.7 5.66697C3.33571 4.58661 3.73393 3.66161 3.7875 3.52411C4.825 3.43125 5.90357 4.26697 5.9875 4.33304C6.57679 4.17411 7.25 4.09018 8.00357 4.09018C8.76071 4.09018 9.43571 4.17768 10.0304 4.33839C10.2321 4.18482 11.2321 3.46697 12.1964 3.55447C12.2482 3.69197 12.6375 4.59554 12.2946 5.66161C12.8732 6.31875 13.1679 7.13839 13.1679 8.02411C13.1679 9.84911 12.1143 11.383 9.59643 11.8259C9.81209 12.038 9.98333 12.2909 10.1001 12.5699C10.217 12.8489 10.277 13.1484 10.2768 13.4509V15.4598C10.2911 15.6205 10.2768 15.7795 10.5446 15.7795C13.7071 14.7134 15.9839 11.7259 15.9839 8.20625C15.9839 3.79196 12.4054 0.218751 7.99286 0.218751V0.218751Z" />
+</svg>
+</a><a href="#"><svg class="svg-icon svg-icon--stroke" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.38567 12.1767L7.35325 11.8922L7.09148 11.7762L3.3153 10.1027L17.2938 4.80249L14.5675 16.1947L11.1614 13.9808L10.9241 13.8266L10.6698 13.9506L7.75003 15.3739L7.38567 12.1767Z" />
+</svg>
+</a><a href="#"><?xml version="1.0"?><svg fill="#898989" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="18px" height="18px">    <path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"/></svg></a><a href="#"><svg fill="#898989" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="20px" height="20px"><path d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z"/></svg></a></div>
+              </div>
+              <div class="team__item">
+                <div class="team__icon"><img class="icon" src="./img/helper_2.png"/></div>
+                <p class="text-m--bold">Михайло Чалий</p>
+                <p class="caption-2">розробка мікросервісу NER та Docker-скриптів для усіх мікросервісів</p>
+                <div class="team__info-socialnetworks"><a href="#"><svg class="svg-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.99286 0.218751C3.57679 0.216965 0 3.79197 0 8.20447C0 11.6938 2.2375 14.6598 5.35357 15.7491C5.77321 15.8545 5.70893 15.5563 5.70893 15.3527V13.9688C3.28571 14.2527 3.1875 12.6491 3.025 12.3813C2.69643 11.8205 1.91964 11.6777 2.15179 11.4098C2.70357 11.1259 3.26607 11.4813 3.91786 12.4438C4.38929 13.142 5.30893 13.0241 5.775 12.908C5.87679 12.4884 6.09464 12.1134 6.39464 11.8223C3.88393 11.3723 2.8375 9.84018 2.8375 8.01875C2.8375 7.13482 3.12857 6.32232 3.7 5.66697C3.33571 4.58661 3.73393 3.66161 3.7875 3.52411C4.825 3.43125 5.90357 4.26697 5.9875 4.33304C6.57679 4.17411 7.25 4.09018 8.00357 4.09018C8.76071 4.09018 9.43571 4.17768 10.0304 4.33839C10.2321 4.18482 11.2321 3.46697 12.1964 3.55447C12.2482 3.69197 12.6375 4.59554 12.2946 5.66161C12.8732 6.31875 13.1679 7.13839 13.1679 8.02411C13.1679 9.84911 12.1143 11.383 9.59643 11.8259C9.81209 12.038 9.98333 12.2909 10.1001 12.5699C10.217 12.8489 10.277 13.1484 10.2768 13.4509V15.4598C10.2911 15.6205 10.2768 15.7795 10.5446 15.7795C13.7071 14.7134 15.9839 11.7259 15.9839 8.20625C15.9839 3.79196 12.4054 0.218751 7.99286 0.218751V0.218751Z" />
+</svg>
+</a><a href="#"><svg class="svg-icon svg-icon--stroke" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.38567 12.1767L7.35325 11.8922L7.09148 11.7762L3.3153 10.1027L17.2938 4.80249L14.5675 16.1947L11.1614 13.9808L10.9241 13.8266L10.6698 13.9506L7.75003 15.3739L7.38567 12.1767Z" />
+</svg>
+</a><a href="#"><?xml version="1.0"?><svg fill="#898989" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="18px" height="18px">    <path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"/></svg></a><a href="#"><svg fill="#898989" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="20px" height="20px"><path d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z"/></svg></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="media-articles">
+            <div class="media-articles__title">
+              <p class="h1 text-center">Медіа про нас</p>
+            </div>
+            <div class="media-articles__content">
+              <div class="slider-wrap">
+                <div class="slider-wrap__slider">
+                  <div class="slider">
+                    <div class="media-card">
+                      <div class="media-card__head">
+                        <div class="media-card__head-item">
+                          <div class="media-card__head-logo"><img src="./img/dou_logo.jpg"/></div>
+                          <p class="media-card__head-text">07.09.2017</p>
+                        </div>
+                        <div class="media-card__head-item">
+                          <p class="media-card__head-text media-card__head-text--label text-right">Promo</p>
+                          <p class="media-card__head-text media-card__head-text--bold text-right">№1</p>
+                        </div>
+                      </div>
+                      <div class="media-card__body">
+                        <p class="text-l">Комп’ютерна лінгвістика по-українськи: про підсумки роботи lang-uk за рік існування</p>
+                      </div>
+                    </div>
+                    <div class="media-card">
+                      <div class="media-card__head">
+                        <div class="media-card__head-item">
+                          <div class="media-card__head-logo"><img src="./img/dou_logo.jpg"/></div>
+                          <p class="media-card__head-text">07.09.2017</p>
+                        </div>
+                        <div class="media-card__head-item">
+                          <p class="media-card__head-text media-card__head-text--label text-right">Business</p>
+                          <p class="media-card__head-text media-card__head-text--bold text-right">№2</p>
+                        </div>
+                      </div>
+                      <div class="media-card__body">
+                        <p class="text-l">Анонс lang-uk: створюємо умови для повноцінної обробки україномовних текстів</p>
+                      </div>
+                    </div>
+                    <div class="media-card">
+                      <div class="media-card__head">
+                        <div class="media-card__head-item">
+                          <div class="media-card__head-logo"><img src="./img/dou_logo.jpg"/></div>
+                          <p class="media-card__head-text">07.09.2017</p>
+                        </div>
+                        <div class="media-card__head-item">
+                          <p class="media-card__head-text media-card__head-text--label text-right">Lang-uk</p>
+                          <p class="media-card__head-text media-card__head-text--bold text-right">№3</p>
+                        </div>
+                      </div>
+                      <div class="media-card__body">
+                        <p class="text-l">Комп’ютерна лінгвістика по-українськи: про підсумки роботи lang-uk за рік існування</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="become-part">
+            <div class="become-part__container">
+              <p class="become-part__title">Стань частиною проєкту, який змінить майбутнє країни</p>
+              <div class="become-part__actions">
+                <div class="spacer spacer--h-sm">
+                  <div class="spacer__item"><a class="button button-wave button-wave--transparent spacer__item" href="#">Залишити видгук</a></div>
+                  <div class="spacer__item"><a class="button button-wave spacer__item" href="add-product.html">Доповнити продукт</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="svg-hover"><img src="./img/Hover.svg"/></div>
+          </div>
         </div>
       </main>
       <footer class="footer">
@@ -64,29 +508,26 @@
             </div>
             <div class="footer__actions">
               <div class="spacer spacer--h spacer--size-3">
-                <div class="spacer__item">
-                  <button class="footer__button button-wave button-wave--transparent"><svg class="svg-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <div class="spacer__item"><a class="footer__button button-wave button-wave--transparent" href="https://github.com/lang-uk/new_design"><svg class="svg-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
     <path d="M7.99286 0.218751C3.57679 0.216965 0 3.79197 0 8.20447C0 11.6938 2.2375 14.6598 5.35357 15.7491C5.77321 15.8545 5.70893 15.5563 5.70893 15.3527V13.9688C3.28571 14.2527 3.1875 12.6491 3.025 12.3813C2.69643 11.8205 1.91964 11.6777 2.15179 11.4098C2.70357 11.1259 3.26607 11.4813 3.91786 12.4438C4.38929 13.142 5.30893 13.0241 5.775 12.908C5.87679 12.4884 6.09464 12.1134 6.39464 11.8223C3.88393 11.3723 2.8375 9.84018 2.8375 8.01875C2.8375 7.13482 3.12857 6.32232 3.7 5.66697C3.33571 4.58661 3.73393 3.66161 3.7875 3.52411C4.825 3.43125 5.90357 4.26697 5.9875 4.33304C6.57679 4.17411 7.25 4.09018 8.00357 4.09018C8.76071 4.09018 9.43571 4.17768 10.0304 4.33839C10.2321 4.18482 11.2321 3.46697 12.1964 3.55447C12.2482 3.69197 12.6375 4.59554 12.2946 5.66161C12.8732 6.31875 13.1679 7.13839 13.1679 8.02411C13.1679 9.84911 12.1143 11.383 9.59643 11.8259C9.81209 12.038 9.98333 12.2909 10.1001 12.5699C10.217 12.8489 10.277 13.1484 10.2768 13.4509V15.4598C10.2911 15.6205 10.2768 15.7795 10.5446 15.7795C13.7071 14.7134 15.9839 11.7259 15.9839 8.20625C15.9839 3.79196 12.4054 0.218751 7.99286 0.218751V0.218751Z" />
 </svg>
-
-                  </button>
-                </div>
-                <div class="spacer__item">
-                  <button class="footer__button button-wave button-wave--transparent"><svg class="svg-icon svg-icon--stroke" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+</a></div>
+                <div class="spacer__item"><a class="footer__button button-wave button-wave--transparent" href="tg://resolve?domain=lang-uk"><svg class="svg-icon svg-icon--stroke" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
     <path d="M7.38567 12.1767L7.35325 11.8922L7.09148 11.7762L3.3153 10.1027L17.2938 4.80249L14.5675 16.1947L11.1614 13.9808L10.9241 13.8266L10.6698 13.9506L7.75003 15.3739L7.38567 12.1767Z" />
 </svg>
-
-                  </button>
-                </div>
+</a></div>
               </div>
             </div>
           </div>
           <div class="footer__bottom"><span class="caption-1 caption-1--regular">©2021 Lang-uk</span>
-            <div class="spacer spacer--h spacer--size-1"><span class="spacer__item"><svg class="svg-icon svg-icon--stroke" width="25" height="13" viewBox="0 0 25 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="footer__bottom-dev">
+              <div class="spacer spacer--h spacer--size-1 footer__developer"><span class="spacer__item"><svg class="svg-icon svg-icon--stroke" width="25" height="13" viewBox="0 0 25 13" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M24.3192 11.7166L18.5313 6.21051L12.4218 11.861L6.64232 6.35494L1.00303 12" stroke="black"/>
     <path d="M24.3211 6.50616L18.5317 1.00006L12.4237 6.65056L6.64278 1.14449L1.005 6.78955" stroke="black"/>
 </svg>
-</span><span class="spacer__item caption-1 caption-1--regular">Architected by</span><span class="spacer__item caption-1">Báchoo</span></div>
+</span><span class="spacer__item caption-1 caption-1--regular">Architected by</span><a class="spacer__item caption-1" href="https://bachoodesign.com">Báchoo</a></div>
+              <div class="spacer spacer--h spacer--size-1 footer__developer"><a class="footer__developer-highweb spacer__item caption-1" href="https://bachoodesign.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 121.82"><path d="M41.6,93.73H57.5v6.34H48.41v3.83H57.5v6.34H48.41v4.66H57.5v6.35H41.6Zm38.79,16.84a7.47,7.47,0,0,1,.31,2.23,7.78,7.78,0,0,1-.71,3.29,8.06,8.06,0,0,1-2,2.67,9.3,9.3,0,0,1-3,1.82,10.76,10.76,0,0,1-3.82.67H61.9V93.73h8.94a9,9,0,0,1,5.92,2.18,7,7,0,0,1,1.8,2.35,6.64,6.64,0,0,1,.65,2.89,7.25,7.25,0,0,1-.59,2.94A6.37,6.37,0,0,1,77,106.3a8.89,8.89,0,0,1,1.4,1,6.66,6.66,0,0,1,1.16,1.41A7.54,7.54,0,0,1,80.39,110.57ZM68.7,104h1.79a1.8,1.8,0,0,0,1.36-.59,2,2,0,0,0,.56-1.43,1.91,1.91,0,0,0-1.92-1.92H68.7Zm5,8.49a2.4,2.4,0,0,0-.74-1.78,2.43,2.43,0,0,0-1.78-.75H68.7v4.93h2.52a2.5,2.5,0,0,0,1.78-.7A2.26,2.26,0,0,0,73.74,112.5Zm39.68-5.6a14.77,14.77,0,0,0-2.74-1.74L108,103.8a14.76,14.76,0,0,1-2.1-1.24,1.75,1.75,0,0,1-.84-1.41,1.63,1.63,0,0,1,.47-1.15,1.53,1.53,0,0,1,1.13-.5,2.18,2.18,0,0,1,.67.1,1.31,1.31,0,0,1,.59.36,2,2,0,0,1,.44.74,3.8,3.8,0,0,1,.17,1.29h6.81a9.74,9.74,0,0,0-.69-3.79,8.23,8.23,0,0,0-1.86-2.77,7.54,7.54,0,0,0-2.75-1.7,9.87,9.87,0,0,0-3.38-.57,8.57,8.57,0,0,0-6,2.35,8,8,0,0,0-1.8,2.54,7.56,7.56,0,0,0-.65,3.1,5.68,5.68,0,0,0,.83,3.19,7.36,7.36,0,0,0,2.08,2.08,16.93,16.93,0,0,0,2.69,1.45,28.25,28.25,0,0,1,2.7,1.32,7.91,7.91,0,0,1,2.08,1.64,3.56,3.56,0,0,1,.82,2.43,2.08,2.08,0,0,1-.71,1.57,2.63,2.63,0,0,1-1.85.65,2.48,2.48,0,0,1-1.83-.9,4,4,0,0,1-.84-2.81h-7a10.53,10.53,0,0,0,.78,4.11,10.17,10.17,0,0,0,2.09,3.17,9.26,9.26,0,0,0,3,2,9,9,0,0,0,3.53.72,10,10,0,0,0,3.8-.72,9.88,9.88,0,0,0,3.1-2,9.48,9.48,0,0,0,2.08-2.93,8.34,8.34,0,0,0,.77-3.53,6.38,6.38,0,0,0-.84-3.35A9.12,9.12,0,0,0,113.42,106.9Zm5.61-6.83h4.78v21.18h6.8V100.07h4.78V93.73H119Zm32.3,12.54a2.9,2.9,0,0,1-2.91,2.87,2.65,2.65,0,0,1-2-.86,2.85,2.85,0,0,1-.82-2V93.73h-6.8v18.92a8.74,8.74,0,0,0,.74,3.57,9.47,9.47,0,0,0,2,2.91,9.8,9.8,0,0,0,3,2,9.65,9.65,0,0,0,3.73.72,10.18,10.18,0,0,0,3.82-.72,9.81,9.81,0,0,0,3.11-2,9.68,9.68,0,0,0,2.09-2.93,8.41,8.41,0,0,0,.76-3.57V93.73h-6.8Zm33-10.62a12.41,12.41,0,0,1,1.11,5.19,14.2,14.2,0,0,1-1.07,5.51,13.92,13.92,0,0,1-13,8.56h-8.67V93.73h8.67a14.11,14.11,0,0,1,5.47,1.07,14.38,14.38,0,0,1,4.47,2.91A13.79,13.79,0,0,1,184.35,102Zm-5.85,5.38a6.66,6.66,0,0,0-.61-2.82,7.67,7.67,0,0,0-7-4.48h-1.37V114.9H171a7.29,7.29,0,0,0,2.94-.59,7.49,7.49,0,0,0,2.39-1.6,7.41,7.41,0,0,0,1.59-2.39A7.64,7.64,0,0,0,178.5,107.37Zm10.78,13.88h6.8V93.73h-6.8ZM229,107.49a13.73,13.73,0,0,1-1.15,5.58,14.55,14.55,0,0,1-3.13,4.55,15.09,15.09,0,0,1-4.63,3.07,14.25,14.25,0,0,1-5.65,1.13,14.4,14.4,0,0,1-5.68-1.13,14.69,14.69,0,0,1-4.62-3.07,14.52,14.52,0,0,1-3.12-4.55,14.11,14.11,0,0,1,0-11.16,14.52,14.52,0,0,1,3.12-4.55,14.72,14.72,0,0,1,4.62-3.08,14.39,14.39,0,0,1,5.68-1.12,14.25,14.25,0,0,1,5.65,1.12,15.12,15.12,0,0,1,4.63,3.08,14.55,14.55,0,0,1,3.13,4.55A13.73,13.73,0,0,1,229,107.49Zm-6.92,0a8.17,8.17,0,0,0-2.22-5.68,7.36,7.36,0,0,0-5.42-2.31,7.13,7.13,0,0,0-3,.63,7.47,7.47,0,0,0-2.42,1.72,8.56,8.56,0,0,0-1.65,2.54,8.18,8.18,0,0,0,0,6.2,8.56,8.56,0,0,0,1.65,2.54,7.62,7.62,0,0,0,2.42,1.72,7.29,7.29,0,0,0,5.93,0,7.62,7.62,0,0,0,2.42-1.72,8.56,8.56,0,0,0,1.65-2.54A8,8,0,0,0,222.11,107.49Zm-195.19.18L21.49,93.73H17.25l-5.49,13.9-5-13.9H0l10.11,27.52H13l6.33-16.16,6.27,16.16h2.83L38.71,93.73H32Z"/><path d="M37.18,1.49H54.87V73.06H37.18V44.23H17.69V73.06H0V1.49H17.69V27.73H37.18ZM64.81,73.06h17.7V1.49H64.81ZM128.39,49.4h16.14A9.2,9.2,0,0,1,142,53.18a17.29,17.29,0,0,1-4.08,2.69,22.6,22.6,0,0,1-9.44,2.18,18.33,18.33,0,0,1-7.7-1.64,19.83,19.83,0,0,1-6.32-4.47,21.79,21.79,0,0,1-4.27-6.61,21.17,21.17,0,0,1,0-16.1,21.84,21.84,0,0,1,4.27-6.62,20.15,20.15,0,0,1,6.32-4.47,18.48,18.48,0,0,1,7.7-1.64,18.17,18.17,0,0,1,9.64,2.68,18.68,18.68,0,0,1,6.76,7.06h19.58a36.36,36.36,0,0,0-5.76-10.73,40.67,40.67,0,0,0-8.6-8.3,39.89,39.89,0,0,0-10.39-5.32A34.7,34.7,0,0,0,128.43,0a37.43,37.43,0,0,0-14.76,2.93,38.69,38.69,0,0,0-12.08,8,37.78,37.78,0,0,0-8.15,11.83,35.56,35.56,0,0,0-3,14.52,35.51,35.51,0,0,0,3,14.51,37.66,37.66,0,0,0,8.15,11.83,38.52,38.52,0,0,0,12.08,8,37.43,37.43,0,0,0,14.76,2.93,34.55,34.55,0,0,0,14.71-3.18,38,38,0,0,0,12-8.7A42.18,42.18,0,0,0,166.2,33.9H128.39Zm82.94-21.67H191.85V1.49H174.16V73.06h17.69V44.23h19.48V73.06H229V1.49h-17.7Zm87.18,15.71V1.49H282.8L256.56,43.44V1.49H238.87V73.06h17.69L280.82,33.8V73.06H300.2L347.32,1.49H324.75ZM350.3,73.06h41.35V56.56H368V44.43h23.66V27.93H368V18h23.66V1.49H350.3Zm98.9-27.78a19.72,19.72,0,0,0-2.08-4.72,17.59,17.59,0,0,0-3-3.68,21.88,21.88,0,0,0-3.62-2.69,16.47,16.47,0,0,0,4.12-5.76,18.64,18.64,0,0,0,1.54-7.65,17.13,17.13,0,0,0-1.69-7.51,18.56,18.56,0,0,0-4.67-6.11,23.64,23.64,0,0,0-7-4.13,23.3,23.3,0,0,0-8.45-1.54H401.09V73.06h24.16a27.72,27.72,0,0,0,9.94-1.74A24.43,24.43,0,0,0,443,66.6a21.59,21.59,0,0,0,5.12-7,21.06,21.06,0,0,0,1-14.36Z"/></svg></a></div>
+            </div>
           </div>
         </div>
       </footer>

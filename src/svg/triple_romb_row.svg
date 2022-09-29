@@ -1,0 +1,9 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="24.3258" y="30" width="19.2132" height="19.2132" transform="rotate(-45 24.3258 30)" stroke="black" stroke-width="2"/>
+<rect x="8.91421" y="30" width="19.2132" height="19.2132" transform="rotate(-45 8.91421 30)" stroke="black" stroke-width="2"/>
+<mask id="path-3-inside-1_704_10674" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M30 22.5L37.5 30L30 37.5L22.5 30L30 22.5Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M30 22.5L37.5 30L30 37.5L22.5 30L30 22.5Z" fill="black"/>
+<path d="M30 22.5L31.4142 21.0858L30 19.6716L28.5858 21.0858L30 22.5ZM37.5 30L38.9142 31.4142L40.3284 30L38.9142 28.5858L37.5 30ZM30 37.5L28.5858 38.9142L30 40.3284L31.4142 38.9142L30 37.5ZM22.5 30L21.0858 28.5858L19.6716 30L21.0858 31.4142L22.5 30ZM28.5858 23.9142L36.0858 31.4142L38.9142 28.5858L31.4142 21.0858L28.5858 23.9142ZM36.0858 28.5858L28.5858 36.0858L31.4142 38.9142L38.9142 31.4142L36.0858 28.5858ZM31.4142 36.0858L23.9142 28.5858L21.0858 31.4142L28.5858 38.9142L31.4142 36.0858ZM23.9142 31.4142L31.4142 23.9142L28.5858 21.0858L21.0858 28.5858L23.9142 31.4142Z" fill="black" mask="url(#path-3-inside-1_704_10674)"/>
+</svg>

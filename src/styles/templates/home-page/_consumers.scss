@@ -1,11 +1,27 @@
 .consumers {
-  margin-top: $spacer * 20;
+  margin-top: $spacer * 8;
+  @media (min-width: $sm) {
+    margin-top: $spacer * 13;
+  }
+  @media (min-width: $md) {
+    margin-top: $spacer * 20;
+  }
 
   &__container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: $spacer ;
+    margin-bottom: $spacer * 2 ;
+
+    @media (min-width: $sm) {
+      margin-top: $spacer * 3;
+      margin-bottom: $spacer * 3 ;
+    }
+    @media (min-width: $md) {
+      margin-bottom: $spacer * 8;
+    }
   }
 
   &__card {

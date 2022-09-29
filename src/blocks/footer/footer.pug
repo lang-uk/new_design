@@ -26,15 +26,22 @@ footer.footer
 			.footer__actions
 				.spacer.spacer--h.spacer--size-3
 					.spacer__item
-						button.footer__button.button-wave.button-wave--transparent
+						a(href="https://github.com/lang-uk/new_design").footer__button.button-wave.button-wave--transparent
 							include ../../svg/github.svg
 					.spacer__item
-						button.footer__button.button-wave.button-wave--transparent
+						a(href="tg://resolve?domain=lang-uk").footer__button.button-wave.button-wave--transparent
 							include ../../svg/telegram.svg
 		.footer__bottom
 			span.caption-1.caption-1--regular ©2021 Lang-uk
-			.spacer.spacer--h.spacer--size-1
-				span.spacer__item
-					include ../../svg/wave_1.svg
-				span.spacer__item.caption-1.caption-1--regular Architected by
-				span.spacer__item.caption-1 Báchoo
+
+			
+			.footer__bottom-dev
+				.spacer.spacer--h.spacer--size-1.footer__developer
+					span.spacer__item
+						include ../../svg/wave_1.svg
+					span.spacer__item.caption-1.caption-1--regular Architected by
+					a(href="https://bachoodesign.com").spacer__item.caption-1 Báchoo
+				.spacer.spacer--h.spacer--size-1.footer__developer
+					a(href="https://bachoodesign.com").footer__developer-highweb.spacer__item.caption-1
+						include ../../svg/highweb.svg
+

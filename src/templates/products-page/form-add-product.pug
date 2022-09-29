@@ -1,0 +1,198 @@
+
+.add-product
+    h1.h1.add-product-title Додати продукт
+
+    form.add-product-form
+        .form-row
+            .form-row__title.text-m Мова заповнення форми
+            .form-row__content
+                .radio-items
+                    label.radio-item
+                        input(type='radio' name='lang' value='Укр' checked)
+                        span.radio-item__text Укр
+                        span.radio-item__square
+                    
+                    label.radio-item
+                        input(type='radio' name='lang' value='Укр/En')
+                        span.radio-item__text Укр/En
+                        span.radio-item__square
+
+        .form-row
+            .form-row__title.text-m Назва продукту*
+            .form-row__content
+                input.input.required(type='text' name='name-product' placeholder="Введіть назву продукту")
+                .error-message Enter product name
+
+        .form-row
+            .form-row__title.text-m Категорія*
+            .form-row__content
+                select.required(name='select' class="select-css")
+                    option(disabled selected value="0") Виберіть категорію
+                    option(value='Бібліотеки') Бібліотеки
+                    option(value='Ґазетіри') Ґазетіри
+                    option(value='Сервіси') Сервіси
+                    option(value='Моделі') Моделі
+                    option(value='Словники') Словники
+                    option(value='Корпуси') Корпуси
+
+        .form-row
+            .form-row__title.text-m Текстовий опис*
+            .form-row__content
+                textarea.required.editor(name="description")
+
+        .form-row
+            .form-row__title.text-m Автор(-и) *
+            .form-row__content
+                .copy-block
+                    .copy-block-content
+                        .copy-block-content__count
+                        input.required.input(type="text" name="authors[]" placeholder="Ім’я автора")
+                        .chip
+                            //- .chip-list
+                            input.chip-input(type="text" name="authors_links[]" placeholder="Посилання на соц. мережі (опціонально)")
+                        .copy-block-content__button
+                            .copy-block-content__icon.copy-block-content__add
+                                include ../../svg/form-plus.svg
+
+        .form-row
+            .form-row__title.text-m Ліцензія*
+            .form-row__content
+                select.required(name='select' class="select-css")
+                    option(disabled selected  value="0") Виберіть ліцензію
+                    option(value='Ліцензія 1') Ліцензія 1
+                    option(value='Ліцензія 2') Ліцензія 2
+        
+        .form-row
+            .form-row__title.text-m Приклад цитування
+            .form-row__content
+                textarea.textarea.textarea--quote(name="quote" placeholder="Приклад цитування (опціонально)")     
+
+        .form-row
+            .form-row__title.text-m Чи потрібен хостинг*
+            .form-row__content
+                .radio-items
+                    label.radio-item
+                        input(type='radio' name='hosting' value='Так' checked)
+                        span.radio-item__text Так
+                        span.radio-item__square
+                    
+                    label.radio-item
+                        input(type='radio' name='hosting' value='Ні')
+                        span.radio-item__text Ні
+                        span.radio-item__square
+
+        .form-row
+            .form-row__title.text-m Посилання на деліверабли 
+            .form-row__content
+                .copy-block
+                    .copy-block-content
+                        .copy-block-content__count
+                        input.input(type="text" name="links[]" placeholder="Опціонально")
+                        .copy-block-content__button
+                            .copy-block-content__icon.copy-block-content__add
+                                include ../../svg/form-plus.svg
+
+
+                
+                textarea.textarea(name="dev-description1" placeholder="Опис")
+                textarea.textarea(name="dev-description2" placeholder="Add a description")
+        
+        .form-row
+            .form-row__title.text-m Email для зворотнього зв’язку *
+            .form-row__content
+                input.input.required(type="email" name="email" placeholder="Your email")
+                .note Ми не будемо оприлюднювати ваш імейл на сайті
+
+        .form-row
+            .form-row__button
+                button.button.button-wave(type='submit') Відправити
+
+
+//- .form-product
+//-     h1.h1.form-product__title Додати продукт
+    
+//-     .form-product__content
+//-        form(action="" method="POST")
+//-             .block__content
+//-                 p.text-m Мова заповнення форми
+//-                 .input__block
+//-                     .input-radio
+//-                         input#radio1(type='radio', class="custom-radio" name='lang', value='1')
+//-                         label(for="radio1", class="caption-1") Укр
+//-                         input#radio2(type='radio', class="custom-radio" name='lang', value='1')
+//-                         label(for="radio2", class="caption-1") Укр/En
+//-             .block__content.name-product
+//-                 p.text-m Назва продукту*
+//-                 .input__block.name-product
+//-                     input.input__item(type='text', name='name-product', placeholder="Введіть назву продукту" value='')
+//-             .block__content
+//-                 p.text-m Категорія*
+//-                 .input__block.category
+//-                     select(name='select' class="select-css")
+//-                         option( disabled selected='Виберіть категорію') Виберіть категорію
+//-                         option(value='value1') Бібліотеки
+//-                         option(value='value2') Ґазетіри
+//-                         option(value='value3') Сервіси
+//-                         option(value='value4') Моделі
+//-                         option(value='value5') Словники
+//-                         option(value='value6') Корпуси
+//-             .block__content
+//-                 p.text-m Текстовий опис*
+//-                 .input__block.description
+//-                     textarea.editor
+//-             .block__content
+//-                 p.text-m Автор(-и) *
+//-                 .input__block.author
+//-                     .input__author
+//-                         p.text-m 1.
+//-                         .input-author
+//-                             input.input__item(type='text', name='name-author', placeholder="Ім’я автора" value='')
+//-                             input.input__item(type='email', name='email', placeholder="Посилання на соц. мережі (опціонально)" value='')
+//-                             .adding
+//-                                 include ../../svg/plus.svg
+//-                     .input__author
+//-                         p.text-m 2.
+//-                         .input-author
+//-                             input.input__item(type='text', name='name-author', placeholder="Ім’я автора" value='')
+//-                             input.input__item(type='email', name='email', placeholder="Посилання на соц. мережі (опціонально)" value='')
+//-                             .adding
+//-                                 include ../../svg/close.svg
+//-             .block__content
+//-                 p.text-m Ліцензія*
+//-                 .input__block.license
+//-                     select(name='select' class="select-css")
+//-                         option(selected='Вибрати ліцензію') Вибрати ліцензію
+//-             .block__content
+//-                 p.text-m Приклад цитування
+//-                 .input__block.quote
+//-                     textarea(name="quote" placeholder="Приклад цитування (опціонально)" class="textarea")
+//-             .block__content
+//-                 p.text-m Чи потрібен хостинг*
+//-                 .input__block.hosting
+//-                     .input-radio
+//-                         input#radio3(type='radio', name='hosting', value='2')
+//-                         label(for="radio3", class="caption-1") Так
+//-                         input#radio4(type='radio', name='hosting', value='2')
+//-                         label(for="radio4", class="caption-1") Ні
+//-             .block__content
+//-                 p.text-m Посилання на деліверабли
+//-                 .input__block.deliverables
+//-                     p.text-m 1.
+//-                     .block_deliverables
+//-                         .input-deliverables
+//-                             input.input__item(type='text', name='optional', placeholder="Опціонально" value='')
+//-                             input.input__item.enter-field( name='description', placeholder="Опис" )
+//-                             input.input__item.enter-field( name='description', placeholder="Add a description" )
+//-                         .adding
+//-                             include ../../svg/plus.svg
+//-             .block__content
+//-                 p.text-m Email для зворотнього зв’язку *
+//-                 .input__block.your-email
+//-                     input.input__item(type='email', name='your-email', placeholder="Your email" value='')
+//-                     p.caption-2 Ми не будемо оприлюднювати ваш імейл на сайті
+//-             .block__content.content__button
+//-                 .block__button
+//-                     button.button.button-wave.button-wave--wave-white.spacer__item(type="submit") Відправити
+    
+//-     script(src='https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js', referrerpolicy='origin')
+

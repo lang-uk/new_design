@@ -1,0 +1,133 @@
+.about-manifest {
+  overflow: hidden;
+  width: calc(100% + 32px);
+  margin-right: -16px;
+  margin-left: -16px;
+
+  .about-manifest__info {
+    @include flex-column;
+    justify-content: center;
+    margin: $spacer * 12 $spacer * 2 $spacer * 13;
+
+
+    @media (min-width: $sm) {
+      margin:$spacer * 21 0 $spacer * 21;
+    }
+    @media (min-width: $md) {
+      margin: $spacer * 21 0 $spacer * 28;
+    }
+
+    .about-manifest__content {
+      position: relative;
+      text-align: center;
+      padding: $spacer * 4 $spacer * 2.5 $spacer * 4;
+
+      @media (min-width: $sm) {
+        padding: $spacer * 7 $spacer * 6 $spacer;
+      }
+      @media (min-width: $md) {
+        padding:$spacer * 7.5 $spacer * 2 $spacer * 4.5;
+      }
+
+      .h3 {
+        font-family: $font-family-gilroy-regular;
+        padding-bottom: $spacer * 3;
+
+        @media (min-width: $xs) {
+          max-width: 33.5rem;
+        }
+        @media (min-width: $md) {
+          max-width: 46rem;
+        }
+      }
+    }
+
+    .manifest__content-line {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .line1 {
+      position: absolute;
+      top: 0;
+      left: -28px;
+      width: calc(100% + 2 * 28px);
+      height: 1px;
+      background: black;
+
+      @media (min-width: $sm) {
+        left: -44px;
+        width: calc(100% + 2 * 44px);
+      }
+
+      @media (min-width: $md) {
+        left: -64px;
+        width: calc(100% + 2 * 64px);
+      }
+    }
+
+    .line2 {
+      position: absolute;
+      left: 0;
+      top: -32px;
+      height: calc(100% + 2 * 32px);
+      width: 1px;
+      background: black;
+
+      @media (min-width: $sm) {
+        top: -64px;
+        height: calc(100% + 2 * 64px);
+      }
+
+      @media (min-width: $md) {
+        top: -64px;
+        height: calc(100% + 2 * 64px);
+      }
+    }
+
+    .line3 {
+      position: absolute;
+      bottom: 0;
+      left: -28px;
+      width: calc(100% + 2 * 28px);
+      height: 1px;
+      background: black;
+
+      @media (min-width: $sm) {
+        display: block;
+        bottom: 0;
+        left: -44px;
+        width: calc(100% + 2 * 44px);
+      }
+
+      @media (min-width: $md) {
+        display: block;
+        bottom: 0;
+        left: -64px;
+        width: calc(100% + 2 * 64px);
+      }
+    }
+
+    .line4 {
+      position: absolute;
+      right: 0;
+      top: -32px;
+      height: calc(100% + 2 * 32px);
+      width: 1px;
+      background: black;
+
+      @media (min-width: $sm) {
+        top: -64px;
+        height: calc(100% + 2 * 64px);
+      }
+
+      @media (min-width: $md) {
+        top: -64px;
+        height: calc(100% + 2 * 64px);
+      }
+    }
+  }
+}

@@ -2,12 +2,14 @@
 html(lang="uk")
 	include ../templates/head/head.pug
 
-	body
-		.layout
+	body(data-barba="wrapper")
+		.loader
 
+		.layout
 			include ../blocks/header/header.pug
 
-			main.main
+			main.main(data-barba="container")
+				include ../templates/cookies/cookies.pug
 				.main__container
 					include ../templates/home-page/slogan-section.pug
 					include ../templates/home-page/about-us-section.pug
@@ -19,6 +21,7 @@ html(lang="uk")
 					include ../blocks/become-part/become-part.pug
 					include ../blocks/media-articles/media-articles.pug
 
+		
 			include ../blocks/footer/footer.pug
 
 		script(type="module", src="./js/main.js")

@@ -1,0 +1,27 @@
+
+
+html.noscroll,
+body.noscroll {
+    touch-action: none;
+    -ms-touch-action: none;
+    overflow: hidden !important;
+}
+
+html,
+body {
+    scrollbar-width: thin;
+    scrollbar-color: $color-black rgba(0, 0, 0, 0.1);
+
+    &::-webkit-scrollbar {
+        width: 3px
+    }
+
+    &::-webkit-scrollbar-track {
+        background:rgba(0, 0, 0, 0.1)
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $color-black;
+        border-radius: 10px
+    }
+}

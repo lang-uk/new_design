@@ -6,27 +6,103 @@ header.header
 		.header__navigation
 			nav.navigation
 				span.navigation__item
-					a.navigation__link.underline-animation(href="products.html") Продукти
-				span.navigation__item
-					a.navigation__link.underline-animation(href="services.html") Сервіси
+					//- a.navigation__link.underline-animation(href="products.html") Продукти
+					span.navigation__link.navigation__link--toggle.underline-animation(href="products.html") Продукти
+						span.svg
+							include ../../svg/star.svg
+						span.arrow
+							include ../../svg/header_arrow.svg
+
+					.navigation__sub
+						ul.sub__navigation--list
+							li.sub__navigation--item
+								a.navigation__link.underline-animation(href="services.html") Сервіси
+									span.svg
+										include ../../svg/star.svg
+									
+								.card__icon
+									include ../../svg/wave_2.svg
+							li.sub__navigation--item
+								a.navigation__link.underline-animation(href="services.html") Моделі
+								.card__icon
+									include ../../svg/romb.svg
+							li.sub__navigation--item
+								a.navigation__link.underline-animation(href="services.html") Бібліотеки
+								.card__icon
+									include ../../svg/double_romb_row.svg
+							li.sub__navigation--item
+								a.navigation__link.underline-animation(href="services.html") Словники
+								.card__icon
+									include ../../svg/double_triange.svg
+							li.sub__navigation--item
+								a.navigation__link.underline-animation(href="services.html") Корпуси
+									span.svg
+										include ../../svg/star.svg
+								.card__icon
+									include ../../svg/double_romb_column.svg
+							li.sub__navigation--item
+								a.navigation__link.underline-animation(href="services.html") Газетярі
+								.card__icon
+									include ../../svg/double_semirhombus.svg
 				span.navigation__item
 					a.navigation__link.underline-animation(href="about-us.html") Про нас
 				span.navigation__item
-					a.navigation__link.underline-animation(href="manifest.html") Маніфест
+					a.navigation__link.underline-animation.active(href="manifest.html") Маніфест
 				span.navigation__item
 					a.navigation__link.underline-animation(href="contact-us.html") Контакти
+			
 			.navigation-action
-				.navigation-action__item
-					span UA
-				.navigation-action__item
-					//span O
-					.header-input
-						input.header-input__input(type="text" placeholder="Пошук")
-						span.header-input__icon
-							include ../../svg/search.svg
-				.navigation-action__item
-					a.header-product-action(href="#") Доповнити продукт
+				.navigation-action__item.lang
+					a(href="#").lang__item UA
+						span.lang-arrow
+							include ../../svg/vector_1.svg
+					a(href="#").lang__item.lang-en EN
 
+
+				.navigation-action__item
+
+					form.search-form(action="/search-result.html")
+						.search-form__wrapper
+							input.search-form__input(name="search" type="text" placeholder="Пошук" autocomplete="off")
+
+							.search-form__result
+								ul
+									li
+										a.text-m(href="search-result.html") Мікро <b>сервіс</b> NLP_UK
+									li
+										a.text-m(href="") Мікро<b>сервіс</b> NER
+									li
+										a.text-m(href="") Мікро<b>сервіс</b> розпізнавання мови (WILD)
+									li
+										a.text-m(href="") Веб-<b>сервіс</b> оцінки когерентності тексту
+						
+						button.search-form__button(type="submit")
+							include ../../svg/search.svg
+
+				
+				.navigation-action__item
+					a.button.button-wave.button-wave--produckt(href="add-product.html") Доповнити продукт
+		
+		form.search-form.search-form--mobile(action="/search-result.html")
+			.search-form__wrapper
+				input.search-form__input(name="search" type="text" placeholder="Пошук" autocomplete="off")
+
+				.live-search.search-form__result
+					ul
+						li
+							a.text-m(href="search-result.html") Мікро <b>сервіс</b> NLP_UK
+						li
+							a.text-m(href="") Мікро<b>сервіс</b> NER
+						li
+							a.text-m(href="") Мікро<b>сервіс</b> розпізнавання мови (WILD)
+						li
+							a.text-m(href="") Веб-<b>сервіс</b> оцінки когерентності тексту
+			
+			button.search-form__button(type="submit")
+				include ../../svg/search.svg
+				
 		.header__burger-wrap
 			button.header__burger
 				span.header__burger-line
+				span.svg-burger
+					include ../../svg/star.svg

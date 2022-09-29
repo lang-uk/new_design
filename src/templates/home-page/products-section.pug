@@ -5,42 +5,48 @@
 		.spacer__item
 			p.text-l.text-center
 				| На даний момент всі результати нашої роботи розміщені на&nbsp;
-				a.link.link--primary-dark(href='#') github
+				a.link.link--primary-dark.underline-animation-reverse(href="https://github.com/lang-uk/new_design") github
 				|  в репозиторіях організації
 		.spacer__item.spacer__item--size-6
 			.card-container
-				.card
+				a.card.card__home(href="services.html")
 					span.h3 Сервіси
+						span.svg
+							include ../../svg/star.svg
+							span.star-text Нові надходження
 					.card__icon
 						include ../../svg/wave_2.svg
 					.card__strip
-				.card
+				a.card.card__home(href="services.html")
 					span.h3 Моделі
 					.card__icon
 						include ../../svg/romb.svg
 					.card__strip
-				.card
+				a.card.card__home(href="services.html")
 					span.h3 Бібліотеки
 					.card__icon
 						include ../../svg/double_romb_row.svg
 					.card__strip
-				.card
+				a.card.card__home(href="services.html")
 					span.h3 Словники
 					.card__icon
 						include ../../svg/double_triange.svg
 					.card__strip
-				.card
+				a.card.card__home(href="services.html")
 					span.h3 Корпуси
+						span.svg
+							include ../../svg/star.svg
+							span.star-text Нові надходження
 					.card__icon
 						include ../../svg/double_romb_column.svg
 					.card__strip
-				.card
+				a.card.card__home(href="services.html")
 					span.h3 Ґазетіри
 					.card__icon
 						include ../../svg/double_semirhombus.svg
 					.card__strip
 
-		.spacer__item.spacer__item--size-13
+		.spacer__item
 			.spacer.spacer--h-sm.spacer--center-v.spacer--size-4
-				button.button.button-wave.button-wave--transparent.spacer__item Залишити видгук
-				button.button.button-wave.spacer__item Доповнити продукт
+				a(href="#").button.button-wave.button-wave--transparent.spacer__item Залишити видгук
+				a(href="add-product.html").button.button-wave.spacer__item Доповнити продукт
