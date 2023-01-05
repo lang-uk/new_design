@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
+  <!-- head/head.pug-->
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -11,9 +12,11 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="css/main.css"/>
   </head>
+  <!-- /head/head.pug-->
   <body data-barba="wrapper">
     <div class="loader"></div>
     <div class="layout">
+      <!-- header.pug-->
       <header class="header">
         <div class="header__container">
           <div class="header-logo"><a href="index.html"><img class="header-logo__logo" src="./img/logo.svg" alt="lang uk"/></a></div>
@@ -137,8 +140,10 @@
           </div>
         </div>
       </header>
+      <!-- /header.pug-->
       <main class="main" data-barba="container">
-        <div class="cookies__pop-up">
+        <!-- cookies/cookies.pug-->
+        <div class="cookies__pop-up popup--hide"> 
           <div class="cookies__content">
             <div class="cookies__close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M17.6562 6.34314L6.34254 17.6568" stroke="black" stroke-width="2" stroke-linecap="round"/>
@@ -154,7 +159,9 @@
             </div>
           </div>
         </div>
+        <!-- /cookies/cookies.pug-->
         <div class="main__container">
+          <!-- home-page/slogan-section.pug-->
           <div class="slogan">
             <div class="cols">
               <div class="cols__item cols__item--md">
@@ -188,6 +195,8 @@
               </div>
             </div>
           </div>
+          <!-- /home-page/slogan-section.pug-->
+          <!-- home-page/abous-us-section.pug-->
           <div class="about-us">
             <div class="separator separator--line separator--icon-right">
               <div class="separator__icons">
@@ -242,6 +251,8 @@
               </div>
             </div>
           </div>
+          <!-- /home-page/abous-us-section.pug-->
+          <!-- home-page/products-section.pug-->
           <div class="products">
             <div class="spacer spacer--size-3">
               <div class="spacer__item">
@@ -305,6 +316,8 @@
               </div>
             </div>
           </div>
+          <!-- /home-page/products-section.pug-->
+          <!-- home-page/consumers-section.pug-->
           <div class="consumers spacer">
             <div class="spacer__item">
               <p class="h2 text-center">Вже використовують наші продукти</p>
@@ -339,8 +352,12 @@
               </div>
             </div>
           </div>
+          <!-- /home-page/consumers-section.pug-->
           <!-- TODO: needs to be redone block enter-->
+          <!-- enter.pug-->
           <div class="enter"><img src="./img/enter_picture.png"/></div>
+          <!-- /enter.pug-->
+          <!-- home-page/healthy-section.pug-->
           <div class="healthy spacer">
             <p class="h1 text-center">Кому це може бути корисно</p>
             <div class="healthy__content">
@@ -358,6 +375,8 @@
               </div>
             </div>
           </div>
+          <!-- /home-page/healthy-section.pug-->
+          <!-- become-part.pug-->
           <div class="become-part">
             <div class="become-part__container">
               <p class="become-part__title">Стань частиною проєкту, який змінить майбутнє країни</p>
@@ -370,6 +389,8 @@
             </div>
             <div class="svg-hover"><img src="./img/Hover.svg"/></div>
           </div>
+          <!-- /become-part.pug-->
+          <!-- media-articles.pug-->
           <div class="media-articles">
             <div class="media-articles__title">
               <p class="h1 text-center">Медіа про нас</p>
@@ -428,8 +449,10 @@
               </div>
             </div>
           </div>
+          <!-- /media-articles.pug-->
         </div>
       </main>
+      <!-- footer.pug-->
       <footer class="footer">
         <div class="footer__container">
           <div class="footer__top">
@@ -474,6 +497,7 @@
           </div>
         </div>
       </footer>
+      <!-- /footer.pug-->
     </div>
     <script type="module" src="./js/main.js"></script>
   </body>

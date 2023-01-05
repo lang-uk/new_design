@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+html(lang="uk")
+	include ../templates/head/head.pug
+
+	body(data-barba="wrapper")
+		.loader
+
+		.layout
+			include ../blocks/header/header.pug
+
+			main.main(data-barba="container")
+				include ../templates/cookies/cookies.pug
+				.main__container
+
+		
+			include ../blocks/footer/footer.pug
+
+		script(type="module", src="./js/main.js")

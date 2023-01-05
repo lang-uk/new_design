@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <!-- head/head.pug-->
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -11,9 +12,11 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="css/main.css"/>
   </head>
+  <!-- /head/head.pug-->
   <body data-barba="wrapper">
     <div class="loader"></div>
     <div class="layout">
+      <!-- header.pug-->
       <header class="header">
         <div class="header__container">
           <div class="header-logo"><a href="index.html"><img class="header-logo__logo" src="./img/logo.svg" alt="lang uk"/></a></div>
@@ -137,8 +140,10 @@
           </div>
         </div>
       </header>
+      <!-- /header.pug-->
       <main class="main" data-barba="container">
         <div class="main__container">
+          <!-- contact-us/contact-submitted.pug-->
           <div class="contact__submitted">
             <div class="contact__submitted-content">
               <div class="content__icon"><svg width="400" height="277" viewBox="0 0 400 277" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -188,8 +193,10 @@
               </div>
             </div>
           </div>
+          <!-- /contact-us/contact-submitted.pug-->
         </div>
       </main>
+      <!-- footer.pug-->
       <footer class="footer">
         <div class="footer__container">
           <div class="footer__top">
@@ -234,6 +241,7 @@
           </div>
         </div>
       </footer>
+      <!-- /footer.pug-->
     </div>
     <script type="module" src="./js/main.js"></script>
   </body>

@@ -28,13 +28,14 @@ function getCookie(cname) {
 export const initCookie = () => {
     const cookiesPopup = document.querySelector('.cookies__pop-up');
 
-    if (cookiesPopup) {
+    if (cookiesPopup && getCookie("show_cookies_block") !== "no") {
+        cookiesPopup.classList.remove("popup--hide");
         const cookiesButtons = cookiesPopup.querySelectorAll('.cookies__close, .button');
 
         cookiesButtons&&cookiesButtons.length&&cookiesButtons.forEach((button) => {
             button.addEventListener('click', function(e) {
                 cookiesPopup.classList.add('popup--hide');
-                // setCookie('show_cookies_block', 'no', 365);
+                setCookie('show_cookies_block', 'no', 365);
             })
         });
     }

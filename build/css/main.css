@@ -245,14 +245,14 @@ h1 {
 }
 @media (min-width: 767px) {
   .h1,
-h1 {
+  h1 {
     font-size: 52px;
     line-height: 60px;
   }
 }
 @media (min-width: 992px) {
   .h1,
-h1 {
+  h1 {
     font-size: 72px;
     line-height: 72px;
   }
@@ -265,14 +265,14 @@ h2 {
 }
 @media (min-width: 767px) {
   .h2,
-h2 {
+  h2 {
     font-size: 40px;
     line-height: 48px;
   }
 }
 @media (min-width: 992px) {
   .h2,
-h2 {
+  h2 {
     font-size: 44px;
     line-height: 48px;
   }
@@ -285,14 +285,14 @@ h3 {
 }
 @media (min-width: 767px) {
   .h3,
-h3 {
+  h3 {
     font-size: 28px;
     line-height: 36px;
   }
 }
 @media (min-width: 992px) {
   .h3,
-h3 {
+  h3 {
     font-size: 32px;
     line-height: 40px;
   }
@@ -305,7 +305,7 @@ h4 {
 }
 @media (min-width: 767px) {
   .h4,
-h4 {
+  h4 {
     font-size: 24px;
     line-height: 36px;
   }
@@ -1908,9 +1908,9 @@ h4 {
 }
 @media (min-width: 992px) {
   .services-list .service-content h1:not(:last-child),
-.services-list .service-content h2:not(:last-child),
-.services-list .service-content h3:not(:last-child),
-.services-list .service-content h4:not(:last-child) {
+  .services-list .service-content h2:not(:last-child),
+  .services-list .service-content h3:not(:last-child),
+  .services-list .service-content h4:not(:last-child) {
     margin-bottom: 32px;
   }
 }
@@ -3747,7 +3747,7 @@ h4 {
 }
 @media (min-width: 767px) {
   .article .article__content .h1,
-.article .article__content .h2 {
+  .article .article__content .h2 {
     margin: 4rem 0 2.5rem;
   }
 }
@@ -3903,8 +3903,8 @@ h4 {
 }
 @media (min-width: 767px) {
   .article .table table td,
-.article .table table tr,
-.article .table table th {
+  .article .table table tr,
+  .article .table table th {
     padding: 0.75rem 0;
   }
 }

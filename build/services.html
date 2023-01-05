@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <!-- head/head.pug-->
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -11,9 +12,11 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="css/main.css"/>
   </head>
+  <!-- /head/head.pug-->
   <body data-barba="wrapper">
     <div class="loader"></div>
     <div class="layout">
+      <!-- header.pug-->
       <header class="header">
         <div class="header__container">
           <div class="header-logo"><a href="index.html"><img class="header-logo__logo" src="./img/logo.svg" alt="lang uk"/></a></div>
@@ -137,12 +140,16 @@
           </div>
         </div>
       </header>
+      <!-- /header.pug-->
       <main class="main" data-barba="container">
         <div class="main__container">
+          <!-- service-page/breadcrumbs.pug-->
           <ul class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
             <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a class="breadcrumbs__item" href="index.html" itemid="index.html" itemscope="" itemtype="http://schema.org/Thing" itemprop="item"><span itemprop="name">Головна</span></a><meta itemprop="position" content="1"></li>
             <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><span class="breadcrumbs__item" itemid="services.html" itemscope="" itemtype="http://schema.org/Thing" itemprop="item"><span itemprop="name">Сервіси</span></span><meta itemprop="position" content="2"></li>
           </ul>
+          <!-- /service-page/breadcrumbs.pug-->
+          <!-- service-page/intro-section.pug-->
           <div class="intro">
             <div class="cols">
               <div class="cols__item cols__item--md">
@@ -159,6 +166,8 @@
               </div></span>
           </div>
           <div class="separator separator--line"></div>
+          <!-- /service-page/intro-section.pug-->
+          <!-- service-page/about-microservices.pug-->
           <div class="about-microservices">
             <div class="about-microservices__item">
               <div class="cols">
@@ -241,6 +250,8 @@
               </div>
             </div>
           </div>
+          <!-- /service-page/about-microservices.pug-->
+          <!-- service-page/services-list.pug-->
           <div class="services">
             <div class="services-types">
               <div class="button-fill-container">
@@ -434,6 +445,8 @@
               </div>
             </div>
           </div>
+          <!-- /service-page/services-list.pug-->
+          <!-- become-part.pug-->
           <div class="become-part">
             <div class="become-part__container">
               <p class="become-part__title">Стань частиною проєкту, який змінить майбутнє країни</p>
@@ -446,8 +459,10 @@
             </div>
             <div class="svg-hover"><img src="./img/Hover.svg"/></div>
           </div>
+          <!-- /become-part.pug-->
         </div>
       </main>
+      <!-- footer.pug-->
       <footer class="footer">
         <div class="footer__container">
           <div class="footer__top">
@@ -492,6 +507,7 @@
           </div>
         </div>
       </footer>
+      <!-- /footer.pug-->
     </div>
     <script type="module" src="./js/main.js"></script>
   </body>

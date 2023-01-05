@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
+  <!-- head/head.pug-->
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -11,9 +12,11 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="css/main.css"/>
   </head>
+  <!-- /head/head.pug-->
   <body data-barba="wrapper">
     <div class="loader"></div>
     <div class="layout">
+      <!-- header.pug-->
       <header class="header">
         <div class="header__container">
           <div class="header-logo"><a href="index.html"><img class="header-logo__logo" src="./img/logo.svg" alt="lang uk"/></a></div>
@@ -137,12 +140,16 @@
           </div>
         </div>
       </header>
+      <!-- /header.pug-->
       <main class="main" data-barba="container">
         <div class="main__container">
+          <!-- about-us/breadcrumbs.pug-->
           <ul class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
             <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a class="breadcrumbs__item" href="index.html" itemid="index.html" itemscope="" itemtype="http://schema.org/Thing" itemprop="item"><span itemprop="name">Головна</span></a><meta itemprop="position" content="1"></li>
             <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><span class="breadcrumbs__item" itemid="about-us.html" itemscope="" itemtype="http://schema.org/Thing" itemprop="item"><span itemprop="name">Про нас</span></span><meta itemprop="position" content="2"></li>
           </ul>
+          <!-- /about-us/breadcrumbs.pug-->
+          <!-- about-us/intro-section.pug-->
           <div class="intro">
             <div class="cols">
               <div class="cols__item cols__item--md">
@@ -159,6 +166,8 @@
               </div></span>
           </div>
           <div class="separator separator--line"></div>
+          <!-- /about-us/intro-section.pug-->
+          <!-- about-us/info-section.pug-->
           <div class="info__about-us">
             <div class="aboutus__content">
               <div class="aboutus__content-subtitle text-center">
@@ -208,6 +217,8 @@
               </div>
             </div>
           </div>
+          <!-- /about-us/info-section.pug-->
+          <!-- about-us/our_team.pug-->
           <div class="our__team">
             <p class="h1">Наша команда</p>
             <div class="team__items">
@@ -281,6 +292,8 @@
               </div>
             </div>
           </div>
+          <!-- /about-us/our_team.pug-->
+          <!-- about-us/team_helper.pug-->
           <div class="team__helper">
             <p class="h2 text-center">В різних проектах допомогали нашій роботі волонтери</p>
             <div class="team__heart">
@@ -415,6 +428,8 @@
               </div>
             </div>
           </div>
+          <!-- /about-us/team_helper.pug-->
+          <!-- media-articles.pug-->
           <div class="media-articles">
             <div class="media-articles__title">
               <p class="h1 text-center">Медіа про нас</p>
@@ -473,6 +488,8 @@
               </div>
             </div>
           </div>
+          <!-- /media-articles.pug-->
+          <!-- become-part.pug-->
           <div class="become-part">
             <div class="become-part__container">
               <p class="become-part__title">Стань частиною проєкту, який змінить майбутнє країни</p>
@@ -485,8 +502,10 @@
             </div>
             <div class="svg-hover"><img src="./img/Hover.svg"/></div>
           </div>
+          <!-- /become-part.pug-->
         </div>
       </main>
+      <!-- footer.pug-->
       <footer class="footer">
         <div class="footer__container">
           <div class="footer__top">
@@ -531,6 +550,7 @@
           </div>
         </div>
       </footer>
+      <!-- /footer.pug-->
     </div>
     <script type="module" src="./js/main.js"></script>
   </body>

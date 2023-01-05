@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <!-- head/head.pug-->
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -11,9 +12,11 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="css/main.css"/>
   </head>
+  <!-- /head/head.pug-->
   <body data-barba="wrapper">
     <div class="loader"></div>
     <div class="layout">
+      <!-- header.pug-->
       <header class="header">
         <div class="header__container">
           <div class="header-logo"><a href="index.html"><img class="header-logo__logo" src="./img/logo.svg" alt="lang uk"/></a></div>
@@ -137,8 +140,10 @@
           </div>
         </div>
       </header>
+      <!-- /header.pug-->
       <main class="main" data-barba="container" data-barba-namespace="add-product">
         <div class="main__container">
+          <!-- products-page/form-add-product.pug-->
           <div class="add-product">
             <h1 class="h1 add-product-title">Додати продукт</h1>
             <form class="add-product-form">
@@ -266,8 +271,10 @@
               </div>
             </form>
           </div>
+          <!-- /products-page/form-add-product.pug-->
         </div>
       </main>
+      <!-- footer.pug-->
       <footer class="footer">
         <div class="footer__container">
           <div class="footer__top">
@@ -312,6 +319,7 @@
           </div>
         </div>
       </footer>
+      <!-- /footer.pug-->
     </div>
     <script type="module" src="./js/main.js"></script>
   </body>
